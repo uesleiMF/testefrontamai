@@ -443,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`https://crud-back-amai.herokuapp.com/${row.image}`} width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`https://crud-back-amai.herokuapp.com/${row.image}`} width="90" height="90" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.price}</TableCell>
                   <TableCell align="center">{row.discount}</TableCell>
