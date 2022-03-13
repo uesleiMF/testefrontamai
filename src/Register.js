@@ -3,7 +3,7 @@ import swal from 'sweetalert';
 import { Button, TextField, Link } from '@material-ui/core';
 const axios = require('axios');
 
-export default class Register extends React.Component {
+export default class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
