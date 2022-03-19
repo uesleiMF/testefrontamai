@@ -50,7 +50,7 @@ export default class Dashboard extends Component {
     if (this.state.search) {
       data = `${data}&search=${this.state.search}`;
     }
-    axios.get(`https://listpr.herokuapp.com//get-product${data}`, {
+    axios.get(`https://listpr.herokuapp.com/get-product${data}`, {
       headers: {
         'token': this.state.token
       }
@@ -67,7 +67,7 @@ export default class Dashboard extends Component {
   }
 
   deleteProduct = (id) => {
-    axios.post('https://listpr.herokuapp.com//delete-product', {
+    axios.post('https://listpr.herokuapp.com/delete-product', {
       id: id
     }, {
       headers: {
