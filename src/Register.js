@@ -17,7 +17,7 @@ export default class Register extends Component {
 
   register = () => {
 
-    axios.post('https://crud-back-amai.herokuapp.com/register', {
+    axios.post('https://listpr.herokuapp.com/register', {
       username: this.state.username,
       password: this.state.password,
     }).then((res) => {
