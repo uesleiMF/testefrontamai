@@ -280,7 +280,7 @@ export default class Dashboard extends Component {
             /><br />
             <TextField
               id="standard-basic"
-              type="number"
+              type="text"
               autoComplete="off"
               name="tel"
               value={this.state.tel}
@@ -360,7 +360,7 @@ export default class Dashboard extends Component {
             /><br />
             <TextField
               id="standard-basic"
-              type="number"
+              type="text"
               autoComplete="off"
               name="tel"
               value={this.state.tel}
@@ -429,12 +429,12 @@ export default class Dashboard extends Component {
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="center">Name</TableCell>
-                <TableCell align="center">Image</TableCell>
+                <TableCell align="center">Nome</TableCell>
+                <TableCell align="center">Imagem</TableCell>
                 <TableCell align="center">Descrição</TableCell>
                 <TableCell align="center">Telefone</TableCell>
                 <TableCell align="center">Cargo</TableCell>
-                <TableCell align="center">Action</TableCell>
+                <TableCell align="center">Ação</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -443,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`https://listpr.herokuapp.com/${row.image}`} width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`https://listpr.herokuapp.com/${row.image}`} width="100" height="100" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.tel}</TableCell>
                   <TableCell align="center">{row.cargo}</TableCell>
