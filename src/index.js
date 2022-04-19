@@ -23,7 +23,8 @@ ReactDOM.render(
            
             <Route path= "/home" component={Home} />
             <Route path= "/sobrenos" component={Sobrenos} />
-            {/* <Route component={NotFound}/> */}
+        
+         {/* <Route component={NotFound}/> */}
 
         </Switch> 
          <Footer/>

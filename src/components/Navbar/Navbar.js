@@ -1,17 +1,12 @@
 import { Container,List } from "./styles";
 import {FaHeart,FaRegUser,FaUserPlus} from "react-icons/fa";
-import styles from "./styles.module.css";
+//import styles from "./styles.module.css";
 import React from 'react';
-export default function Navbar() {
-  const token = localStorage.getItem("token");
 
-  console.log(token)
+
+export default function Navbar() {
   
-  const handleLogout = () => {
-		localStorage.removeItem("token");
-		window.location.reload();
-    
-	};
+	
 
   return (
     <Container>
