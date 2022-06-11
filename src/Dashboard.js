@@ -67,7 +67,7 @@ export default class Dashboard extends Component {
   }
 
   deleteProduct = (id) => {
-    axios.post('http://localhost:2000/delete-product', {
+    axios.post('https://projeto----amai.herokuapp.com/delete-product', {
       id: id
     }, {
       headers: {
@@ -126,7 +126,7 @@ export default class Dashboard extends Component {
     file.append('discount', this.state.discount);
     file.append('price', this.state.price);
 
-    axios.post('http://localhost:2000/add-product', file, {
+    axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -164,7 +164,7 @@ export default class Dashboard extends Component {
     file.append('discount', this.state.discount);
     file.append('price', this.state.price);
 
-    axios.post('http://localhost:2000/update-product', file, {
+    axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -443,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`http://localhost:2000/${row.image}`} width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.price}</TableCell>
                   <TableCell align="center">{row.discount}</TableCell>
