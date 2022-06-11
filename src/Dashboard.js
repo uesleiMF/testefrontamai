@@ -22,6 +22,7 @@ export default class Dashboard extends Component {
       cargo: '',
       file: '',
       fileName: '',
+      image:'',
       page: 1,
       search: '',
       products: [],
