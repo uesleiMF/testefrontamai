@@ -18,11 +18,10 @@ export default class Dashboard extends Component {
       id: '',
       name: '',
       desc: '',
-      tel: '',
-      cargo: '',
+      price: '',
+      discount: '',
       file: '',
       fileName: '',
-      image:'',
       page: 1,
       search: '',
       products: [],
@@ -51,7 +50,7 @@ export default class Dashboard extends Component {
     if (this.state.search) {
       data = `${data}&search=${this.state.search}`;
     }
-    axios.get(`https://projeto----amai.herokuapp.com/get-product${data}`, {
+    axios.get(`http://localhost:2000/get-product${data}`, {
       headers: {
         'token': this.state.token
       }
@@ -68,7 +67,7 @@ export default class Dashboard extends Component {
   }
 
   deleteProduct = (id) => {
-    axios.post('https://projeto----amai.herokuapp.com/delete-product', {
+    axios.post('http://localhost:2000/delete-product', {
       id: id
     }, {
       headers: {
@@ -124,10 +123,10 @@ export default class Dashboard extends Component {
     file.append('file', fileInput.files[0]);
     file.append('name', this.state.name);
     file.append('desc', this.state.desc);
-    file.append('cargo', this.state.cargo);
-    file.append('tel', this.state.tel);
+    file.append('discount', this.state.discount);
+    file.append('price', this.state.price);
 
-    axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
+    axios.post('http://localhost:2000/add-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -141,7 +140,7 @@ export default class Dashboard extends Component {
       });
 
       this.handleProductClose();
-      this.setState({ name: '', desc: '', cargo: '', tel: '', file: null, page: 1 }, () => {
+      this.setState({ name: '', desc: '', discount: '', price: '', file: null, page: 1 }, () => {
         this.getProduct();
       });
     }).catch((err) => {
@@ -162,10 +161,10 @@ export default class Dashboard extends Component {
     file.append('file', fileInput.files[0]);
     file.append('name', this.state.name);
     file.append('desc', this.state.desc);
-    file.append('cargo', this.state.cargo);
-    file.append('tel', this.state.tel);
+    file.append('discount', this.state.discount);
+    file.append('price', this.state.price);
 
-    axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
+    axios.post('http://localhost:2000/update-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -179,7 +178,7 @@ export default class Dashboard extends Component {
       });
 
       this.handleProductEditClose();
-      this.setState({ name: '', desc: '', cargo: '', tel: '', file: null }, () => {
+      this.setState({ name: '', desc: '', discount: '', price: '', file: null }, () => {
         this.getProduct();
       });
     }).catch((err) => {
@@ -199,8 +198,8 @@ export default class Dashboard extends Component {
       id: '',
       name: '',
       desc: '',
-      tel: '',
-      cargo: '',
+      price: '',
+      discount: '',
       fileName: ''
     });
   };
@@ -215,8 +214,8 @@ export default class Dashboard extends Component {
       id: data._id,
       name: data.name,
       desc: data.desc,
-      tel: data.tel,
-      cargo: data.cargo,
+      price: data.price,
+      discount: data.discount,
       fileName: data.image
     });
   };
@@ -230,7 +229,7 @@ export default class Dashboard extends Component {
       <div>
         {this.state.loading && <LinearProgress size={40} />}
         <div>
-          <h2>CADASTRAR MEMBROS DE CELULAS</h2>
+          <h2>Dashboard</h2>
           <Button
             className="button_style"
             variant="contained"
@@ -238,7 +237,7 @@ export default class Dashboard extends Component {
             size="small"
             onClick={this.handleProductOpen}
           >
-            ADICIONAR CASAL
+            Add Product
           </Button>
           <Button
             className="button_style"
@@ -246,7 +245,7 @@ export default class Dashboard extends Component {
             size="small"
             onClick={this.logOut}
           >
-            SAIR
+            Log Out
           </Button>
         </div>
 
@@ -257,7 +256,7 @@ export default class Dashboard extends Component {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">Editar Casal</DialogTitle>
+          <DialogTitle id="alert-dialog-title">Edit Product</DialogTitle>
           <DialogContent>
             <TextField
               id="standard-basic"
@@ -266,7 +265,7 @@ export default class Dashboard extends Component {
               name="name"
               value={this.state.name}
               onChange={this.onChange}
-              placeholder="Nome  do Casal"
+              placeholder="Product Name"
               required
             /><br />
             <TextField
@@ -276,27 +275,27 @@ export default class Dashboard extends Component {
               name="desc"
               value={this.state.desc}
               onChange={this.onChange}
-              placeholder="Descrição"
+              placeholder="Description"
               required
             /><br />
             <TextField
               id="standard-basic"
-              type="text"
+              type="number"
               autoComplete="off"
-              name="tel"
-              value={this.state.tel}
+              name="price"
+              value={this.state.price}
               onChange={this.onChange}
-              placeholder="Telefone"
+              placeholder="Price"
               required
             /><br />
             <TextField
               id="standard-basic"
-              type="text"
+              type="number"
               autoComplete="off"
-              name="cargo"
-              value={this.state.cargo}
+              name="discount"
+              value={this.state.discount}
               onChange={this.onChange}
-              placeholder="Cargo"
+              placeholder="Discount"
               required
             /><br /><br />
             <Button
@@ -320,12 +319,12 @@ export default class Dashboard extends Component {
 
           <DialogActions>
             <Button onClick={this.handleProductEditClose} color="primary">
-              Cancelar
+              Cancel
             </Button>
             <Button
-              disabled={this.state.name == '' || this.state.desc == '' || this.state.cargo == '' || this.state.tel == ''}
+              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == ''}
               onClick={(e) => this.updateProduct()} color="primary" autoFocus>
-              Editar Casal
+              Edit Product
             </Button>
           </DialogActions>
         </Dialog>
@@ -337,7 +336,7 @@ export default class Dashboard extends Component {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">Adicionar Casal</DialogTitle>
+          <DialogTitle id="alert-dialog-title">Add Product</DialogTitle>
           <DialogContent>
             <TextField
               id="standard-basic"
@@ -346,7 +345,7 @@ export default class Dashboard extends Component {
               name="name"
               value={this.state.name}
               onChange={this.onChange}
-              placeholder="Nome do Casal"
+              placeholder="Product Name"
               required
             /><br />
             <TextField
@@ -356,27 +355,27 @@ export default class Dashboard extends Component {
               name="desc"
               value={this.state.desc}
               onChange={this.onChange}
-              placeholder="Descrição"
+              placeholder="Description"
               required
             /><br />
             <TextField
               id="standard-basic"
-              type="text"
+              type="number"
               autoComplete="off"
-              name="tel"
-              value={this.state.tel}
+              name="price"
+              value={this.state.price}
               onChange={this.onChange}
-              placeholder="Telefone"
+              placeholder="Price"
               required
             /><br />
             <TextField
               id="standard-basic"
-              type="text"
+              type="number"
               autoComplete="off"
-              name="cargo"
-              value={this.state.cargo}
+              name="discount"
+              value={this.state.discount}
               onChange={this.onChange}
-              placeholder="Cargo"
+              placeholder="Discount"
               required
             /><br /><br />
             <Button
@@ -404,12 +403,12 @@ export default class Dashboard extends Component {
 
           <DialogActions>
             <Button onClick={this.handleProductClose} color="primary">
-              Cancelar
+              Cancel
             </Button>
             <Button
-              disabled={this.state.name == '' || this.state.desc == '' || this.state.cargo == '' || this.state.tel == '' || this.state.file == null}
+              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == '' || this.state.file == null}
               onClick={(e) => this.addProduct()} color="primary" autoFocus>
-              Adicionar Casal
+              Add Product
             </Button>
           </DialogActions>
         </Dialog>
@@ -424,18 +423,18 @@ export default class Dashboard extends Component {
             name="search"
             value={this.state.search}
             onChange={this.onChange}
-            placeholder="Procurar Casais"
+            placeholder="Search by product name"
             required
           />
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="center">Nome</TableCell>
-                <TableCell align="center">Imagem</TableCell>
-                <TableCell align="center">Descrição</TableCell>
-                <TableCell align="center">Telefone</TableCell>
-                <TableCell align="center">Cargo</TableCell>
-                <TableCell align="center">Ação</TableCell>
+                <TableCell align="center">Name</TableCell>
+                <TableCell align="center">Image</TableCell>
+                <TableCell align="center">Description</TableCell>
+                <TableCell align="center">Price</TableCell>
+                <TableCell align="center">Discount</TableCell>
+                <TableCell align="center">Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -444,10 +443,10 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} width="100" height="100" /></TableCell>
+                  <TableCell align="center"><img src={`http://localhost:2000/${row.image}`} width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
-                  <TableCell align="center">{row.tel}</TableCell>
-                  <TableCell align="center">{row.cargo}</TableCell>
+                  <TableCell align="center">{row.price}</TableCell>
+                  <TableCell align="center">{row.discount}</TableCell>
                   <TableCell align="center">
                     <Button
                       className="button_style"
@@ -456,7 +455,7 @@ export default class Dashboard extends Component {
                       size="small"
                       onClick={(e) => this.handleProductEditOpen(row)}
                     >
-                      Editar
+                      Edit
                   </Button>
                     <Button
                       className="button_style"
@@ -465,7 +464,7 @@ export default class Dashboard extends Component {
                       size="small"
                       onClick={(e) => this.deleteProduct(row._id)}
                     >
-                      Deletar
+                      Delete
                   </Button>
                   </TableCell>
                 </TableRow>
