@@ -386,9 +386,6 @@ export default class Dashboard extends Component {
                 id="standard-basic"
                 type="file"
                 accept="image/*"
-                // inputProps={{
-                //   accept: "image/*"
-                // }}
                 name="file"
                 value={this.state.file}
                 onChange={this.onChange}
