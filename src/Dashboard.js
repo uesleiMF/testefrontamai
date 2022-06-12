@@ -50,7 +50,7 @@ export default class Dashboard extends Component {
     if (this.state.search) {
       data = `${data}&search=${this.state.search}`;
     }
-    axios.get(`http://localhost:2000/get-product${data}`, {
+    axios.get(`https://projeto----amai.herokuapp.com/get-product${data}`, {
       headers: {
         'token': this.state.token
       }
@@ -164,7 +164,7 @@ export default class Dashboard extends Component {
     file.append('discount', this.state.discount);
     file.append('price', this.state.price);
 
-    axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
+    axios.post('http://localhost:2000/update-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
