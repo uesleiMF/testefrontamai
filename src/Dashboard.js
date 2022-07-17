@@ -309,7 +309,7 @@ export default class Dashboard extends Component {
                 name="file"
                 value={this.state.file}
                 onChange={this.onChange}
-                file="fileInput"
+                id="fileInput"
                 placeholder="File"
                 hidden
               />
@@ -389,7 +389,7 @@ export default class Dashboard extends Component {
                 name="file"
                 value={this.state.file}
                 onChange={this.onChange}
-                file="fileInput"
+                id="fileInput"
                 placeholder="File"
                 hidden
                 required
