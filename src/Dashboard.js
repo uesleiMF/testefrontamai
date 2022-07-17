@@ -164,7 +164,7 @@ export default class Dashboard extends Component {
     file.append('discount', this.state.discount);
     file.append('price', this.state.price);
 
-    axios.post('http://localhost:2000/update-product', file, {
+    axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
