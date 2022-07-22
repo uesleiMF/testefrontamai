@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import swal from 'sweetalert';
 import { Button, TextField, Link } from '@material-ui/core';
 const axios = require('axios');
@@ -82,7 +82,7 @@ export default class Register extends React.Component {
             variant="contained"
             color="primary"
             size="small"
-            disabled={this.state.username == '' && this.state.password == ''}
+            disabled={this.state.username === '' && this.state.password === ''}
             onClick={this.register}
           >
             Register
