@@ -221,7 +221,7 @@ export default class Dashboard extends Component {
   };
 
   handleProductEditClose = () => {
-    this.setState({ openProductEditModal: false });
+    this.setState({ openProductEditModal: true});
   };
 
   render() {
