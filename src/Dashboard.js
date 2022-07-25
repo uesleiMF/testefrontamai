@@ -210,7 +210,7 @@ export default class Dashboard extends Component {
 
   handleProductEditOpen = (data) => {
     this.setState({
-      openProductEditModal: true,
+      openProductEditModal: false,
       id: data._id,
       name: data.name,
       desc: data.desc,
