@@ -205,12 +205,12 @@ export default class Dashboard extends Component {
   };
 
   handleProductClose = () => {
-    this.setState({ openProductModal: false });
+    this.setState({ openProductModal: true});
   };
 
   handleProductEditOpen = (data) => {
     this.setState({
-      openProductEditModal: false,
+      openProductEditModal: true,
       id: data._id,
       name: data.name,
       desc: data.desc,
@@ -221,7 +221,7 @@ export default class Dashboard extends Component {
   };
 
   handleProductEditClose = () => {
-    this.setState({ openProductEditModal: true});
+    this.setState({ openProductEditModal: false});
   };
 
   render() {
