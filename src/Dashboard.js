@@ -12,7 +12,6 @@ export default class Dashboard extends Component {
   constructor() {
     super();
     this.state = {
-      token: '',
       openProductModal: false,
       openProductEditModal: false,
       id: '',
@@ -31,15 +30,11 @@ export default class Dashboard extends Component {
   }
 
   componentDidMount = () => {
-    let token = localStorage.getItem('token');
-    if (!token) {
-      this.props.history.push('/login');
-    } else {
-      this.setState({ token: token }, () => {
-        this.getProduct();
-      });
-    }
-  }
+    localStorage.getItem();
+    this.props.history.push('/login');
+  
+      }
+  
 
   getProduct = () => {
     
@@ -52,7 +47,7 @@ export default class Dashboard extends Component {
     }
     axios.get(` https://projeto----amai.herokuapp.com/get-product${data}`, {
       headers: {
-        'token': this.state.token
+       
       }
     }).then((res) => {
       this.setState({ loading: false, products: res.data.products, pages: res.data.pages });
@@ -72,7 +67,7 @@ export default class Dashboard extends Component {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'token': this.state.token
+       
       }
     }).then((res) => {
 
@@ -101,7 +96,7 @@ export default class Dashboard extends Component {
   }
 
   logOut = () => {
-    localStorage.setItem('token', null);
+    localStorage.setItem();
     this.props.history.push('/');
   }
 
@@ -129,7 +124,7 @@ export default class Dashboard extends Component {
     axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
-        'token': this.state.token
+        
       }
     }).then((res) => {
 
@@ -167,7 +162,7 @@ export default class Dashboard extends Component {
     axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
-        'token': this.state.token
+       
       }
     }).then((res) => {
 
@@ -326,6 +321,7 @@ export default class Dashboard extends Component {
               onClick={(e) => this.updateProduct()} color="primary" autoFocus>
               Edit Product
             </Button>
+
           </DialogActions>
         </Dialog>
 
