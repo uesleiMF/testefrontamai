@@ -31,11 +31,11 @@ export default class Dashboard extends Component {
   }
 
   componentDidMount = () => {
-  /*let token = localStorage.getItem('token');*/
+    let token = localStorage.getItem('token');
     if (!token) {
       this.props.history.push('/login');
     } else {
-      this.setState({ /*token: token */}, () => {
+      this.setState({ token: token }, () => {
         this.getProduct();
       });
     }
@@ -52,7 +52,7 @@ export default class Dashboard extends Component {
     }
     axios.get(` https://projeto----amai.herokuapp.com/get-product${data}`, {
       headers: {
-        //'token': this.state.token
+        'token': this.state.token
       }
     }).then((res) => {
       this.setState({ loading: false, products: res.data.products, pages: res.data.pages });
@@ -72,7 +72,7 @@ export default class Dashboard extends Component {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        //'token': this.state.token
+        'token': this.state.token
       }
     }).then((res) => {
 
@@ -101,7 +101,7 @@ export default class Dashboard extends Component {
   }
 
   logOut = () => {
-    localStorage.setItem( null);
+    localStorage.setItem('token', null);
     this.props.history.push('/');
   }
 
@@ -129,7 +129,7 @@ export default class Dashboard extends Component {
     axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
-        //'token': this.state.token
+        'token': this.state.token
       }
     }).then((res) => {
 
@@ -167,7 +167,7 @@ export default class Dashboard extends Component {
     axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
       headers: {
         'content-type': 'multipart/form-data',
-        //'token': this.state.token
+        'token': this.state.token
       }
     }).then((res) => {
 
@@ -443,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt='' width="75" height="75"/></TableCell>
+                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt='' width="45" height="45"/></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.price}</TableCell>
                   <TableCell align="center">{row.discount}</TableCell>
