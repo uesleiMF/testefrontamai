@@ -31,11 +31,11 @@ export default class Dashboard extends Component {
   }
 
   componentDidMount = () => {
-  let token = localStorage.getItem('token');
+  /*let token = localStorage.getItem('token');*/
     if (!token) {
       this.props.history.push('/login');
     } else {
-      this.setState({ token: token }, () => {
+      this.setState({ /*token: token */}, () => {
         this.getProduct();
       });
     }
@@ -101,7 +101,7 @@ export default class Dashboard extends Component {
   }
 
   logOut = () => {
-    localStorage.setItem('token', null);
+    localStorage.setItem( null);
     this.props.history.push('/');
   }
 
