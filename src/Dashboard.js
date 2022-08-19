@@ -12,7 +12,7 @@ export default class Dashboard extends Component {
   constructor() {
     super();
     this.state = {
-     /* token: '',*/
+      //token: '',
       openProductModal: false,
       openProductEditModal: false,
       id: '',
@@ -406,7 +406,7 @@ export default class Dashboard extends Component {
               Cancel
             </Button>
             <Button
-              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == '' || this.state.file == ''}
+              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == '' || this.state.file == null}
               onClick={(e) => this.addProduct()} color="primary" autoFocus>
               Add Product
             </Button>
