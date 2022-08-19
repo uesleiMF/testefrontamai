@@ -406,7 +406,7 @@ export default class Dashboard extends Component {
               Cancel
             </Button>
             <Button
-              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == '' || this.state.file == null}
+              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == '' || this.state.file == ''}
               onClick={(e) => this.addProduct()} color="primary" autoFocus>
               Add Product
             </Button>
