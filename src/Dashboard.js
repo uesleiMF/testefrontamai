@@ -110,7 +110,7 @@ export default class Dashboard extends Component {
       this.setState({ fileName: e.target.files[0].name }, () => { });
     }
     this.setState({ [e.target.name]: e.target.value }, () => { });
-    if (e.target.name == 'search') {
+    if (e.target.name === 'search') {
       this.setState({ page: 1 }, () => {
         this.getProduct();
       });
@@ -303,7 +303,7 @@ export default class Dashboard extends Component {
               component="label"
             > Upload
             <input
-                id="standard-basic"
+                idd="standard-basic"
                 type="file"
                 accept="image/*"
                 name="file"
@@ -322,7 +322,7 @@ export default class Dashboard extends Component {
               Cancel
             </Button>
             <Button
-              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == ''}
+              disabled={this.state.name === '' || this.state.desc === '' || this.state.discount === '' || this.state.price === ''| this.state.file === null}
               onClick={(e) => this.updateProduct()} color="primary" autoFocus>
               Edit Product
             </Button>
@@ -383,7 +383,7 @@ export default class Dashboard extends Component {
               component="label"
             > Upload
             <input
-                id="standard-basic"
+                idd="standard-basic"
                 type="file"
                 accept="image/*"
                 // inputProps={{
@@ -406,7 +406,7 @@ export default class Dashboard extends Component {
               Cancel
             </Button>
             <Button
-              disabled={this.state.name == '' || this.state.desc == '' || this.state.discount == '' || this.state.price == '' || this.state.file == null}
+              disabled={this.state.name === '' || this.state.desc === '' || this.state.discount === '' || this.state.price === '' || this.state.file === null}
               onClick={(e) => this.addProduct()} color="primary" autoFocus>
               Add Product
             </Button>
@@ -443,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={row.image} width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`http://localhost:2000/${row.image}`} alt= "img" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.price}</TableCell>
                   <TableCell align="center">{row.discount}</TableCell>
