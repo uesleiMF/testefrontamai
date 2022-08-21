@@ -322,7 +322,7 @@ export default class Dashboard extends Component {
               Cancel
             </Button>
             <Button
-              disabled={this.state.name === '' || this.state.desc === '' || this.state.discount === '' || this.state.price === ''| this.state.file === null}
+              disabled={this.state.name === '' || this.state.desc === '' || this.state.discount === '' || this.state.price === ''}
               onClick={(e) => this.updateProduct()} color="primary" autoFocus>
               Edit Product
             </Button>
@@ -443,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`http://localhost:2000/${row.image}`} alt= "img" width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.price}</TableCell>
                   <TableCell align="center">{row.discount}</TableCell>
