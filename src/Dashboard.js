@@ -385,10 +385,7 @@ export default class Dashboard extends Component {
             <input
                 idd="standard-basic"
                 type="file"
-                //accept="image/*"
-                inputProps={{
-                 accept: "image/*"
-                }}
+                accept="image/*"
                 name="file"
                 value={this.state.file}
                 onChange={this.onChange}
