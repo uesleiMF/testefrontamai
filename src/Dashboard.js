@@ -128,8 +128,8 @@ export default class Dashboard extends Component {
 
     axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
       headers: {
-        'content-type': 'multipart/form-data',
-        'token': this.state.token
+        'content-type': 'multipart/form-data'
+        //'token': this.state.token
       }
     }).then((res) => {
 
@@ -440,7 +440,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt= "" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.price}</TableCell>
                   <TableCell align="center">{row.discount}</TableCell>
