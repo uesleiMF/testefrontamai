@@ -128,8 +128,8 @@ export default class Dashboard extends Component {
 
     axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
       headers: {
-        'content-type': 'multipart/form-data'
-        //'token': this.state.token
+        'content-type': 'multipart/form-data',
+        'token': this.state.token
       }
     }).then((res) => {
 
