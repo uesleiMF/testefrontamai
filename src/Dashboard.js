@@ -18,8 +18,8 @@ export default class Dashboard extends Component {
       id: '',
       name: '',
       desc: '',
-      price: '',
-      discount: '',
+      niverH: '',
+      niverM: '',
       file: '',
       fileName: '',
       page: 1,
@@ -123,8 +123,8 @@ export default class Dashboard extends Component {
     file.append('file', fileInput.files[0]);
     file.append('name', this.state.name);
     file.append('desc', this.state.desc);
-    file.append('discount', this.state.discount);
-    file.append('price', this.state.price);
+    file.append('niverM', this.state.niverM);
+    file.append('niverH', this.state.niverH);
 
     axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
       headers: {
@@ -140,7 +140,7 @@ export default class Dashboard extends Component {
       });
 
       this.handleProductClose();
-      this.setState({ name: '', desc: '', discount: '', price: '', file: null, page: 1 }, () => {
+      this.setState({ name: '', desc: '', niverM: '', niverH: '', file: null, page: 1 }, () => {
         this.getProduct();
       });
     }).catch((err) => {
@@ -161,8 +161,8 @@ export default class Dashboard extends Component {
     file.append('file', fileInput.files[0]);
     file.append('name', this.state.name);
     file.append('desc', this.state.desc);
-    file.append('discount', this.state.discount);
-    file.append('price', this.state.price);
+    file.append('niverM', this.state.niverM);
+    file.append('niverH', this.state.niverH);
 
     axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
       headers: {
@@ -178,7 +178,7 @@ export default class Dashboard extends Component {
       });
 
       this.handleProductEditClose();
-      this.setState({ name: '', desc: '', discount: '', price: '', file: null }, () => {
+      this.setState({ name: '', desc: '', niverM: '', niverH: '', file: null }, () => {
         this.getProduct();
       });
     }).catch((err) => {
@@ -198,8 +198,8 @@ export default class Dashboard extends Component {
       id: '',
       name: '',
       desc: '',
-      price: '',
-      discount: '',
+      niverH: '',
+      niverM: '',
       fileName: ''
     });
   };
@@ -214,8 +214,8 @@ export default class Dashboard extends Component {
       id: data._id,
       name: data.name,
       desc: data.desc,
-      price: data.price,
-      discount: data.discount,
+      niverH: data.niverH,
+      niverM: data.niverM,
       fileName: data.image
     });
   };
@@ -229,7 +229,7 @@ export default class Dashboard extends Component {
       <div>
         {this.state.loading && <LinearProgress size={40} />}
         <div>
-          <h2>Dashboard</h2>
+          <h2>CELULAS DE  CASAIS</h2>
           <Button
             className="button_style"
             variant="contained"
@@ -237,7 +237,7 @@ export default class Dashboard extends Component {
             size="small"
             onClick={this.handleProductOpen}
           >
-            Add Product
+            Adicionar Casais
           </Button>
           <Button
             className="button_style"
@@ -245,7 +245,7 @@ export default class Dashboard extends Component {
             size="small"
             onClick={this.logOut}
           >
-            Log Out
+            Sair
           </Button>
         </div>
 
@@ -256,7 +256,7 @@ export default class Dashboard extends Component {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">Edit Product</DialogTitle>
+          <DialogTitle id="alert-dialog-title">Editar Casais</DialogTitle>
           <DialogContent>
             <TextField
               id="standard-basic"
@@ -265,7 +265,7 @@ export default class Dashboard extends Component {
               name="name"
               value={this.state.name}
               onChange={this.onChange}
-              placeholder="Product Name"
+              placeholder="Nome Casais"
               required
             /><br />
             <TextField
@@ -280,22 +280,22 @@ export default class Dashboard extends Component {
             /><br />
             <TextField
               id="standard-basic"
-              type="number"
+              type="date"
               autoComplete="off"
-              name="price"
-              value={this.state.price}
+              name="niverH"
+              value={this.state.niverH}
               onChange={this.onChange}
-              placeholder="Price"
+              placeholder="Aniversario Homem"
               required
             /><br />
             <TextField
               id="standard-basic"
-              type="number"
+              type="date"
               autoComplete="off"
-              name="discount"
-              value={this.state.discount}
+              name="niverM"
+              value={this.state.niverM}
               onChange={this.onChange}
-              placeholder="Discount"
+              placeholder="Aniversario Mulher"
               required
             /><br /><br />
             <Button
@@ -319,12 +319,12 @@ export default class Dashboard extends Component {
 
           <DialogActions>
             <Button onClick={this.handleProductEditClose} color="primary">
-              Cancel
+              Cancelar
             </Button>
             <Button
-              disabled={this.state.name === '' || this.state.desc === '' || this.state.discount === '' || this.state.price === ''}
+              disabled={this.state.name === '' || this.state.desc === '' || this.state.niverM === '' || this.state.niverH === ''}
               onClick={(e) => this.updateProduct()} color="primary" autoFocus>
-              Edit Product
+              Editar Casais
             </Button>
           </DialogActions>
         </Dialog>
@@ -336,7 +336,7 @@ export default class Dashboard extends Component {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">Add Product</DialogTitle>
+          <DialogTitle id="alert-dialog-title">Adicionar Casais</DialogTitle>
           <DialogContent>
             <TextField
               id="standard-basic"
@@ -345,7 +345,7 @@ export default class Dashboard extends Component {
               name="name"
               value={this.state.name}
               onChange={this.onChange}
-              placeholder="Product Name"
+              placeholder="Nome Casais"
               required
             /><br />
             <TextField
@@ -360,22 +360,22 @@ export default class Dashboard extends Component {
             /><br />
             <TextField
               id="standard-basic"
-              type="number"
+              type="date"
               autoComplete="off"
-              name="price"
-              value={this.state.price}
+              name="niverH"
+              value={this.state.niverH}
               onChange={this.onChange}
-              placeholder="Price"
+              placeholder="Anirvesario Homem"
               required
             /><br />
             <TextField
               id="standard-basic"
-              type="number"
+              type="date"
               autoComplete="off"
-              name="discount"
-              value={this.state.discount}
+              name="niverM"
+              value={this.state.niverM}
               onChange={this.onChange}
-              placeholder="Discount"
+              placeholder="Aniversario Mulher"
               required
             /><br /><br />
             <Button
@@ -400,12 +400,12 @@ export default class Dashboard extends Component {
 
           <DialogActions>
             <Button onClick={this.handleProductClose} color="primary">
-              Cancel
+              Cancelar
             </Button>
             <Button
-              disabled={this.state.name === '' || this.state.desc === '' || this.state.discount === '' || this.state.price === '' || this.state.file === null}
+              disabled={this.state.name === '' || this.state.desc === '' || this.state.niverM === '' || this.state.niverH === '' || this.state.file === null}
               onClick={(e) => this.addProduct()} color="primary" autoFocus>
-              Add Product
+              Adicionar Casais
             </Button>
           </DialogActions>
         </Dialog>
@@ -420,18 +420,18 @@ export default class Dashboard extends Component {
             name="search"
             value={this.state.search}
             onChange={this.onChange}
-            placeholder="Search by product name"
+            placeholder="Procurar Casais"
             required
-          />
+          /> 
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="center">Name</TableCell>
+                <TableCell align="center">Nomes Casais</TableCell>
                 <TableCell align="center">Image</TableCell>
-                <TableCell align="center">Description</TableCell>
-                <TableCell align="center">Price</TableCell>
-                <TableCell align="center">Discount</TableCell>
-                <TableCell align="center">Action</TableCell>
+                <TableCell align="center">Descrição</TableCell>
+                <TableCell align="center">Aniversario Homem</TableCell>
+                <TableCell align="center">Aniversario Mulher</TableCell>
+                <TableCell align="center">Ação</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -442,8 +442,8 @@ export default class Dashboard extends Component {
                   </TableCell>
                   <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt= "" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
-                  <TableCell align="center">{row.price}</TableCell>
-                  <TableCell align="center">{row.discount}</TableCell>
+                  <TableCell align="center">{row.niverH}</TableCell>
+                  <TableCell align="center">{row.niverM}</TableCell>
                   <TableCell align="center">
                     <Button
                       className="button_style"
@@ -452,7 +452,7 @@ export default class Dashboard extends Component {
                       size="small"
                       onClick={(e) => this.handleProductEditOpen(row)}
                     >
-                      Edit
+                      Editar
                   </Button>
                     <Button
                       className="button_style"
@@ -461,7 +461,7 @@ export default class Dashboard extends Component {
                       size="small"
                       onClick={(e) => this.deleteProduct(row._id)}
                     >
-                      Delete
+                      Deletar
                   </Button>
                   </TableCell>
                 </TableRow>
