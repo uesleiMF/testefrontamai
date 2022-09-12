@@ -13,8 +13,8 @@ export default class Dashboard extends Component {
     super();
     this.state = {
       token: '',
-      openProductModal: false,
-      openProductEditModal: false,
+      openCasalModal: false,
+      openCasalEditModal: false,
       id: '',
       name: '',
       desc: '',
@@ -24,7 +24,7 @@ export default class Dashboard extends Component {
       fileName: '',
       page: 1,
       search: '',
-      products: [],
+      casais: [],
       pages: 0,
       loading: false
     };
@@ -36,12 +36,12 @@ export default class Dashboard extends Component {
       this.props.history.push('/login');
     } else {
       this.setState({ token: token }, () => {
-        this.getProduct();
+        this.getCasal();
       });
     }
   }
 
-  getProduct = () => {
+  getCasal = () => {
     
     this.setState({ loading: true });
 
@@ -50,24 +50,24 @@ export default class Dashboard extends Component {
     if (this.state.search) {
       data = `${data}&search=${this.state.search}`;
     }
-    axios.get(`https://projeto----amai.herokuapp.com/get-product${data}`, {
+    axios.get(`https://projeto----amai.herokuapp.com/get-casal${data}`, {
       headers: {
         'token': this.state.token
       }
     }).then((res) => {
-      this.setState({ loading: false, products: res.data.products, pages: res.data.pages });
+      this.setState({ loading: false, casais: res.data.casais, pages: res.data.pages });
     }).catch((err) => {
       swal({
         text: err.response.data.errorMessage,
         icon: "error",
         type: "error"
       });
-      this.setState({ loading: false, products: [], pages: 0 },()=>{});
+      this.setState({ loading: false, casais: [], pages: 0 },()=>{});
     });
   }
 
-  deleteProduct = (id) => {
-    axios.post('https://projeto----amai.herokuapp.com/delete-product', {
+  deleteCasal = (id) => {
+    axios.post('https://projeto----amai.herokuapp.com/delete-casal', {
       id: id
     }, {
       headers: {
@@ -96,7 +96,7 @@ export default class Dashboard extends Component {
 
   pageChange = (e, page) => {
     this.setState({ page: page }, () => {
-      this.getProduct();
+      this.getCasal();
     });
   }
 
@@ -112,12 +112,12 @@ export default class Dashboard extends Component {
     this.setState({ [e.target.name]: e.target.value }, () => { });
     if (e.target.name === 'search') {
       this.setState({ page: 1 }, () => {
-        this.getProduct();
+        this.getCasal();
       });
     }
   };
 
-  addProduct = () => {
+  addCasal = () => {
     const fileInput = document.querySelector("#fileInput");
     const file = new FormData();
     file.append('file', fileInput.files[0]);
@@ -126,7 +126,7 @@ export default class Dashboard extends Component {
     file.append('niverM', this.state.niverM);
     file.append('niverH', this.state.niverH);
 
-    axios.post('https://projeto----amai.herokuapp.com/add-product', file, {
+    axios.post('https://projeto----amai.herokuapp.com/add-casal', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -139,9 +139,9 @@ export default class Dashboard extends Component {
         type: "success"
       });
 
-      this.handleProductClose();
+      this.handleCasalClose();
       this.setState({ name: '', desc: '', niverM: '', niverH: '', file: null, page: 1 }, () => {
-        this.getProduct();
+        this.getCasal();
       });
     }).catch((err) => {
       swal({
@@ -149,12 +149,12 @@ export default class Dashboard extends Component {
         icon: "error",
         type: "error"
       });
-      this.handleProductClose();
+      this.handleCasalClose();
     });
 
   }
 
-  updateProduct = () => {
+  updateCasal = () => {
     const fileInput = document.querySelector("#fileInput");
     const file = new FormData();
     file.append('id', this.state.id);
@@ -164,7 +164,7 @@ export default class Dashboard extends Component {
     file.append('niverM', this.state.niverM);
     file.append('niverH', this.state.niverH);
 
-    axios.post('https://projeto----amai.herokuapp.com/update-product', file, {
+    axios.post('https://projeto----amai.herokuapp.com/update-casal', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -177,9 +177,9 @@ export default class Dashboard extends Component {
         type: "success"
       });
 
-      this.handleProductEditClose();
+      this.handleCasaltEditClose();
       this.setState({ name: '', desc: '', niverM: '', niverH: '', file: null }, () => {
-        this.getProduct();
+        this.getCasal();
       });
     }).catch((err) => {
       swal({
@@ -187,14 +187,14 @@ export default class Dashboard extends Component {
         icon: "error",
         type: "error"
       });
-      this.handleProductEditClose();
+      this.handleCasaltEditClose();
     });
 
   }
 
-  handleProductOpen = () => {
+  handleCasalOpen = () => {
     this.setState({
-      openProductModal: true,
+      openCasalModal: true,
       id: '',
       name: '',
       desc: '',
@@ -204,13 +204,13 @@ export default class Dashboard extends Component {
     });
   };
 
-  handleProductClose = () => {
-    this.setState({ openProductModal: false });
+  handleCasalClose = () => {
+    this.setState({ openCasalModal: false });
   };
 
-  handleProductEditOpen = (data) => {
+  handleCasalEditOpen = (data) => {
     this.setState({
-      openProductEditModal: true,
+      openCasalEditModal: true,
       id: data._id,
       name: data.name,
       desc: data.desc,
@@ -220,8 +220,8 @@ export default class Dashboard extends Component {
     });
   };
 
-  handleProductEditClose = () => {
-    this.setState({ openProductEditModal: false });
+  handleCasaltEditClose = () => {
+    this.setState({ openCasalEditModal: false });
   };
 
   render() {
@@ -235,7 +235,7 @@ export default class Dashboard extends Component {
             variant="contained"
             color="primary"
             size="small"
-            onClick={this.handleProductOpen}
+            onClick={this.handleCasalOpen}
           >
             Adicionar Casais
           </Button>
@@ -249,10 +249,10 @@ export default class Dashboard extends Component {
           </Button>
         </div>
 
-        {/* Edit Product */}
+        {/* Edit Casais */}
         <Dialog
-          open={this.state.openProductEditModal}
-          onClose={this.handleProductClose}
+          open={this.state.openCasalEditModal}
+          onClose={this.handleCasalClose}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
@@ -265,7 +265,7 @@ export default class Dashboard extends Component {
               name="name"
               value={this.state.name}
               onChange={this.onChange}
-              placeholder="Nome Casais"
+              placeholder="Nome Casal"
               required
             /><br />
             <TextField
@@ -275,7 +275,7 @@ export default class Dashboard extends Component {
               name="desc"
               value={this.state.desc}
               onChange={this.onChange}
-              placeholder="Description"
+              placeholder="Descrição"
               required
             /><br />
             <TextField
@@ -318,21 +318,21 @@ export default class Dashboard extends Component {
           </DialogContent>
 
           <DialogActions>
-            <Button onClick={this.handleProductEditClose} color="primary">
+            <Button onClick={this.handleCasaltEditClose} color="primary">
               Cancelar
             </Button>
             <Button
               disabled={this.state.name === '' || this.state.desc === '' || this.state.niverM === '' || this.state.niverH === ''}
-              onClick={(e) => this.updateProduct()} color="primary" autoFocus>
+              onClick={(e) => this.updateCasal()} color="primary" autoFocus>
               Editar Casais
             </Button>
           </DialogActions>
         </Dialog>
 
-        {/* Add Product */}
+        {/* Add Casais */}
         <Dialog
-          open={this.state.openProductModal}
-          onClose={this.handleProductClose}
+          open={this.state.openCasalModal}
+          onClose={this.handleCasalClose}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
@@ -355,7 +355,7 @@ export default class Dashboard extends Component {
               name="desc"
               value={this.state.desc}
               onChange={this.onChange}
-              placeholder="Description"
+              placeholder="Descrição"
               required
             /><br />
             <TextField
@@ -399,12 +399,12 @@ export default class Dashboard extends Component {
           </DialogContent>
 
           <DialogActions>
-            <Button onClick={this.handleProductClose} color="primary">
+            <Button onClick={this.handleCasalClose} color="primary">
               Cancelar
             </Button>
             <Button
               disabled={this.state.name === '' || this.state.desc === '' || this.state.niverM === '' || this.state.niverH === '' || this.state.file === null}
-              onClick={(e) => this.addProduct()} color="primary" autoFocus>
+              onClick={(e) => this.addCasal()} color="primary" autoFocus>
               Adicionar Casais
             </Button>
           </DialogActions>
@@ -426,8 +426,8 @@ export default class Dashboard extends Component {
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="center">Nomes Casais</TableCell>
-                <TableCell align="center">Image</TableCell>
+                <TableCell align="center">Nome Casal</TableCell>
+                <TableCell align="center">Imagem</TableCell>
                 <TableCell align="center">Descrição</TableCell>
                 <TableCell align="center">Aniversario Homem</TableCell>
                 <TableCell align="center">Aniversario Mulher</TableCell>
@@ -435,7 +435,7 @@ export default class Dashboard extends Component {
               </TableRow>
             </TableHead>
             <TableBody>
-              {this.state.products.map((row) => (
+              {this.state.casais.map((row) => (
                 <TableRow key={row.name}>
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
@@ -450,7 +450,7 @@ export default class Dashboard extends Component {
                       variant="outlined"
                       color="primary"
                       size="small"
-                      onClick={(e) => this.handleProductEditOpen(row)}
+                      onClick={(e) => this.handleCasalEditOpen(row)}
                     >
                       Editar
                   </Button>
@@ -459,7 +459,9 @@ export default class Dashboard extends Component {
                       variant="outlined"
                       color="secondary"
                       size="small"
-                      onClick={(e) => this.deleteProduct(row._id)}
+                      
+                      
+                      onClick={(e) => this.deleteCasal(row._id)}
                     >
                       Deletar
                   </Button>
