@@ -53,7 +53,7 @@ export default class Login extends Component {
             name="username"
             value={this.state.username}
             onChange={this.onChange}
-            placeholder="User Name"
+            placeholder="Usuario"
             required
           />
           <br /><br />
@@ -64,7 +64,7 @@ export default class Login extends Component {
             name="password"
             value={this.state.password}
             onChange={this.onChange}
-            placeholder="Password"
+            placeholder="Senha"
             required
           />
           <br /><br />

@@ -40,7 +40,7 @@ export default class Register extends Component {
     return (
       <div style={{ marginTop: '200px' }}>
         <div>
-          <h2>Register</h2>
+          <h2>Cadastro</h2>
         </div>
 
         <div>
@@ -51,7 +51,7 @@ export default class Register extends Component {
             name="username"
             value={this.state.username}
             onChange={this.onChange}
-            placeholder="User Name"
+            placeholder="Usuario"
             required
           />
           <br /><br />
@@ -62,11 +62,11 @@ export default class Register extends Component {
             name="password"
             value={this.state.password}
             onChange={this.onChange}
-            placeholder="Password"
+            placeholder="Senha"
             required
           />
           <br /><br />
-          <TextField
+         {/* <TextField
             id="standard-basic"
             type="password"
             autoComplete="off"
@@ -75,7 +75,7 @@ export default class Register extends Component {
             onChange={this.onChange}
             placeholder="Confirm Password"
             required
-          />
+    />*/}
           <br /><br />
           <Button
             className="button_style"
@@ -85,7 +85,7 @@ export default class Register extends Component {
             disabled={this.state.username === '' && this.state.password === ''}
             onClick={this.register}
           >
-            Register
+            Registro
           </Button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="/">
             Login

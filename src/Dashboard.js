@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import {
-  Button, TextField, Dialog, DialogActions, LinearProgress,
+  Button, TextField, Dialog, DialogActions,
   DialogTitle, DialogContent, TableBody, Table,
-  TableContainer, TableHead, TableRow, TableCell
+  TableContainer, TableHead, TableRow, TableCell,CircularProgress,
 } from '@material-ui/core';
 import { Pagination } from '@material-ui/lab';
 import swal from 'sweetalert';
 const axios = require('axios');
-
 export default class Dashboard extends Component {
   constructor() {
     super();
     this.state = {
-      token: '',
+      token: '123',
       openCasalModal: false,
       openCasalEditModal: false,
       id: '',
@@ -227,7 +226,7 @@ export default class Dashboard extends Component {
   render() {
     return (
       <div>
-        {this.state.loading && <LinearProgress size={40} />}
+        {this.state.loading && <CircularProgress color="inherit" />}
         <div>
           <h2>CELULAS DE  CASAIS</h2>
           <Button
@@ -281,6 +280,7 @@ export default class Dashboard extends Component {
             <TextField
               id="standard-basic"
               type="date"
+              format="MM/DD/YYYY"
               autoComplete="off"
               name="niverH"
               value={this.state.niverH}
@@ -291,6 +291,7 @@ export default class Dashboard extends Component {
             <TextField
               id="standard-basic"
               type="date"
+              format="MM/DD/YYYY"
               autoComplete="off"
               name="niverM"
               value={this.state.niverM}
@@ -361,6 +362,7 @@ export default class Dashboard extends Component {
             <TextField
               id="standard-basic"
               type="date"
+              format="MM/DD/YYYY"
               autoComplete="off"
               name="niverH"
               value={this.state.niverH}
@@ -371,6 +373,7 @@ export default class Dashboard extends Component {
             <TextField
               id="standard-basic"
               type="date"
+              format="MM/DD/YYYY"
               autoComplete="off"
               name="niverM"
               value={this.state.niverM}
@@ -440,7 +443,7 @@ export default class Dashboard extends Component {
                   <TableCell align="center" component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt= "" width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt="Remy Sharp" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.niverH}</TableCell>
                   <TableCell align="center">{row.niverM}</TableCell>
