@@ -17,6 +17,7 @@ export default class Dashboard extends Component {
       id: '',
       name: '',
       desc: '',
+      tel:'',
       niverH: '',
       niverM: '',
       file: '',
@@ -122,8 +123,9 @@ export default class Dashboard extends Component {
     file.append('file', fileInput.files[0]);
     file.append('name', this.state.name);
     file.append('desc', this.state.desc);
-    file.append('niverM', this.state.niverM);
+    file.append('tel', this.state.tel);
     file.append('niverH', this.state.niverH);
+    file.append('niverM', this.state.niverM);
 
     axios.post('https://projeto----amai.herokuapp.com/add-casal', file, {
       headers: {
@@ -139,7 +141,7 @@ export default class Dashboard extends Component {
       });
 
       this.handleCasalClose();
-      this.setState({ name: '', desc: '', niverM: '', niverH: '', file: null, page: 1 }, () => {
+      this.setState({ name: '', desc: '',  tel: '', niverH: '', niverM: '',  file: null, page: 1 }, () => {
         this.getCasal();
       });
     }).catch((err) => {
@@ -160,8 +162,12 @@ export default class Dashboard extends Component {
     file.append('file', fileInput.files[0]);
     file.append('name', this.state.name);
     file.append('desc', this.state.desc);
-    file.append('niverM', this.state.niverM);
+    file.append('tel', this.state.tel);
     file.append('niverH', this.state.niverH);
+    file.append('niverM', this.state.niverM);
+   
+   
+
 
     axios.post('https://projeto----amai.herokuapp.com/update-casal', file, {
       headers: {
@@ -177,7 +183,7 @@ export default class Dashboard extends Component {
       });
 
       this.handleCasaltEditClose();
-      this.setState({ name: '', desc: '', niverM: '', niverH: '', file: null }, () => {
+      this.setState({ name: '', desc: '',tel:'', niverH: '', niverM: '',  file: null }, () => {
         this.getCasal();
       });
     }).catch((err) => {
@@ -197,6 +203,7 @@ export default class Dashboard extends Component {
       id: '',
       name: '',
       desc: '',
+      tel:'',
       niverH: '',
       niverM: '',
       fileName: ''
@@ -213,8 +220,10 @@ export default class Dashboard extends Component {
       id: data._id,
       name: data.name,
       desc: data.desc,
+      tel: data.tel,
       niverH: data.niverH,
       niverM: data.niverM,
+     
       fileName: data.image
     });
   };
@@ -277,6 +286,16 @@ export default class Dashboard extends Component {
               placeholder="Descrição"
               required
             /><br />
+              <TextField
+              id="standard-basic"
+              type="number"
+              autoComplete="off"
+              name="tel"
+              value={this.state.tel}
+              onChange={this.onChange}
+              placeholder="Contato"
+              required
+            /><br />
             <TextField
               id="standard-basic"
               type="date"
@@ -323,7 +342,7 @@ export default class Dashboard extends Component {
               Cancelar
             </Button>
             <Button
-              disabled={this.state.name === '' || this.state.desc === '' || this.state.niverM === '' || this.state.niverH === ''}
+              disabled={this.state.name === '' || this.state.desc === '' || this.state.tel===''|| this.state.niverH === '' || this.state.niverM === '' }
               onClick={(e) => this.updateCasal()} color="primary" autoFocus>
               Editar Casais
             </Button>
@@ -359,6 +378,17 @@ export default class Dashboard extends Component {
               placeholder="Descrição"
               required
             /><br />
+              <TextField
+              id="standard-basic"
+              type="number"
+              autoComplete="off"
+              name="tel"
+              value={this.state.tel}
+              onChange={this.onChange}
+              placeholder="Contato"
+              required
+            /><br />
+
             <TextField
               id="standard-basic"
               type="date"
@@ -406,7 +436,7 @@ export default class Dashboard extends Component {
               Cancelar
             </Button>
             <Button
-              disabled={this.state.name === '' || this.state.desc === '' || this.state.niverM === '' || this.state.niverH === '' || this.state.file === null}
+              disabled={this.state.name === '' || this.state.desc === ''|| this.state.tel==='' || this.state.H === '' || this.state.niverM === ''|| this.state.file === null}
               onClick={(e) => this.addCasal()} color="primary" autoFocus>
               Adicionar Casais
             </Button>
@@ -432,6 +462,7 @@ export default class Dashboard extends Component {
                 <TableCell align="center">Nome Casal</TableCell>
                 <TableCell align="center">Imagem</TableCell>
                 <TableCell align="center">Descrição</TableCell>
+                <TableCell align="center">Contato</TableCell>
                 <TableCell align="center">Aniversario Homem</TableCell>
                 <TableCell align="center">Aniversario Mulher</TableCell>
                 <TableCell align="center">Ação</TableCell>
@@ -445,8 +476,10 @@ export default class Dashboard extends Component {
                   </TableCell>
                   <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
+                  <TableCell align="center">{row.tel}</TableCell>
                   <TableCell align="center">{row.niverH}</TableCell>
                   <TableCell align="center">{row.niverM}</TableCell>
+               
                   <TableCell align="center">
                     <Button
                       className="button_style"
