@@ -40,7 +40,7 @@ export default class Register extends Component {
     return (
       <div style={{ marginTop: '200px' }}>
         <div>
-          <h2>Cadastro</h2>
+          <h2>Cadastrar Usuario</h2>
         </div>
 
         <div>

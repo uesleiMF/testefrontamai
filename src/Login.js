@@ -79,7 +79,7 @@ export default class Login extends Component {
             Login
           </Button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="/register">
-            Register
+            Registro
           </Link>
         </div>
       </div>
