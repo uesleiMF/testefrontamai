@@ -30,7 +30,7 @@ export default function Home() {
   return (
     
     <div className="container">
-    <div className="card mt-2 bg-info">
+    <div className="card mt-1 bg-info">
       <div className="card-title">
         <div className="row">
           <div className="col">
@@ -44,54 +44,54 @@ export default function Home() {
                 
     <Carousel autoPlay>
         <div>
-            <img src={c0} alt="bo" min-width= '358px' max-width='1024px' />
+            <img src={c0} alt="bo" width= '100%' height= '350px' />
 
             <p className="l">LegendA 1 </p>
         </div>
         <div>
 
-        <img src={c1} alt="bo" min-width= '358px' max-width='1024px' />
+        <img src={c1} alt="bo" width= '100%' height= '350px'/>
 
        <p className="l">Legend 2</p>
         </div>
         <div>
-       <img src={c2} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c2} alt="bo" width= '100%' height= '350px' />
 
     <p className="l">Legend 3</p>
         </div>
         <div>
         
-        <img src={c3} alt="bo" min-width= '358px' max-width='1024px' />
+        <img src={c3} alt="bo" width= '100%' height= '350px' />
 
     <p className="l">Legend 4</p>
         </div>
         <div>
-       <img src={c4} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c4} alt="bo" width= '100%' height= '350px' />
 
    <p className="l">Legend 5</p>
         </div>
         <div>
-       <img src={c5} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c5} alt="bo" width= '100%' height= '350px' />
 
       <p className="l">Legend 6</p>
         </div>
         <div>
-       <img src={c6} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c6} alt="bo" width= '100%' height= '350px' />
 
   <p className="l">Legend 7</p>
         </div>
         <div>
-       <img src={c7} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c7} alt="bo" width= '100%' height= '350px' />
 
   <p className="l">Legend 8</p>
         </div>
         <div>
-       <img src={c8} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c8} alt="bo" width= '100%' height= '350px' />
 
     <p className="l">Legend 9</p>
         </div>
         <div>
-       <img src={c9} alt="bo" min-width= '358px' max-width='1024px' />
+       <img src={c9} alt="bo" width= '100%' height= '350px'/>
 
       <p className="l">Legend 10</p>
       </div>
