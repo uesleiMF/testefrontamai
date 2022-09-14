@@ -23,6 +23,7 @@
     "react-dom": "^16.13.1",
     "react-h5-audio-player": "^3.8.5",
     "react-icons": "^4.3.1",
+    "react-multiplayer": "0.0.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",

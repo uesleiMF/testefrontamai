@@ -40,7 +40,7 @@ export default function Sobrenos() {
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
-            <img src={c1} alt="bo" className="card-img-top"/>
+            <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
               </a>
               
              <div className="card-body">
@@ -166,6 +166,56 @@ export default function Sobrenos() {
         </div>
       </div>
       </div>
+
+      </div>
+     
+     </div>
+  
+
+          <div className="card mt-2 bg-warning">
+  
+               
+  
+  <div className="row mb-3">
+  <div class='col-4 p-3'>
+    <div className="card">
+    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+      
+            <img src={c1} alt="bo" className="card-img-top"/>
+              </a>
+              
+             <div className="card-body">
+          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+          <span className="badge bg-primary"></span>
+        </div>
+      </div>
+      </div>
+      </div>
+     
+     </div>
+  
+
+          <div className="card mt-2 bg-success">
+  
+               
+  
+  <div className="row mb-3">
+  <div class='col-4 p-3'>
+    <div className="card">
+    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+      
+            <img src={c1} alt="bo" className="card-img-top"/>
+              </a>
+              
+             <div className="card-body">
+          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+          <span className="badge bg-primary"></span>
+        </div>
+      </div>
+      </div>
+
+
+
       </div>
       
       </div>
