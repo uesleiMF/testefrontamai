@@ -17,7 +17,13 @@ import {Social } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-  
+import ReactAudioPlayer from 'react-audio-player';
+//import son from "../../Audio/audio.mp3";
+import som from "../../Audio/audio1.mp3";
+
+import 'react-h5-audio-player/lib/styles.css';
+
+
 
 
 export default function Home() {
@@ -257,7 +263,12 @@ export default function Home() {
             
           </Social>
          
-       
+          <ReactAudioPlayer
+  
+  src={som} autoPlay  controls/>
+
+
+  
   </div>
   </div>
       
