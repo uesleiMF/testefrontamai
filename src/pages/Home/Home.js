@@ -100,7 +100,7 @@ export default function Home() {
     </Carousel>
    
        </div>
-              
+            
        <div className="card mt-2 bg-success">
   <h4 className="mx-3 my-3 text-center">ESCOLHA A CELULA MAIS PROXIMA DE SUA CASA </h4>
   <h5 className="mx-3 my-3 text-center">CLIQUE NAS IMAGENS ABAIXO! </h5>
@@ -265,9 +265,8 @@ export default function Home() {
          
           <ReactAudioPlayer
   
-  src={som} autoPlay  controls/>
-
-
+  src={som} autoPlay  controls  />
+ 
   
   </div>
   </div>
