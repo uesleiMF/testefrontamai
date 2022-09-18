@@ -11,7 +11,7 @@ export default class Dashboard extends Component {
   constructor() {
     super();
     this.state = {
-      token: null,
+      token: false,
       openCasalModal: false,
       openCasalEditModal: false,
       id: '',
