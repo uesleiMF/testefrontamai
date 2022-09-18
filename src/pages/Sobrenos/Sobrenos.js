@@ -31,12 +31,12 @@ export default function Sobrenos() {
      </div>
   
 
-          <div className="card mt-2 bg-success">
+          <div className="card mt-4 bg-success">
   
                
   
   <div className="row mb-3">
-  <div class='col-3 p-4'>
+  <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -52,7 +52,7 @@ export default function Sobrenos() {
 
 
  
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -66,7 +66,7 @@ export default function Sobrenos() {
       </div>
       </div>
 
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -80,7 +80,7 @@ export default function Sobrenos() {
       </div>
       </div>
 
-      <div class='col-3 p-4'>
+     <div class='col-4 p-3'>
     <div className="card">
     
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -96,7 +96,7 @@ export default function Sobrenos() {
       </div>
     
 
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -110,7 +110,7 @@ export default function Sobrenos() {
       </div>
       </div>
 
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -124,7 +124,7 @@ export default function Sobrenos() {
       </div>
       </div>
 
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -138,7 +138,7 @@ export default function Sobrenos() {
       </div>
       </div>
 
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -153,7 +153,7 @@ export default function Sobrenos() {
       </div>
 
 
-      <div class='col-3 p-4'>
+      <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -172,12 +172,12 @@ export default function Sobrenos() {
      </div>
   
 
-          <div className="card mt-2 bg-warning">
+          <div className="card mt-4 bg-warning">
   
                
   
   <div className="row mb-3">
-  <div class='col-3 p-4'>
+  <div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
@@ -195,12 +195,12 @@ export default function Sobrenos() {
      </div>
   
 
-          <div className="card mt-2 bg-success">
+         <div className="card mt-4 bg-info text-white">
   
                
   
   <div className="row mb-3">
-  <div class='col-3 p-4'>
+<div class='col-4 p-3'>
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
