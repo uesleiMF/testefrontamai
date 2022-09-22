@@ -1,102 +1,102 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  background-color: #A020F0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10rem;
-  min-width: 768px;
-  max-width: 1024px;
-
-  h2 {
-    text-align: center;
-    padding: 0 0 2rem 0;
-    font-weight: 500;
-    color: white;
-  }
+export const Title = styled.h2`
+text-align: center;
+padding: 4rem;
+font-weight: 500;
 `
-export const Social = styled.div`
-  a {
-    font-size: 2.5rem;
-    color: #A020F0;
-    text-decoration: none;
-  }
+export const Item = styled.div`
+cursor: pointer;
+text-decoration: none;
+color: #000;
+
+img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 0.4rem;
+}
+
+h2 {
+  padding: 0.5rem 0;
+  font-size: 1.2em;
+  inline-size: 15rem;
+  overflow-wrap: break-word;
+}
 `;
-export const CadContainer = styled.div`
-  padding: 4rem 4rem 1rem 4rem;
-  background-color: #9370DB;
-  border-radius:100px;
-  min-width: 768px;
-  max-width: 1024px;
-  
-  form {
-    display: flex;
-    flex-direction: column;
+export const Form = styled.form`
+background-color: black;
+padding: 3rem;
+display: flex;
+flex-direction: column;
+width: 40rem;
+margin: 0 0 4rem 0;
+border-radius:100px;
 
-    & > input {
-      font-size: 1.2rem;
-      width: 25rem;
-      height: 2.5rem;
-      padding: 0.4rem 0.6rem;
-      margin: 0.4rem 0;
-    }
-  }
+label {
+  font-size: 1.2rem;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0 1rem 0;
+}
 `
 
-export const LostPass = styled.div`
-  display: flex;
-  justify-content: space-between;
+export const Terms = styled.div`
+margin: 2rem 0;
+padding: 0.5rem 0;
+border-top: 1px solid #00000028;
+border-bottom: 1px solid #00000028;
 
-  a {
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #3a6cdf;
+label {
+  font-size: 0.8rem;
+  text-align: justify;
+}
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+a {
+  color: #97B0E7;
+}
 
-  & > input {
-    background-color: #b1b1b1;
-    border: none;
-    padding: 0.6rem 1.5rem;
-    border-radius: 1rem;
-    color: #fff;
-    cursor: pointer;
-  }
+input {
+  margin: 0 0.5rem;
+}
 `
 
-export const Create = styled.div`
-  display: flex;
-  flex-direction: column;
+export const Cards = styled.div`
+padding: 100%;
+width: 3%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border: 10px solid grey
+
+`;
+export const Social = styled.div`
+a {
+  font-size: 2.5rem;
+  color: #0000FF;
+  text-decoration: none;
   justify-content: center;
-  align-items: center;
-  padding: 3rem 0;
+}
+`;
+export const Button = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
 
-  & > span {
-    padding: 0.5rem;
+input {
+  background-color: #b1b1b1;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #b1b1b173;
   }
+}
 
-  a {
-    padding: 0.6rem;
-    border-radius: 1rem;
-    color: #000;
-    border: 1px solid #000;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 0.8rem;
-
-    &:hover {
-      background-color: #b1b1b1;
-      transition: all 200ms ease;
-    }
-  }
-
-
-
-
-  
 `
