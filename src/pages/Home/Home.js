@@ -259,15 +259,9 @@ export default function Home() {
      </div>
   
 
-          <div className="card mt-4 bg-warning">
-  
-               
-  
-  <div className="row mb-3">
-  <div class='col-4 p-3'>
-  
+     
 
-     <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+     <h5 className="mx-3 my-3 text-center">CONHECAM AS MIDIAS SOCIAIS DO MINISTERIO AMAI! </h5>
           
           <Social>
                
@@ -290,9 +284,6 @@ export default function Home() {
   src={som} autoPlay  controls  />
  
   
-  </div>
-  </div>
-  </div>
   </div>
   </div>
   </div>
