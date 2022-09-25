@@ -23,7 +23,12 @@ export default function Navbar() {
             <span>Sobre Nos</span>
           </a>
         </li>
-       
+        <li>
+          <a href="/radio">
+            <FaUserPlus />
+            <span>Radio Gospel</span>
+          </a>
+        </li>
        
         <li>
          

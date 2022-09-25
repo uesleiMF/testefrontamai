@@ -24,13 +24,15 @@
     "react-h5-audio-player": "^3.8.5",
     "react-icons": "^4.3.1",
     "react-multiplayer": "0.0.1",
+    "react-player": "^2.11.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-use-navigate": "^0.1.1",
     "rsuite": "^5.18.0",
     "styled-components": "^5.3.5",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -9,7 +9,7 @@ import Register from './Register';
 import Dashboard from './Dashboard';
 import Home from "./pages/Home/Home";
 import Sobrenos from "./pages/Sobrenos/Sobrenos";
-
+import Radio from "./pages/Radio/Radio";
 
 import './Login.css';
 
@@ -23,6 +23,7 @@ ReactDOM.render(
            
             <Route path= "/home" component={Home} />
             <Route path= "/sobrenos" component={Sobrenos} />
+            <Route path= "/radio" component={Radio} />
           
         
          {/* <Route component={NotFound}/> */}
