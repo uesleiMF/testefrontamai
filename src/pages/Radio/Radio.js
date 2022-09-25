@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 function Radio() {
   const classes = useStyles();
 
-  const url = "https://s13.maxcast.com.br:8038/live";
+  const url = 'https://s6.stweb.tv/radio10/live/playlist.m3u8';
 
   const [radio, setRadio] = useState({ play: false, volume: 0.5, mute: false });
 

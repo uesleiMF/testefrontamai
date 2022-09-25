@@ -18,7 +18,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactAudioPlayer from 'react-audio-player';
-//import son from "../../Audio/audio.mp3";
+import ReactPlayer from 'react-player';
+import son from "../../Audio/audio.mp3";
 import som from "../../Audio/audio1.mp3";
 
 import 'react-h5-audio-player/lib/styles.css';
@@ -279,11 +280,26 @@ export default function Home() {
             
           </Social>
          
-          <ReactAudioPlayer
-  
-  src={som} autoPlay  controls  />
+        <ReactAudioPlayer
+        
+        
+        src={[som]}
+
+        autoPlay  controls/>
+        
+
+
+          <ReactPlayer
  
-  
+  frameborder="0" 
+  allowfullscreen=""
+  iframe width="560" 
+  height="315"
+  url={["https://www.youtube.com/watch?v=YjsEH8BRXyg" 
+            
+  ]}
+  autoPlay  controls/>
+          
   </div>
   </div>
   </div>
