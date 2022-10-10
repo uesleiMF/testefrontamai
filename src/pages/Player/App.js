@@ -28,6 +28,30 @@ function App() {
       artist: "Artist 4",
       img_src: "./images/5.gif",
       src: "./music/audio1.mp3"
+    },
+    {
+      title: "Song 5",
+      artist: "Artist 5",
+      img_src: "./images/1.gif", 
+      src: "./music/audio.mp3"
+    },
+    {
+      title: "Song 6",
+      artist: "Artist 6",
+      img_src: "./images/2.gif",
+      src: "./music/audio1.mp3"
+    },
+    {
+      title: "Song 7",
+      artist: "Artist 7",
+      img_src: "./images/4.gif",
+      src: "./music/audio.mp3"
+    },
+    {
+      title: "Song 8",
+      artist: "Artist 8",
+      img_src: "./images/5.gif",
+      src: "./music/audio1.mp3"
     }
   ]);
 
