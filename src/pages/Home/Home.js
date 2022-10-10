@@ -18,10 +18,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import ReactPlayer from 'react-player';
+//import ReactPlayer from 'react-player';
 
 
-import 'react-h5-audio-player/lib/styles.css';
+//import 'react-h5-audio-player/lib/styles.css';
 
 
 
@@ -42,7 +42,7 @@ export default function Home() {
       </div>
                          
                 
-    <Carousel autoPlay>
+    <Carousel>
         <div>
             <img src={c0} alt="bo" height= '300px' />
 
@@ -282,7 +282,7 @@ export default function Home() {
     
 
 
-          <ReactPlayer
+        {/*  <ReactPlayer
  
   frameborder="0" 
   allowfullscreen=""
@@ -291,7 +291,7 @@ export default function Home() {
   url={["https://www.youtube.com/watch?v=YjsEH8BRXyg" 
             
   ]}
-  autoPlay  controls/>
+autoPlay  controls/>*/}
           
   </div>
   </div>

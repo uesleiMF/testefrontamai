@@ -8,25 +8,25 @@ function App() {
     {
       title: "Song 1",
       artist: "Artist 1",
-      img_src: "./images/2.png", 
+      img_src: "./images/1.gif", 
       src: "./music/audio.mp3"
     },
     {
       title: "Song 2",
       artist: "Artist 2",
-      img_src: "./images/img.jpeg",
+      img_src: "./images/2.gif",
       src: "./music/audio1.mp3"
     },
     {
       title: "Song 3",
       artist: "Artist 3",
-      img_src: "./images/3.webp",
+      img_src: "./images/4.gif",
       src: "./music/audio.mp3"
     },
     {
       title: "Song 4",
       artist: "Artist 4",
-      img_src: "./images/img.jpeg",
+      img_src: "./images/5.gif",
       src: "./music/audio1.mp3"
     }
   ]);
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="container">
-    <div className="card mt-6 bg-warning">
+    <div className="card mt-1 bg-primary">
       <div className="card-title">
         <div className="row">
           <div className="col">

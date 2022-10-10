@@ -1,5 +1,5 @@
 import { Container,List } from "./styles";
-import {FaHeart,FaRegUser,FaUserPlus} from "react-icons/fa";
+import {FaHeart,FaRegUser,FaUserPlus,FaPlayCircle} from "react-icons/fa";
 //import styles from "./styles.module.css";
 import React from 'react';
 
@@ -25,8 +25,8 @@ export default function Navbar() {
         </li>
         <li>
           <a href="/app">
-            <FaUserPlus />
-            <span>Radio Gospel</span>
+            <FaPlayCircle />
+            <span>Hinos Gospel</span>
           </a>
         </li>
        
