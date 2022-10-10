@@ -24,7 +24,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/radio">
+          <a href="/app">
             <FaUserPlus />
             <span>Radio Gospel</span>
           </a>
