@@ -6,9 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [songs] = useState([
     {
-      title: "Forget me too ft. Halsey",
-      artist: "Machine Gun Kelly",
-      img_src: "./images/img.jpeg", 
+      title: "Song 1",
+      artist: "Artist 1",
+      img_src: "./images/2.png", 
       src: "./music/audio.mp3"
     },
     {
@@ -20,7 +20,7 @@ function App() {
     {
       title: "Song 3",
       artist: "Artist 3",
-      img_src: "./images/img.jpeg",
+      img_src: "./images/3.webp",
       src: "./music/audio.mp3"
     },
     {
