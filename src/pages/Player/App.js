@@ -1,31 +1,33 @@
 import {useState, useEffect} from 'react';
 import Player from '../Player/Player';
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   const [songs] = useState([
     {
       title: "Forget me too ft. Halsey",
       artist: "Machine Gun Kelly",
-      img_src: "./images/song-1.jpg",
-      src: "./music/on-n-on.mp3"
+      img_src: "./images/img.jpeg", 
+      src: "./music/audio.mp3"
     },
     {
       title: "Song 2",
       artist: "Artist 2",
-      img_src: "./images/song-2.jpg",
-      src: "./music/somebody-new.mp3"
+      img_src: "./images/img.jpeg",
+      src: "./music/audio1.mp3"
     },
     {
       title: "Song 3",
       artist: "Artist 3",
-      img_src: "./images/song-3.jpg",
-      src: "./music/on-n-on.mp3"
+      img_src: "./images/img.jpeg",
+      src: "./music/audio.mp3"
     },
     {
       title: "Song 4",
       artist: "Artist 4",
-      img_src: "./images/song-4.jpg",
-      src: "./music/somebody-new.mp3"
+      img_src: "./images/img.jpeg",
+      src: "./music/audio1.mp3"
     }
   ]);
 
@@ -43,13 +45,27 @@ function App() {
   }, [currentSongIndex]);
 
   return (
-    <div className="App">
+    <div className="container">
+    <div className="card mt-6 bg-warning">
+      <div className="card-title">
+        <div className="row">
+          <div className="col">
+            <br></br>
+          <h4 className="mx-3 my-3 text-center">OUÇA SEUS HINOS AQUI</h4>
+          </div>
+   
+          </div>
+       
+        
+      
       <Player 
         currentSongIndex={currentSongIndex} 
         setCurrentSongIndex={setCurrentSongIndex} 
         nextSongIndex={nextSongIndex} 
         songs={songs}
       />
+    </div>
+    </div>
     </div>
   );
 }
