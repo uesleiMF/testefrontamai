@@ -6,50 +6,50 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const [songs] = useState([
     {
-      title: "Song 1",
-      artist: "Artist 1",
+      title: "Som 1",
+      artist: "Artista 1",
       img_src: "./images/1.gif", 
       src: "./music/audio.mp3"
     },
     {
-      title: "Song 2",
-      artist: "Artist 2",
+      title: "Som 2",
+      artist: "Artista 2",
       img_src: "./images/2.gif",
       src: "./music/audio1.mp3"
     },
     {
-      title: "Song 3",
-      artist: "Artist 3",
+      title: "Som 3",
+      artist: "Artista 3",
       img_src: "./images/4.gif",
       src: "./music/audio.mp3"
     },
     {
-      title: "Song 4",
-      artist: "Artist 4",
+      title: "Som 4",
+      artist: "Artista 4",
       img_src: "./images/5.gif",
       src: "./music/audio1.mp3"
     },
     {
-      title: "Song 5",
-      artist: "Artist 5",
+      title: "Som 5",
+      artist: "Artista 5",
       img_src: "./images/1.gif", 
       src: "./music/audio.mp3"
     },
     {
-      title: "Song 6",
-      artist: "Artist 6",
+      title: "Som 6",
+      artist: "Artista 6",
       img_src: "./images/2.gif",
       src: "./music/audio1.mp3"
     },
     {
-      title: "Song 7",
-      artist: "Artist 7",
+      title: "Som 7",
+      artist: "Artista 7",
       img_src: "./images/4.gif",
       src: "./music/audio.mp3"
     },
     {
-      title: "Song 8",
-      artist: "Artist 8",
+      title: "Som 8",
+      artist: "Artista 8",
       img_src: "./images/5.gif",
       src: "./music/audio1.mp3"
     }
@@ -70,12 +70,12 @@ function App() {
 
   return (
     <div className="container">
-    <div className="card mt-1 bg-primary">
+    <div className="card mt-1 bg-info">
       <div className="card-title">
         <div className="row">
           <div className="col">
             <br></br>
-          <h4 className="mx-3 my-3 text-center">OUÇA SEUS HINOS AQUI</h4>
+          <h4 className="mx-3 my-3 text-center">OUÇA SEUS HINOS AQUI!</h4>
           </div>
    
           </div>
