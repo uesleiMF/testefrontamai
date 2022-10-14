@@ -51,7 +51,7 @@ function App() {
       title: "Som 8",
       artist: "Artista 8",
       img_src: "./images/5.gif",
-      src: "./music/audio1.mp3"
+      src: "./music/audio5.mp3"
     }
   ]);
 
