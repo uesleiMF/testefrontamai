@@ -14,7 +14,7 @@ export default function Navbar() {
         <li>
           <a href="/home">
             <FaHeart />
-            <span>Home</span>
+            <span>Pagina Inicial</span>
           </a>
         </li>
         <li>
