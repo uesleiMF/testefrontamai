@@ -50,7 +50,7 @@ export default class Dashboard extends Component {
     if (this.state.search) {
       data = `${data}&search=${this.state.search}`;
     }
-    axios.get(`http://projeto----amai.herokuapp.com/get-casal${data}`, {
+    axios.get(`https://projeto----amai.herokuapp.com/get-casal${data}`, {
       headers: {
         'token': this.state.token
       }
@@ -67,7 +67,7 @@ export default class Dashboard extends Component {
   }
 
   deleteCasal = (id) => {
-    axios.post('http://projeto----amai.herokuapp.com/delete-casal', {
+    axios.post('https://projeto----amai.herokuapp.com/delete-casal', {
       id: id
     }, {
       headers: {
@@ -127,7 +127,7 @@ export default class Dashboard extends Component {
     file.append('niverH', this.state.niverH);
     file.append('niverM', this.state.niverM);
 
-    axios.post('http://projeto----amai.herokuapp.com/add-casal', file, {
+    axios.post('https://projeto----amai.herokuapp.com/add-casal', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -169,7 +169,7 @@ export default class Dashboard extends Component {
    
 
 
-    axios.post('http://projeto----amai.herokuapp.com/update-casal', file, {
+    axios.post('https://projeto----amai.herokuapp.com/update-casal', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
