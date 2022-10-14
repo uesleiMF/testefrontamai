@@ -474,7 +474,7 @@ export default class Dashboard extends Component {
                 <TableRow key={row.name}>
                 
                  
-                  <TableCell align="center"><img src={`https://projeto----amai.herokuapp.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`http://projeto----amai.herokuapp.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.name}</TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.tel}</TableCell>
