@@ -9,19 +9,19 @@ function App() {
       title: "Som 1",
       artist: "Artista 1",
       img_src: "./images/1.gif", 
-      src: "./music/audio.mp3"
+      src: "./music/audio2.mp3"
     },
     {
       title: "Som 2",
       artist: "Artista 2",
       img_src: "./images/2.gif",
-      src: "./music/audio1.mp3"
+      src: "./music/audio3.mp3"
     },
     {
       title: "Som 3",
       artist: "Artista 3",
       img_src: "./images/4.gif",
-      src: "./music/audio.mp3"
+      src: "./music/audio4.mp3"
     },
     {
       title: "Som 4",
