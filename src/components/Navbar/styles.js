@@ -22,7 +22,7 @@ export const Logo = styled.a`
   img {
     width: 5rem;
     margin: 0 1rem;
-    border-radius: 10px;
+    border-radius: 100px;
   }
 `;
 

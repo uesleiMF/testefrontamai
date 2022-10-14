@@ -459,8 +459,9 @@ export default class Dashboard extends Component {
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell align="center">Nome Casal</TableCell>
+              
                 <TableCell align="center">Imagem</TableCell>
+                <TableCell align="center">Nome Casal</TableCell>
                 <TableCell align="center">Descrição</TableCell>
                 <TableCell align="center">Contato</TableCell>
                 <TableCell align="center">Aniversario Homem</TableCell>
@@ -471,10 +472,10 @@ export default class Dashboard extends Component {
             <TableBody>
               {this.state.casais.map((row) => (
                 <TableRow key={row.name}>
-                  <TableCell align="center" component="th" scope="row">
-                    {row.name}
-                  </TableCell>
+                
+                 
                   <TableCell align="center"><img src={`http://projeto----amai.herokuapp.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
+                  <TableCell align="center">{row.name}</TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.tel}</TableCell>
                   <TableCell align="center">{row.niverH}</TableCell>
