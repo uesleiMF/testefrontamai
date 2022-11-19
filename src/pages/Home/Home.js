@@ -41,6 +41,8 @@ export default function Home() {
       </div>
                          
         
+
+
       <CCarousel controls indicators>
 
 <CCarouselItem>
@@ -109,17 +111,16 @@ export default function Home() {
 
 </CCarousel>
 
+<div>
 
 
 
-     
+ <div>    
     
      
-<div className="container">
-      <div className="card mt-6 bg-warning">
-        <div className="card-title">
-          <div className="row">
-            <div className="col">
+<div>
+  <div>
+    <div>
          
             
        <h4 className="mx-3 my-3 text-center">ESCOLHA A CELULA MAIS PROXIMA DE SUA CASA </h4>
