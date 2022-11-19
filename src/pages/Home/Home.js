@@ -1,5 +1,8 @@
-import { Carousel } from 'react-responsive-carousel';
+//import { Carousel } from 'react-responsive-carousel';
 import React from "react";
+
+import { CCarousel, CCarouselItem, CImage} from '@coreui/react';
+
 import c0 from "../../components/Img/c0.jpg";
 import c1 from "../../components/Img/c1.jpg";
 import c2 from "../../components/Img/c2.jpg";
@@ -25,7 +28,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home() {
   return (
     
-    <div className="container-fluid">
+    <div className="container">
     <div className="card mt-1 bg-info">
       <div className="card-title">
         <div className="row">
@@ -37,47 +40,82 @@ export default function Home() {
         </div>
       </div>
                          
-                
-    <Carousel>
-            <img src={c0} alt="bo" height= '300px' />
-
         
+      <CCarousel controls indicators>
 
-        <img src={c1} alt="bo" height= '300px'/>
+<CCarouselItem>
 
-   
-       <img src={c2} alt="bo"  height= '300px' />
+  <CImage className="d-block " src={c0}  height="350px" alt="slide 1" />
 
-   
-        
-        <img src={c3} alt="bo" height= '300px' />
+</CCarouselItem>
 
-   
+<CCarouselItem>
+
+  <CImage className="d-block " src={c1}   height="350px" alt="slide 2" />
+
+</CCarouselItem>
+
+<CCarouselItem>
+
+  <CImage className="d-block " src={c2}  height="350px" alt="slide 3" />
+
+
+</CCarouselItem>
+<CCarouselItem>
+
+  <CImage className="d-block " src={c3} height="350px" alt="slide 4" />
+
+
+</CCarouselItem>
+<CCarouselItem>
+
+  <CImage className="d-block " src={c4} height="350px"alt="slide 5" />
+
+
+</CCarouselItem>
+<CCarouselItem>
+
+  <CImage className="d-block " src={c5}  height="350px"alt="slide 6" />
+
+
+</CCarouselItem>
+<CCarouselItem>
+
+  <CImage className="d-block " src={c6} height="350px"alt="slide 7" />
+
+
+</CCarouselItem>
+<CCarouselItem>
+
+  <CImage className="d-block " src={c7} height="350px"alt="slide 8" />
+
+
+</CCarouselItem>
+
+<CCarouselItem>
+
+  <CImage className="d-block " src={c8} height="350px"alt="slide 9" />
+
+
+</CCarouselItem>
+<CCarouselItem>
+
+  <CImage className="d-block " src={c9} height="350px"alt="slide 10" />
+
+
+</CCarouselItem>
+
+
+
+</CCarousel>
+
+
+
+
      
-       <img src={c4} alt="bo" height= '300px' />
-
-  
-       <img src={c5} alt="bo" height= '300px' />
-
     
-       <img src={c6} alt="bo" height= '300px' />
-
- 
-       <img src={c7} alt="bo" height= '300px' />
-
-  
-       <img src={c8} alt="bo" height= '300px' />
-
-   
-       <img src={c9} alt="bo" height= '300px'/>
-
-    
-   
-      
-        
-    </Carousel>
-   
-    <div className="container-fluid">
+     
+<div className="container">
       <div className="card mt-6 bg-warning">
         <div className="card-title">
           <div className="row">
@@ -90,16 +128,16 @@ export default function Home() {
 
 
           </div>
+     </div>
+     </div>
+     </div>
      
-     </div>
-     </div>
      
-     </div>
 
-          <div className="card mt-4 bg-success">
+        
   
                
-  
+    <div className="card mt-4 bg-success">
   <div className="row mb-3">
   <div class='col-4 p-3'>
     <div className="card">
@@ -275,6 +313,7 @@ autoPlay  controls/>*/}
   </div>
   </div>
   
+
   
   );
 }
