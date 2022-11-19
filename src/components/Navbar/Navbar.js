@@ -1,6 +1,6 @@
 import { Container,List } from "./styles";
 import {FaHeart,FaRegUser,FaUserFriends,FaPlayCircle} from "react-icons/fa";
-//import styles from "./styles.module.css";
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 
@@ -11,38 +11,29 @@ export default function Navbar() {
   return (
     <Container>
       <List>
-        <li>
-          <a href="/home">
-            <FaHeart />
-            <span>Pagina Inicial</span>
-          </a>
-        </li>
-        <li>
-          <a href="/sobrenos">
-            <FaUserFriends/>
-            <span>Sobre Nos</span>
-          </a>
-        </li>
-        <li>
-          <a href="/app">
-            <FaPlayCircle />
-            <span>Hinos Gospel</span>
-          </a>
+    <li>
+      <FaHeart />
+      <Link to="/home">Pagina Inicial</Link>
+   </li>
+       
+     <li>
+         <FaUserFriends/> 
+         <Link to="/sobrenos">Sobrenós</Link>
+      </li>
+      
+      <li>
+         <FaPlayCircle />
+         
+         <Link to="/app">Hinos Gospel</Link>
+            
         </li>
        
         <li>
-         
-            <a href="/">
-              <FaRegUser />
-              <span>Login</span>
-            </a>
-        
-          
-          
+           <FaRegUser />
+           <Link to="/">Login</Link>
+            
+                   
         </li>
-
-
-        
 
 
       </List>
