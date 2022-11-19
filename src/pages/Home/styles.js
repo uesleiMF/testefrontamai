@@ -26,6 +26,23 @@ export const Social = styled.div`
   align-items: center;
    
   }
+ 
+  b {
+    font-size: 3.5rem;
+    color: #A020F0;
+    text-decoration: none;
+    justify-content: center;
+  align-items: center;
+   
+  }
+  c {
+    font-size: 6.5rem;
+    color: #A020F0;
+    text-decoration: none;
+    justify-content: center;
+  align-items: center;
+    
+  }
 `;
 export const CadContainer = styled.div`
   padding: 4rem 4rem 1rem 4rem;

@@ -16,6 +16,7 @@ import c9 from "../../components/Img/c9.jpg";
 
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
+import {BsFillArrowDownCircleFill} from "react-icons/bs";
 import {Social } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
@@ -33,9 +34,10 @@ export default function Home() {
       <div className="card-title">
         <div className="row">
           <div className="col">
-             <h3 className="mx-3 my-3 text-center"> REDE DE CASAIS</h3>
+        
+             <h3 className="mx-3 my-3 text-center "> REDE DE CASAIS</h3>
              <h4 className="mx-3 my-3 text-center"> AMAI SEMPRE</h4>
-              
+            
              </div>
         </div>
       </div>
@@ -126,7 +128,14 @@ export default function Home() {
        <h4 className="mx-3 my-3 text-center">ESCOLHA A CELULA MAIS PROXIMA DE SUA CASA </h4>
   <h5 className="mx-3 my-3 text-center">CLIQUE NAS IMAGENS ABAIXO! </h5>
         
-
+  <Social>
+               
+            
+            <b>
+              
+              <BsFillArrowDownCircleFill/>
+            </b>
+           </Social>
 
           </div>
      </div>
