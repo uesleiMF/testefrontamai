@@ -18,10 +18,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-//import ReactPlayer from 'react-player';
-
-
-//import 'react-h5-audio-player/lib/styles.css';
 
 
 
@@ -29,7 +25,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home() {
   return (
     
-    <div className="container">
+    <div className="container-fluid">
     <div className="card mt-1 bg-info">
       <div className="card-title">
         <div className="row">
@@ -81,7 +77,7 @@ export default function Home() {
         
     </Carousel>
    
-    <div className="container">
+    <div className="container-fluid">
       <div className="card mt-6 bg-warning">
         <div className="card-title">
           <div className="row">
