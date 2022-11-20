@@ -30,15 +30,17 @@ export default function Sobrenos() {
 
           <div className="card mt-4 bg-primary">
   
-         <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
+         <h3 className="mx-3 my-3 text-center">AMAI SEMPRE</h3>
           
           
-  <div className="row mb-2">
+         <div class="row row-cols-1 row-cols-md-2 g-3">
     
 
 
-  <div class="col-4 p-3">
-    <div className="card">
+         <div class='col-2 p-5'>
+
+
+<div className="card">
     
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
 
@@ -55,8 +57,10 @@ export default function Sobrenos() {
 
 
  
-      <div class='col-4 p-3'>
-    <div className="card">
+      <div class='col-2 p-5'>
+
+
+<div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
             <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
