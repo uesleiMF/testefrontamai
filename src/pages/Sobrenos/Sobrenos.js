@@ -31,14 +31,24 @@ export default function Sobrenos() {
      </div>
   
 
-          <div className="card mt-4 bg-success">
+
+          <div className="card mt-4 bg-primary">
   
-               
-  
-  <div className="row mb-3">
+          <br></br>
+            <h3>
+              <center> CASAIS DE PASTORES LIDERES:</center>
+            </h3>
+          
+          
+  <div className="row mb-9">
+    
   <div class='col-4 p-3'>
+
+
     <div className="card">
+    
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
       
             <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
               </a>
@@ -70,117 +80,6 @@ export default function Sobrenos() {
     <div className="card">
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
-            <img src={c3} alt="bo" width="25px" height="100px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
-
-     <div class='col-4 p-3'>
-    <div className="card">
-    
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary "></span>
-        </div>
-      </div>
-      </div>
-    
-
-      <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
-
-      <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
-
-      <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
-
-      <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={c2} alt="bo" width="25px" height="100px"  className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
-
-
-      <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
-
-      </div>
-     
-     </div>
-  
-
-          <div className="card mt-4 bg-warning">
-  
-               
-  
-  <div className="row mb-3">
-  <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
             <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
               </a>
               
@@ -193,33 +92,851 @@ export default function Sobrenos() {
       </div>
      
      </div>
-  
 
-         <div className="card mt-4 bg-info text-white">
+     <div className="card mt-4 bg-success">
   
-               
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
   
-  <div className="row mb-3">
+  
+<div className="row mb-9">
+
 <div class='col-4 p-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
       
-            <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
 
 
 
-      </div>
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
       
-      </div>
-        </div>
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div className="card mt-4 bg-danger">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-info">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-warning">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-warning">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-primary">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-info">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+  <div className="card mt-4 bg-success">
+  
+  <br></br>
+    <h3>
+      <center> CASAIS DE PASTORES LIDERES:</center>
+    </h3>
+  
+  
+<div className="row mb-9">
+
+<div class='col-4 p-3'>
+
+
+<div className="card">
+
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+
+    <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c2} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+
+<div class='col-4 p-3'>
+<div className="card">
+<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+    <img src={c1} alt="bo" width="25px" height="100px" className="card-img-top"/>
+      </a>
+      
+     <div className="card-body">
+  <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+  <span className="badge bg-primary"></span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+     
        
   );
 }
