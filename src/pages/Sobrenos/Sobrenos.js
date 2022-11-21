@@ -46,17 +46,17 @@ export default function Sobrenos() {
     
     
       
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+  
 
         
             <img src={c1} alt="bo" className="card-img-top"/>
 
            
-              </a>
+            
               
                 <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make .</p>
+    <p class="card-text">Some quick example text .</p>
     <a href="#" class="btn btn-primary">Go </a>
  
   </div>
@@ -75,17 +75,16 @@ export default function Sobrenos() {
     
     
       
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-
+    
         
             <img src={c1} alt="bo" className="card-img-top"/>
 
            
-              </a>
+            
               
                 <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title andt.</p>
+    <p class="card-text">Some quick example text.</p>
     <a href="#" class="btn btn-primary">Go </a>
  
   </div>
