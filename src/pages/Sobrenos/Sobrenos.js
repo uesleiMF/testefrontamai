@@ -35,11 +35,9 @@ export default function Sobrenos() {
          <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
           
           
-         <div class="row mx-md-n5">
-   
+         <div className="row mb-5">
 
-
-         <div class="col px-md-5 p-4">
+<div class='col-4 p-3'>
 
 
          <div class="cardd" >
@@ -57,7 +55,7 @@ export default function Sobrenos() {
                 <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text .</p>
-    <a href="#" class="btn btn-primary">Go </a>
+   
  
   </div>
     
@@ -68,7 +66,9 @@ export default function Sobrenos() {
 
 
  
-      <div class="col px-md-5 p-4">
+
+
+<div class='col-4 p-3'>
 
 
       <div class="cardd" >
@@ -85,7 +85,7 @@ export default function Sobrenos() {
                 <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text.</p>
-    <a href="#" class="btn btn-primary">Go </a>
+   
  
   </div>
     
