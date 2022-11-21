@@ -1,15 +1,32 @@
 
-
-ca{
-  padding: 1.5em .2em .2em;
-  border-radius: 5em;
+.cardd {
+  margin-top: 0.5em;
+  width: 65%;
+  padding: 1.5em 1.0em 0.5em;
+  border-radius: 3em;
+  background-color: rgb(241, 229, 59);
   text-align: center;
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 1px rgba(28, 230, 89, 0.979);
 }
-w{
+.cardd img {
   width: 45%;
- 
-  border-radius: 100%;
+  border-radius: 50%;
   margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.cardd .card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+  
+}
+.cardd .btn {
+  border-radius: 2em;
+  background-color: teal;
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+}
+.cardd .btn:hover {
+  background-color: rgba(238, 231, 229, 0.7);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(197, 69, 69, 0.2);
 }

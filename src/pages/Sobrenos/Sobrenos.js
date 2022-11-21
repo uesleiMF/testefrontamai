@@ -42,10 +42,10 @@ export default function Sobrenos() {
          <div class="col px-md-5 p-4">
 
 
-         <div class="card" width="8rem;">
-    <w>
+         <div class="cardd" >
     
-  
+    
+      
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
 
         
@@ -53,13 +53,14 @@ export default function Sobrenos() {
 
            
               </a>
-                </w>
+              
                 <div class="card-body">
     <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">Some quick example text to build on the card title and make .</p>
+    <a href="#" class="btn btn-primary">Go </a>
+ 
   </div>
-   
+    
   </div>
 
 </div>
@@ -70,18 +71,28 @@ export default function Sobrenos() {
       <div class="col px-md-5 p-4">
 
 
-<div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+      <div class="cardd" >
+    
+    
       
-            <img src={c2} alt="bo" width="20px" height="100px" className="card-img-top"/>
+    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+
+        
+            <img src={c1} alt="bo" className="card-img-top"/>
+
+           
               </a>
               
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
+                <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title andt.</p>
+    <a href="#" class="btn btn-primary">Go </a>
+ 
+  </div>
+    
+  </div>
+
+</div>
 
   
       </div>
