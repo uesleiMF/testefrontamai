@@ -4,6 +4,8 @@ import c1 from "../../components/Img/c1.jpg";
 import c2 from "../../components/Img/c2.jpg";
 import c3 from "../../components/Img/c3.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
+import './Sobrenos.css';
+
 
 export default function Sobrenos() {
   return (
@@ -34,26 +36,34 @@ export default function Sobrenos() {
           
           
          <div class="row mx-md-n5">
-    
+   
 
 
          <div class="col px-md-5 p-4">
 
 
-<div className="card">
+         <div class="card" width="8rem;">
+    <w>
     
+  
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
 
-      
-            <img src={c1} alt="bo" width="20px" height="100px"  className="card-img-top"/>
+        
+            <img src={c1} alt="bo" className="card-img-top"/>
+
+           
               </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-          <span className="badge bg-primary"></span>
-        </div>
-      </div>
-      </div>
+                </w>
+                <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+   
+  </div>
+
+</div>
+     
 
 
  

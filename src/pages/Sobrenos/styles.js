@@ -19,11 +19,6 @@ export const Item = styled.div`
   text-decoration: none;
   color: #000;
 
-  img {
-    width: 15rem;
-    height: 10rem;
-    border-radius: 0.4rem;
-  }
 
   h2 {
     padding: 0.5rem 0;
@@ -72,16 +67,7 @@ export const Terms = styled.div`
   }
 `
 
-export const Cards = styled.div`
-  padding: 90%;
-  width: 3%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border: 100px solid grey
 
-`;
 export const Social = styled.div`
   a {
     font-size: 2.5rem;
