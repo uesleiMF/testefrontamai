@@ -73,13 +73,13 @@ export const Terms = styled.div`
 `
 
 export const Cards = styled.div`
-  padding: 100%;
+  padding: 90%;
   width: 3%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border: 10px solid grey
+  border: 100px solid grey
 
 `;
 export const Social = styled.div`
