@@ -35,8 +35,8 @@ export default function Sobrenos() {
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-                <h7 class="card-title">TITULO</h7>
-                <p class="card-text">text to build on the card.</p>
+                <h9 class="card-title">TITULO</h9>
+                <p class="card-text">text to build on the card.
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -47,7 +47,9 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   >
                     <FaWhatsapp />
                   </a>
+              
                 </Social>
+                </p>
               </div>
             </div>
           </div>
@@ -60,8 +62,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-                <h7 class="card-title">TITULO</h7>
-                <p class="card-text">text to build on the card.</p>
+                <h9 class="card-title">TITULO</h9>
+                <p class="card-text">text to build on the card.
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -73,6 +75,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                     <FaWhatsapp />
                   </a>
                 </Social>
+                </p>
               </div>
             </div>
           </div>

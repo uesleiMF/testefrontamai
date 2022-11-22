@@ -1,10 +1,10 @@
 
 .cardd {
   
-  margin-top: 0.2em;
-  width: 75%;
+  margin-top: 0.0em;
+  width: auto;
   border-radius: 7%;
-  padding: 0.5em 0.10em 0.21em 0.3em;
+  padding: auto;
   height:18.0em;
   background-color: rgb(241, 229, 59);
   text-align: center;
@@ -18,12 +18,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .cardd .card-title {
-  font-weight: 2;
+  font-weight: 1;
   font-size: 1;
   
 }
 .cardd .card-text {
-  font-weight: 2;
+  font-weight: 1;
   font-size: 1;
   
 }
