@@ -22,6 +22,9 @@
   
 }
 .cardd .btn {
+  padding: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
   border-radius: 2em;
   background-color: teal;
   color: #ffffff;
