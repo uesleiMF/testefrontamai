@@ -1,14 +1,15 @@
 
 .cardd {
-  padding: 20px;
-    padding-left: 70px;
-    padding-right: 70px;
-  margin-top: 1.5em;
+  
+  margin-top: 0.2em;
   width: 75%;
-  padding: 2.5em 1.0em 0.5em;
+  border-radius: 7%;
+  padding: 0.5em 0.10em 0.21em 0.3em;
+  height:18.0em;
   background-color: rgb(241, 229, 59);
   text-align: center;
   box-shadow: 0 5px 1px rgba(28, 230, 89, 0.979);
+
 }
 .cardd img {
   width: 55%;
@@ -17,8 +18,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .cardd .card-title {
-  font-weight: 700;
-  font-size: 1.5em;
+  font-weight: 2;
+  font-size: 1;
+  
+}
+.cardd .card-text {
+  font-weight: 2;
+  font-size: 1;
   
 }
 .cardd .btn {

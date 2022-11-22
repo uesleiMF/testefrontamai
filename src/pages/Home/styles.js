@@ -16,6 +16,16 @@ export const Container = styled.div`
     font-weight: 500;
     color: white;
   }
+  
+  `
+  export const Card = styled.div`
+ 
+    x {
+    width: 55%;
+    border-radius: 20%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 `
 export const Social = styled.div`
   a {
