@@ -56,8 +56,8 @@ export default function Sobrenos() {
              
               
                 <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card.</p>
+    <h7 class="card-title">TITULO</h7>
+    <p class="card-text">text to build on the card.</p>
     <Social>
 
 <a href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -94,8 +94,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               </a>
               
                 <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card.</p>
+    <h7 class="card-title">TITULO</h7>
+    <p class="card-text">text to build on the card.</p>
     <Social>
 
 <a href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
