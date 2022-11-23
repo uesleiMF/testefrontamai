@@ -35,8 +35,8 @@ export default function Sobrenos() {
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-                <h9>TITULO</h9>
-                <p>text to build on the card.
+              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+                <span className="badge bg-primary"></span>
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -49,7 +49,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   </a>
               
                 </Social>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-              <h9>TITULO</h9>
-                <p>text to build on the card.
+              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+                <span className="badge bg-primary"></span>
                     <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -75,7 +75,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                     <FaWhatsapp />
                   </a>
                 </Social>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -91,8 +91,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-                <h9 class="card-title">TITULO</h9>
-                <p class="card-text">text to build on the card.
+              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+                <span className="badge bg-primary"></span>
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -105,7 +105,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   </a>
               
                 </Social>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -118,8 +118,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-                <h9 class="card-title">TITULO</h9>
-                <p class="card-text">text to build on the card.
+              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+                <span className="badge bg-primary"></span>
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -131,7 +131,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                     <FaWhatsapp />
                   </a>
                 </Social>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -144,8 +144,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-                <h9 class="card-title">TITULO</h9>
-                <p class="card-text">text to build on the card.
+              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
+                <span className="badge bg-primary"></span>
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -157,7 +157,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                     <FaWhatsapp />
                   </a>
                 </Social>
-                </p>
+                
               </div>
             </div>
           </div>
