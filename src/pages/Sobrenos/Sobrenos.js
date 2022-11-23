@@ -31,7 +31,11 @@ export default function Sobrenos() {
 
         <div className="row mb-9">
           <div class="col-4 p-3">
+
+
             <div class="cardd">
+
+              
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
