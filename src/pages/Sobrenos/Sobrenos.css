@@ -14,7 +14,7 @@
 .cardd img {
   width: 60%;
   border-radius: 20%;
-  margin: 0 auto;
+  margin:  auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .cardd .card-title {
