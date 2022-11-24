@@ -14,21 +14,17 @@ export default function Sobrenos() {
           <div className="row">
             <div className="col">
               <br></br>
-              <h3 className="mx-3 my-3 text-center">
-                BIOGRAFIA DA REDE DE CASAIS
-              </h3>
-              <h3 className="mx-3 my-3 text-center">AMAI SEMPRE</h3>
-              <h3 className="mx-3 my-3 text-center">
-                INFORMAÇÕES SOBRE A LIDERANÇA:
-              </h3>
+              <h2 className="mx-3 my-3 text-center">REDE DE CASAIS AMAI SEMPRE</h2>
+              <h4 className="mx-3 my-3 text-center">
+                INFORMAÇÕES SOBRE A LIDERANÇA:</h4>
             </div>
           </div>
         </div>
       </div>
 
       <div className="card mt-4  bg-primary">
-        <h3 className="mx-5 my-5 text-center">CASAIS LIDERANÇAS </h3>
-        <h4 className="mx-5 my-5 text-center">MINISTERIO AMAI SEMPRE </h4>
+        <h3 className="mx-3 my-3 text-center">REDE AMAI  </h3>
+        <h4 className="mx-3 my-3 text-center">CASAIS LIDERES </h4>
 
         <div className="row mb-5 ">
         <div class="col align-self-start">
@@ -40,11 +36,12 @@ export default function Sobrenos() {
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-              <h8 className="card-title">CASAL LIDER</h8>
-             <p><h9 className="card-title">PASTORES </h9></p>
-             <p><h9 className="card-title"> Marcos & Solange </h9></p>
-             
-                <Social>
+              <h8 className="card-title">CASAL LIDER</h8><br></br>
+              <h9 className="card-title">Pastores</h9><br></br>
+              <h10 className="card-title">Marcos</h10><br></br>
+              <h10 className="card-title"> & </h10><br></br>
+              <h10 className="card-title">Solange</h10><br></br>
+               <span className="badge bg-primary"></span>     <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
 iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
@@ -69,9 +66,15 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-                    <Social>
+              <h8 className="card-title">CASAL LIDER</h8><br></br>
+              <h9 className="card-title">Pastores</h9><br></br>
+              <h10 className="card-title">Pina</h10><br></br>
+              <h10 className="card-title"> & </h10><br></br>
+              <h10 className="card-title">Carla</h10><br></br>
+              <span className="badge bg-primary"></span>   
+                <Social>
+             
+                      
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
 iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
@@ -90,7 +93,9 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
       </div>
 
       <div className="card mt-4 bg-success">
-        <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
+      <h3 className="mx-3 my-3 text-center">CELULA UM SO PROPOSITO</h3>
+        <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
+
 
         <div className="row mb-5 ">
         <div class="col align-self-start">
@@ -98,8 +103,14 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
+              <h8 className="card-title">CASAL</h8><br></br>
+              <h9 className="card-title">LIDER</h9><br></br>
+              <h10 className="card-title">Altair</h10><br></br>
+              <h10 className="card-title"> & </h10><br></br>
+              <h10 className="card-title">Ellen</h10><br></br>
+               <span className="badge bg-primary"></span>    
+             
+                
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -125,8 +136,13 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
+              <h8 className="card-title">CASAL </h8><br></br>
+              <h9 className="card-title">VICE-LIDER</h9><br></br>
+              <h10 className="card-title">*******</h10><br></br>
+              <h10 className="card-title"> & </h10><br></br>
+              <h10 className="card-title">*******</h10><br></br>
+            
+              <span className="badge bg-primary"></span>    
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -151,8 +167,15 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
+              <h8 className="card-title">CASAL</h8><br></br>
+              <h9 className="card-title">SECRETARIO</h9><br></br>
+              <h10 className="card-title">Ueslei</h10><br></br>
+              <h10 className="card-title"> & </h10><br></br>
+              <h10 className="card-title">Jessica</h10><br></br>
+            
+              
+              <span className="badge bg-primary"></span>    
+             
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
