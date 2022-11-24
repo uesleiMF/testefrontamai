@@ -26,7 +26,7 @@ export default function Sobrenos() {
         <h3 className="mx-3 my-3 text-center">REDE AMAI  </h3>
         <h4 className="mx-3 my-3 text-center">CASAIS LIDERES </h4>
 
-        <div className="row mb-5 ">
+        <div className="row mb-5  ">
         <div class="col align-self-start">
 
 
@@ -41,7 +41,9 @@ export default function Sobrenos() {
               <h10 className="card-title">Marcos</h10><br></br>
               <h10 className="card-title"> & </h10><br></br>
               <h10 className="card-title">Solange</h10><br></br>
-               <span className="badge bg-primary"></span>     <Social>
+               <span className="badge bg-primary"></span>    
+               
+                <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
 iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
@@ -92,13 +94,13 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         </div>
       </div>
 
-      <div className="card mt-2 bg-success">
+      <div className="card mt-5 bg-success">
       <h3 className="mx-3 my-3 text-center">CELULA UM SO PROPOSITO</h3>
         <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
 
 
-        <div className="row mb-5 ">
-        <div class="col-4 align-self-start">
+        <div className="d-flex flex-nowrap p-3">
+        <div class="d-md-flex">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
@@ -107,8 +109,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <h12 className="card-title">LIDER</h12><br></br>
               <h11 className="card-title">Altair</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">Ellen</h11><br></br>
-               <span className="badge bg-primary"></span>    
+              <h11 className="card-title">Ellen</h11>
+            
              
                 
                 <Social>
@@ -128,7 +130,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col align-self-center">
+          <div class="d-lg-flex">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -140,9 +142,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <h12 className="card-title">VICE-LIDER</h12><br></br>
               <h11 className="card-title">*******</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">*******</h11><br></br>
-            
-              <span className="badge bg-primary"></span>    
+              <h11 className="card-title">*******</h11>            
+                
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
@@ -159,7 +160,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col align-self-end">
+          <div class="d-xl-flex">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -171,10 +172,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <h12 className="card-title">SECRETARIO</h12><br></br>
               <h11 className="card-title">Ueslei</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">Jessica</h11><br></br>
-            
-              
-              <span className="badge bg-primary"></span>    
+              <h11 className="card-title">Jessica</h11>
+                
              
                 <Social>
                   <a
