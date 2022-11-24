@@ -9,7 +9,7 @@ import "./Sobrenos.css";
 export default function Sobrenos() {
   return (
     <div className="container">
-      <div className="card mt-6 bg-warning">
+      <div className="card mt-4 bg-warning">
         <div className="card-title">
           <div className="row">
             <div className="col">
@@ -94,12 +94,12 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         </div>
       </div>
 
-      <div className="card mt-7 bg-success">
+      <div className="card mt-4 bg-success">
       <h3 className="mx-3 my-3 text-center">CELULA UM SO PROPOSITO</h3>
         <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
 
 
-        <div className="d-flex flex-nowrap p-3">
+        <div className="d-flex flex-nowrap p-5">
         <div class="d-xl-flex">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
