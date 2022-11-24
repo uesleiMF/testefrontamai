@@ -27,7 +27,8 @@ export default function Sobrenos() {
       </div>
 
       <div className="card mt-4  bg-primary">
-        <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
+        <h3 className="mx-5 my-5 text-center">CASAIS LIDERANÇAS </h3>
+        <h4 className="mx-5 my-5 text-center">MINISTERIO AMAI SEMPRE </h4>
 
         <div className="row mb-5 ">
         <div class="col align-self-start">
@@ -39,8 +40,10 @@ export default function Sobrenos() {
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-              <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
+              <h8 className="card-title">CASAL LIDER</h8>
+             <p><h9 className="card-title">PASTORES </h9></p>
+             <p><h9 className="card-title"> Marcos & Solange </h9></p>
+             
                 <Social>
                   <a
                     href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
