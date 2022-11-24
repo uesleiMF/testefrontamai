@@ -26,7 +26,7 @@ export default function Sobrenos() {
         </div>
       </div>
 
-      <div className="card mt-5  bg-primary">
+      <div className="card mt-4  bg-primary">
         <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
 
         <div className="row mb-5 ">
@@ -89,8 +89,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
       <div className="card mt-4 bg-success">
         <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
 
-        <div className="row mb-9">
-          <div class="col-4 p-3">
+        <div className="row mb-5 ">
+        <div class="col align-self-start">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
@@ -114,7 +114,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col-4 p-3">
+          <div class="col align-self-center">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -140,7 +140,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col-4 p-3">
+          <div class="col align-self-end">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
