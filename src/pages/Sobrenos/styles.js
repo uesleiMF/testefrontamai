@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10rem;
+  padding: 5rem;
   min-width: 768px;
   max-width: 1024px;
 
@@ -25,9 +25,9 @@ export const Social = styled.div`
   }
 `;
 export const CadContainer = styled.div`
-  padding: 4rem 4rem 1rem 4rem;
+  padding: 8rem 8rem 3rem 8rem;
   background-color: #9370DB;
-  border-radius:10px;
+  border-radius:100px;
  
   
   form {

@@ -26,7 +26,7 @@ export default function Sobrenos() {
         </div>
       </div>
 
-      <div className="card mt-4 bg-primary">
+      <div className="card mt-5  bg-primary">
         <h3 className="mx-5 my-5 text-center">AMAI SEMPRE</h3>
 
         <div className="row mb-5 ">
