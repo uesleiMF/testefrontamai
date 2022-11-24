@@ -168,8 +168,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-              <h8 className="card-title">CASAL</h8><br></br>
-              <h11 className="card-title">SECRETARIO</h11><br></br>
+              <h15 className="card-title">CASAL</h15><br></br>
+              <h20 className="card-title">SECRETARIO</h20><br></br>
               <h11 className="card-title">Ueslei</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
               <h11 className="card-title">Jessica</h11>
