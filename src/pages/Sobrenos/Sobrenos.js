@@ -8,7 +8,7 @@ import "./Sobrenos.css";
 
 export default function Sobrenos() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="card mt-4 bg-warning">
         <div className="card-title">
           <div className="row">
@@ -99,18 +99,17 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
 
 
-        <div className="d-flex flex-nowrap p-5">
-        <div class="d-xl-flex">
+        <div className="row mb-5 ">
+        <div class="col-4 p-3">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
               <div class="card-body">
-              <h8 className="card-title">CASAL</h8><br></br>
-              <h12 className="card-title">LIDER</h12><br></br>
+              <h15 className="card-title">CASAL</h15><br></br>
+              <h20 className="card-title">LIDER</h20><br></br>
               <h11 className="card-title">Altair</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
               <h11 className="card-title">Ellen</h11>
-            
              
                 
                 <Social>
@@ -130,7 +129,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="d-xl-flex">
+          <div class="col-4 p-3">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -138,11 +137,11 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
               <div class="card-body">
-              <h8 className="card-title">CASAL </h8><br></br>
-              <h11 className="card-title">VICE</h11><br></br>
+              <h15 className="card-title">CASAL</h15><br></br>
+              <h20 className="card-title">VICE-LIDER</h20><br></br>
               <h11 className="card-title">*******</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">*******</h11>            
+              <h11 className="card-title">*******</h11>          
                 
                 <Social>
                   <a
@@ -160,7 +159,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="d-xl-flex">
+          <div class="col-4 p-3">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">

@@ -6,9 +6,9 @@
   text-align: center;
   box-shadow: 0 12px 4px rgb(130, 23, 192);
   margin-top: auto;
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: 10px;
-  padding-top: 10px;
+  padding-top:15px;
   padding-right: auto;
   padding-left: auto;
   
@@ -25,5 +25,5 @@
   margin-left: auto;
   margin-right: auto;
  text-align: center;
- font-size: 0.6em;
+ font-size: 0.9em;
 }
