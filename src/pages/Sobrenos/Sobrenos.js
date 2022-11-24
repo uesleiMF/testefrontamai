@@ -104,10 +104,10 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
 
               <div class="card-body">
               <h8 className="card-title">CASAL</h8><br></br>
-              <h9 className="card-title">LIDER</h9><br></br>
-              <h10 className="card-title">Altair</h10><br></br>
-              <h10 className="card-title"> & </h10><br></br>
-              <h10 className="card-title">Ellen</h10><br></br>
+              <h12 className="card-title">LIDER</h12><br></br>
+              <h11 className="card-title">Altair</h11><br></br>
+              <h11 className="card-title"> & </h11><br></br>
+              <h11 className="card-title">Ellen</h11><br></br>
                <span className="badge bg-primary"></span>    
              
                 
@@ -137,10 +137,10 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               </x>
               <div class="card-body">
               <h8 className="card-title">CASAL </h8><br></br>
-              <h9 className="card-title">VICE-LIDER</h9><br></br>
-              <h10 className="card-title">*******</h10><br></br>
-              <h10 className="card-title"> & </h10><br></br>
-              <h10 className="card-title">*******</h10><br></br>
+              <h12 className="card-title">VICE-LIDER</h12><br></br>
+              <h11 className="card-title">*******</h11><br></br>
+              <h11 className="card-title"> & </h11><br></br>
+              <h11 className="card-title">*******</h11><br></br>
             
               <span className="badge bg-primary"></span>    
                 <Social>
@@ -168,10 +168,10 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               </x>
               <div class="card-body">
               <h8 className="card-title">CASAL</h8><br></br>
-              <h9 className="card-title">SECRETARIO</h9><br></br>
-              <h10 className="card-title">Ueslei</h10><br></br>
-              <h10 className="card-title"> & </h10><br></br>
-              <h10 className="card-title">Jessica</h10><br></br>
+              <h12 className="card-title">SECRETARIO</h12><br></br>
+              <h11 className="card-title">Ueslei</h11><br></br>
+              <h11 className="card-title"> & </h11><br></br>
+              <h11 className="card-title">Jessica</h11><br></br>
             
               
               <span className="badge bg-primary"></span>    
