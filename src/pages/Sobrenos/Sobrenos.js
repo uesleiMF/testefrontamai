@@ -92,13 +92,13 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         </div>
       </div>
 
-      <div className="card mt-4 bg-success">
+      <div className="card mt-2 bg-success">
       <h3 className="mx-3 my-3 text-center">CELULA UM SO PROPOSITO</h3>
         <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
 
 
         <div className="row mb-5 ">
-        <div class="col align-self-start">
+        <div class="col-4 align-self-start">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
