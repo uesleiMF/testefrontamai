@@ -35,7 +35,7 @@ export default function Sobrenos() {
               
               <img src={c1} alt="bo" className="card-img-top" />
 
-              <p> <h2 className="card-title">CASAL LIDER</h2></p>
+              <p> <h2 className="card-title">CASAL--LIDER</h2></p>
               <h3 className="card-title">Pastores</h3>
               <h4 className="card-title">Marcos</h4>
               <h4 className="card-title"> & </h4>
@@ -65,7 +65,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   <img src={c1} alt="bo" className="card-img-top" />
                 </a>
               </x>
-              <p> <h2 className="card-title">CASAL LIDER</h2></p>
+              <p> <h2 className="card-title">CASAL--LIDER</h2></p>
               <h3 className="card-title">Pastores</h3>
               <h4 className="card-title">Pina</h4>
               <h4 className="card-title"> & </h4>
@@ -135,9 +135,9 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
              
               <p> <h2 className="card-title">CASAL</h2></p>
               <h3 className="card-title">VICE-LIDER</h3>
-              <h4 className="card-title">*************</h4>
+              <h4 className="card-title">_____________</h4>
               <h4 className="card-title"> & </h4>
-              <h4 className="card-title">*************</h4>
+              <h4 className="card-title">_____________</h4>
                    
                 
                 <Social>
