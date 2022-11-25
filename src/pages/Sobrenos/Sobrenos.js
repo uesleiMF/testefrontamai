@@ -102,14 +102,14 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         <div class="d-flex align-content p-3">
         <div class="d-flex align-content-around flex-wrap">
             <div class="cardd">
-              <img src={c1} alt="bo" className="card-img-top" />
+              <img src={c1} alt="bo" className="card-img" />
 
             
-             <p> <h15 className="card-title">CASAL</h15><br></br></p>
-              <h20 className="card-title">LIDER</h20><br></br>
-              <h11 className="card-title">Altair</h11><br></br>
-              <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">Ellen</h11>
+             <p> <h2 className="card-title">CASAL</h2></p>
+              <h3 className="card-title">LIDER</h3>
+              <h4 className="card-title">Altair</h4>
+              <h4 className="card-title"> & </h4>
+              <h4 className="card-title">Ellen</h4>
              
                 
                 <Social>
@@ -137,11 +137,12 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
              
-            <p>  <h15 className="card-title">CASAL</h15><br></br></p>
-              <h20 className="card-title">VICE-LIDER</h20><br></br>
-              <h11 className="card-title">************</h11><br></br>
-              <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">************</h11>          
+              <p> <h2 className="card-title">CASAL</h2></p>
+              <h3 className="card-title">VICE-LIDER</h3>
+              <h4 className="card-title">*************</h4>
+              <h4 className="card-title"> & </h4>
+              <h4 className="card-title">*************</h4>
+                   
                 
                 <Social>
                   <a
@@ -167,11 +168,11 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 </a>
               </x>
             
-             <p> <h15 className="card-title">CASAL</h15><br></br></p>
-              <h20 className="card-title">SECRETARIO</h20><br></br>
-              <h11 className="card-title">Ueslei</h11><br></br>
-              <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">Jessica</h11>
+              <p> <h2 className="card-title">CASAL</h2></p>
+              <h3 className="card-title">SECRETRIO</h3>
+              <h4 className="card-title">Ueslei</h4>
+              <h4 className="card-title"> & </h4>
+              <h4 className="card-title">Jessica</h4>
                 
              
                 <Social>
