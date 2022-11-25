@@ -104,8 +104,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
-              <div class="card-body">
-              <h15 className="card-title">CASAL</h15><br></br>
+            
+             <p> <h15 className="card-title">CASAL</h15><br></br></p>
               <h20 className="card-title">LIDER</h20><br></br>
               <h11 className="card-title">Altair</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
@@ -125,7 +125,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               
                 </Social>
                 
-              </div>
+            
             </div>
           </div>
 
@@ -136,8 +136,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   <img src={c1} alt="bo" className="card-img-top" />
                 </a>
               </x>
-              <div class="card-body">
-              <h15 className="card-title">CASAL</h15><br></br>
+             
+            <p>  <h15 className="card-title">CASAL</h15><br></br></p>
               <h20 className="card-title">VICE-LIDER</h20><br></br>
               <h11 className="card-title">*******</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
@@ -155,7 +155,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   </a>
                 </Social>
                 
-              </div>
+            
             </div>
           </div>
 
@@ -166,8 +166,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   <img src={c1} alt="bo" className="card-img-top" />
                 </a>
               </x>
-              <div class="card-body">
-              <h15 className="card-title">CASAL</h15><br></br>
+            
+             <p> <h15 className="card-title">CASAL</h15><br></br></p>
               <h20 className="card-title">SECRETARIO</h20><br></br>
               <h11 className="card-title">Ueslei</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
@@ -186,7 +186,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   </a>
                 </Social>
                 
-              </div>
+           
             </div>
           </div>
         </div>
