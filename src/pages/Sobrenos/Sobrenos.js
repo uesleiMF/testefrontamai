@@ -16,7 +16,7 @@ export default function Sobrenos() {
               <br></br>
               <h2 className="mx-3 my-3 text-center text-success">REDE DE CASAIS</h2>
               <h3 className="mx-3 my-3 text-center text-success">AMAI SEMPRE</h3>
-              <h5 className="mx-3 my-3 text-center text-success">**INFORMAÇÕES SOBRE A LIDERANÇA**</h5>
+              <h6 className="mx-3 my-3 text-center text-success">**INFORMAÇÕES-DA-LIDERANÇA**</h6>
             </div>
           </div>
         </div>
