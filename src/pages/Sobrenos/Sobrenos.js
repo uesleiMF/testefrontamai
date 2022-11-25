@@ -35,13 +35,11 @@ export default function Sobrenos() {
               
               <img src={c1} alt="bo" className="card-img-top" />
 
-              <div class="card-body">
-              <h8 className="card-title">CASAL LIDER</h8><br></br>
-              <h9 className="card-title">Pastores</h9><br></br>
-              <h10 className="card-title">Marcos</h10><br></br>
-              <h10 className="card-title"> & </h10><br></br>
-              <h10 className="card-title">Solange</h10><br></br>
-               <span className="badge bg-primary"></span>    
+              <p> <h2 className="card-title">CASAL LIDER</h2></p>
+              <h3 className="card-title">Pastores</h3>
+              <h4 className="card-title">Marcos</h4>
+              <h4 className="card-title"> & </h4>
+              <h4 className="card-title">Solange</h4> 
                
                 <Social>
                   <a
@@ -56,7 +54,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               
                 </Social>
                 
-              </div>
+              
             </div>
           </div>
 
@@ -67,13 +65,11 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   <img src={c1} alt="bo" className="card-img-top" />
                 </a>
               </x>
-              <div class="card-body">
-              <h8 className="card-title">CASAL LIDER</h8><br></br>
-              <h9 className="card-title">Pastores</h9><br></br>
-              <h10 className="card-title">Pina</h10><br></br>
-              <h10 className="card-title"> & </h10><br></br>
-              <h10 className="card-title">Carla</h10><br></br>
-              <span className="badge bg-primary"></span>   
+              <p> <h2 className="card-title">CASAL LIDER</h2></p>
+              <h3 className="card-title">Pastores</h3>
+              <h4 className="card-title">Pina</h4>
+              <h4 className="card-title"> & </h4>
+              <h4 className="card-title">Carla</h4>
                 <Social>
              
                       
@@ -88,7 +84,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                   </a>
                 </Social>
                 
-              </div>
+              
             </div>
           </div>
         </div>
@@ -169,7 +165,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               </x>
             
               <p> <h2 className="card-title">CASAL</h2></p>
-              <h3 className="card-title">SECRETRIO</h3>
+              <h3 className="card-title">SECRETARIO</h3>
               <h4 className="card-title">Ueslei</h4>
               <h4 className="card-title"> & </h4>
               <h4 className="card-title">Jessica</h4>
