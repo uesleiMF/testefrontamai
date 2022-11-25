@@ -135,9 +135,9 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
              
               <p> <h2 className="card-title">CASAL</h2></p>
               <h3 className="card-title">VICE-LIDER</h3>
-              <h4 className="card-title">_____________</h4>
+              <h4 className="card-title">___________</h4>
               <h4 className="card-title"> & </h4>
-              <h4 className="card-title">_____________</h4>
+              <h4 className="card-title">___________</h4>
                    
                 
                 <Social>
