@@ -14,7 +14,7 @@ export default function Sobrenos() {
           <div className="row">
             <div className="col">
               <br></br>
-              <h2 className="mx-3 my-3 text-center">REDE DE CASAIS AMAI SEMPRE</h2>
+              <h2 className="mx-3 my-3 text-center text-success">REDE DE CASAIS AMAI SEMPRE</h2>
               <h4 className="mx-3 my-3 text-center">
                 INFORMAÇÕES SOBRE A LIDERANÇA:</h4>
             </div>
@@ -26,8 +26,8 @@ export default function Sobrenos() {
         <h3 className="mx-3 my-3 text-center">REDE AMAI </h3>
         <h4 className="mx-3 my-3 text-center">CASAIS LIDERES </h4>
 
-        <div className="row mb-5  ">
-        <div class="col align-self-start">
+        <div class="d-flex align-content p-3">
+        <div class="d-flex align-content-around flex-wrap">
 
 
             <div class="cardd">
@@ -35,7 +35,7 @@ export default function Sobrenos() {
               
               <img src={c1} alt="bo" className="card-img-top" />
 
-              <p> <h2 className="card-title">CASAL--LIDER</h2></p>
+              <p> <h2 className="card-title text-success">CASAL--LIDER</h2></p>
               <h3 className="card-title">Pastores</h3>
               <h4 className="card-title">Marcos</h4>
               <h4 className="card-title"> & </h4>
@@ -58,7 +58,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col align-self-end">
+          <div class="d-flex align-content-around flex-wrap">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
