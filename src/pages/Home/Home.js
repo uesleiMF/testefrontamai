@@ -13,6 +13,8 @@ import c6 from "../../components/Img/c6.jpg";
 import c7 from "../../components/Img/c7.jpg";
 import c8 from "../../components/Img/c8.jpg";
 import c9 from "../../components/Img/c9.jpg";
+import ieq from "../../components/Img/ieq.png";
+
 
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -136,7 +138,22 @@ export default function Home() {
               <BsFillArrowDownCircleFill/>
             </b>
            </Social>
-
+         
+           <div class='col p-3 mb-3'>
+    <div className="card">
+    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+      
+            <img src={ieq} alt="bo"  height="200px" className="card-img-top"/>
+              </a>
+              
+             <div className="card-body">
+          <h8 className="card-title">IEQ</h8><br></br>
+          <h8 className="card-title">Igreja do Evangelio Quadrangular</h8><br></br>
+          <h8 className="card-title"> Marabá-PA</h8>
+          <span className="badge bg-primary"></span>
+        </div>
+      </div>
+      </div>
           </div>
      </div>
      </div>

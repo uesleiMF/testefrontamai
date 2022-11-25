@@ -8,7 +8,7 @@ import "./Sobrenos.css";
 
 export default function Sobrenos() {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="card mt-4 bg-warning">
         <div className="card-title">
           <div className="row">
@@ -100,7 +100,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
 
 
         <div className="row mb-5 ">
-        <div class="col-4 p-3">
+        <div class="col-sm p-3 ">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
@@ -129,7 +129,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col-4 p-3">
+          <div class="col-sm p-3">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -159,7 +159,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="col-4 p-3">
+          <div class="col-sm p-3">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
