@@ -16,8 +16,7 @@ export default function Sobrenos() {
               <br></br>
               <h2 className="mx-3 my-3 text-center text-success">REDE DE CASAIS</h2>
               <h3 className="mx-3 my-3 text-center text-success">AMAI SEMPRE</h3>
-              <h4 className="mx-3 my-3 text-center text-success">
-                ****INFORMAÇÕES SOBRE A LIDERANÇA****:</h4>
+              <h5 className="mx-3 my-3 text-center text-success">**INFORMAÇÕES SOBRE A LIDERANÇA**</h5>
             </div>
           </div>
         </div>
@@ -92,8 +91,9 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
       </div>
 
       <div className="card mt-4 bg-success">
-      <h3 className="mx-3 my-3 text-center">CELULA UM SO PROPOSITO</h3>
-        <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
+      <h3 className="mx-3 my-3 text-center text-white">CELULA DE CASAIS</h3>
+      <h4 className="mx-3 my-3 text-center text-white ">(UM SO PROPOSITO)</h4>
+        <h5 className="mx-3 my-3 text-center text-white"> CASAIS LIDERES</h5>
 
 
         <div class="d-flex align-content p-3">
