@@ -99,8 +99,8 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
 
 
-        <div class="d-flex bd-highlight p-2">
-        <div class=" flex-fill bd-highlight">
+        <div class="d-flex align-content p-3">
+        <div class="d-flex align-content-around flex-wrap">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
 
@@ -129,7 +129,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="flex-fill bd-highlight">
+          <div class="d-flex align-content-around flex-wrap">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
@@ -159,7 +159,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
             </div>
           </div>
 
-          <div class="flex-fill bd-highlight">
+          <div class="d-flex align-content-around flex-wrap">
             <div class="cardd">
               <x>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
