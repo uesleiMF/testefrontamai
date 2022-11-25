@@ -99,7 +99,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         <h4 className="mx-3 my-3 text-center"> CASAIS LIDERES</h4>
 
 
-        <div class="d-flex align-content p-2">
+        <div class="d-flex align-content p-3">
         <div class="d-flex align-content-around flex-wrap">
             <div class="cardd">
               <img src={c1} alt="bo" className="card-img-top" />
@@ -139,9 +139,9 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
              
             <p>  <h15 className="card-title">CASAL</h15><br></br></p>
               <h20 className="card-title">VICE-LIDER</h20><br></br>
-              <h11 className="card-title">*******</h11><br></br>
+              <h11 className="card-title">******************</h11><br></br>
               <h11 className="card-title"> & </h11><br></br>
-              <h11 className="card-title">*******</h11>          
+              <h11 className="card-title">******************</h11>          
                 
                 <Social>
                   <a
