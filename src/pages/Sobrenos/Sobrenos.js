@@ -9,7 +9,7 @@ import "./Sobrenos.css";
 export default function Sobrenos() {
   return (
     <div className="container">
-      <div className="card mt-4 bg-warning">
+      <div className="card mt-4 bg-warning bg-opacity-50">
         <div className="card-title">
           <div className="row">
             <div className="col">
@@ -22,7 +22,7 @@ export default function Sobrenos() {
         </div>
       </div>
 
-      <div className="card mt-4  bg-primary">
+      <div className="card mt-4  bg-primary bg-opacity-50">
         <h3 className="mx-3 my-3 text-center text-white">REDE AMAI </h3>
         <h4 className="mx-3 my-3 text-center text-white">CASAIS LIDERES </h4>
 
@@ -90,7 +90,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         </div>
       </div>
 
-      <div className="card mt-4 bg-success">
+      <div className="card mt-4 bg-success bg-opacity-50">
       <h3 className="mx-3 my-3 text-center text-white">CELULA DE CASAIS</h3>
       <h4 className="mx-3 my-3 text-center text-white ">(UM SO PROPOSITO)</h4>
         <h5 className="mx-3 my-3 text-center text-white"> CASAIS LIDERES</h5>
@@ -190,7 +190,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
         </div>
       </div>
 
-      <div className="card mt-4 bg-danger">
+      <div className="card mt-4 bg-danger bg-opacity-50">
       <h3 className="mx-3 my-3 text-center text-white">CELULA DE CASAIS</h3>
       <h4 className="mx-3 my-3 text-center text-white ">(UM SO PROPOSITO)</h4>
         <h5 className="mx-3 my-3 text-center text-white"> CASAIS LIDERES</h5>
@@ -289,7 +289,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
           </div>
         </div>
       </div>
-      <div className="card mt-4 bg-info">
+      <div className="card mt-4 bg-info   ">
       <h3 className="mx-3 my-3 text-center text-white">CELULA DE CASAIS</h3>
       <h4 className="mx-3 my-3 text-center text-white ">(UM SO PROPOSITO)</h4>
         <h5 className="mx-3 my-3 text-center text-white"> CASAIS LIDERES</h5>
