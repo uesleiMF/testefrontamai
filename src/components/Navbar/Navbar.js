@@ -1,5 +1,7 @@
 import { Container,List, Logo } from "./styles";
-import {FaHeart,FaRegUser,FaUserFriends,FaPlayCircle} from "react-icons/fa";
+import {FaHeart,FaRegUser,FaPlayCircle,FaHeartbeat} from "react-icons/fa";
+import {ImManWoman} from "react-icons/im";
+
 import { Link } from 'react-router-dom';
 import React from 'react';
 import c1 from "../../components/Img/ieq2.jpg";
@@ -18,12 +20,12 @@ export default function Navbar() {
 
 
     <li>
-      <FaHeart />
+      <FaHeartbeat />
       <Link to="/home">Pagina Inicial</Link>
    </li>
        
      <li>
-         <FaUserFriends/> 
+         <ImManWoman/> 
          <Link to="/sobrenos">Sobrenós</Link>
       </li>
       
