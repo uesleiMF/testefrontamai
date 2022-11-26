@@ -11,7 +11,19 @@ export default function Navbar() {
   return (
     <Container>
     
+    <Logo>
+     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+                <img src={c1} alt="bo" className="card-img-top" />
+                           
+              </a>
+ <h6 className="card-title">Clique Aqui:</h6>
+     </Logo>
+
+
           <List>
+
+
+
     <li>
       <FaHeart />
       <Link to="/home">Pagina Inicial</Link>

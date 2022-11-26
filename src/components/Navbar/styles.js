@@ -16,13 +16,14 @@ export const Container = styled.div`
 
 export const Logo = styled.a`
 
-  padding: 0.2rem 0;
+  padding: 1.2rem 0;
 
 
   img {
-    width: 5rem;
-    margin: 0 1rem;
-    border-radius: 20%;
+    width: 3rem;
+    margin: auto;
+    border-radius: 15%;
+    
   }
 `;
 
