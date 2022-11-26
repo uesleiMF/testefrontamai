@@ -15,12 +15,6 @@ export default function Navbar() {
 
 
           <List>
-<li>
-<a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img src={c1} alt="bo"  />
-                           
-              </a>
-</li>
 
 
     <li>
@@ -49,7 +43,13 @@ export default function Navbar() {
 
 
       </List>
-     
+      <Logo>
+     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+                <img src={c1} alt="bo"  />
+                           
+              </a>
+
+     </Logo>
 
 
     </Container>

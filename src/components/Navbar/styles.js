@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: start; 
   background-color:#aa67d7;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 2rem;
  
   
 `;
@@ -33,22 +33,13 @@ export const List = styled.ul`
   background:transparent;
 
   li {
-    img {
-      width: 5rem;
-      margin: 0 0rem;
-      border-radius: 25%;
-      margin-top: auto;
     
-     
-  
-    }
-   
     a {
       text-decoration: none;
       color:  #000000;
-      font-weight: 600;
+      font-weight: 700;
       padding: 0 1rem;
-      font-size: 0.8em;
+      font-size: 0.8rem;
       display: flex;
       align-items: center;
 
