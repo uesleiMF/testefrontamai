@@ -2,25 +2,24 @@ import styled from "styled-components";
 
 export const Container = styled.div`
  
-  border-bottom: 100px ;
+  border-bottom: 1px solid #dadada;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   background-color:#aa67d7;
-  padding: 18px;
-  width= 90%;
+ 
  
   
 `;
 
 export const Logo = styled.a`
-
+padding: 1.2rem 0;
   img {
     width: 3rem;
-    margin: 0px;
+    margin: 0 0rem;
     border-radius: 15%;
-    display: auto;
+   
   }
 `;
 
@@ -36,7 +35,7 @@ export const List = styled.ul`
       color:  #000000;
       font-weight: 700;
       padding: 0 1rem;
-      font-size: 0.7em;
+      font-size: 0.9em;
       display: flex;
       align-items: center;
 
