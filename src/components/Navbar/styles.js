@@ -14,13 +14,13 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.a`
-padding: 1.1rem 0;
+ padding: 1.5rem;
   img {
-    width: 5rem;
+    width: 4rem;
     margin: 0 0rem;
     border-radius: 20%;
     margin-top: auto;
-    padding-left: 8px;
+   
     
 
   }
@@ -36,7 +36,7 @@ export const List = styled.ul`
     a {
       text-decoration: none;
       color:  #000000;
-      font-weight: 700;
+      font-weight: 600;
       padding: 0 1rem;
       font-size: 0.9em;
       display: flex;
