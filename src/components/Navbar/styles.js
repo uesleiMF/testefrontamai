@@ -28,7 +28,7 @@ img {
     margin: 0 0.9rem;
     border-radius: 25%;
     margin-top: auto;
-    
+    margin-left:-25px;
     
 
   }
