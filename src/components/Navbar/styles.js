@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start; 
   background-color:#aa67d7;
  
  
