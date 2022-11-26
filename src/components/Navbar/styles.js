@@ -38,16 +38,17 @@ export const List = styled.ul`
       margin: 0 0rem;
       border-radius: 25%;
       margin-top: auto;
-      padding-left: 12px;
-      
+    
+     
   
     }
+   
     a {
       text-decoration: none;
       color:  #000000;
-      font-weight: 700;
+      font-weight: 600;
       padding: 0 1rem;
-      font-size: 0.9em;
+      font-size: 0.8em;
       display: flex;
       align-items: center;
 
