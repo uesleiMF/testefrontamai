@@ -15,7 +15,15 @@ export const Container = styled.div`
 
 export const Logo = styled.a`
 padding: 1.1rem 0;
-  img {
+display: flex;
+list-style: none;
+margin-bottom: 0px;
+background:transparent;
+
+
+
+
+img {
     width: 5rem;
     margin: 0 0rem;
     border-radius: 25%;
