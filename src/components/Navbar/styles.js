@@ -21,9 +21,9 @@ export const Logo = styled.a`
 
   img {
     width: 3rem;
-    margin: auto;
+    margin: 0px;
     border-radius: 15%;
-    
+    display: flex;
   }
 `;
 
