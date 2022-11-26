@@ -16,9 +16,6 @@ export const Container = styled.div`
 
 export const Logo = styled.a`
 
-  padding: 1.2rem 0;
-
-
   img {
     width: 3rem;
     margin: 0px;

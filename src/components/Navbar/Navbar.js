@@ -13,10 +13,10 @@ export default function Navbar() {
     
     <Logo>
      <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img src={c1} alt="bo" className="card-img-top" />
+                <img src={c1} alt="bo"/>
                            
               </a>
- <h6 className="card-title">Clique Aqui:</h6>
+       <h6>Clique Aqui:</h6>
      </Logo>
 
 
@@ -52,10 +52,10 @@ export default function Navbar() {
       </List>
       <Logo>
      <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img src={c1} alt="bo" className="card-img-top" />
+                <img src={c1} alt="bo"  />
                            
               </a>
- <h6 className="card-title">Clique Aqui:</h6>
+ <h6 >Clique Aqui:</h6>
      </Logo>
 
 
