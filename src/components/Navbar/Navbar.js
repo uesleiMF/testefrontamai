@@ -11,13 +11,7 @@ export default function Navbar() {
   return (
     <Container>
     
-    <Logo>
-     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img src={c1} alt="bo"/>
-                           
-              </a>
-       <h6>Clique Aqui:</h6>
-     </Logo>
+  
 
 
           <List>
@@ -55,7 +49,7 @@ export default function Navbar() {
                 <img src={c1} alt="bo"  />
                            
               </a>
- <h6 >Clique Aqui:</h6>
+
      </Logo>
 
 
