@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   background-color:#aa67d7;
  
  
@@ -14,39 +14,38 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.a`
- padding: auto;
+padding: 1.1rem 0;
   img {
-    width: 4rem;
+    width: 5rem;
     margin: 0 0rem;
-    border-radius: 20%;
+    border-radius: 25%;
     margin-top: auto;
-   
+    padding-left: 12px;
     
 
   }
 `;
 
 export const List = styled.ul`
-
-display: flex;
+  display: flex;
   list-style: none;
   margin-bottom: 0px;
   background:transparent;
 
   li {
     img {
-      width: 4rem;
-      margin: auto;
-      border-radius: 20%;
+      width: 5rem;
+      margin: 0 0rem;
+      border-radius: 25%;
       margin-top: auto;
-     
+      padding-left: 12px;
       
   
     }
     a {
       text-decoration: none;
       color:  #000000;
-      font-weight: 600;
+      font-weight: 700;
       padding: 0 1rem;
       font-size: 0.9em;
       display: flex;
