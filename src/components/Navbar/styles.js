@@ -39,14 +39,14 @@ export const List = styled.ul`
   list-style: none;
   margin-bottom: 0px;
   background:transparent;
-
+  margin-left:-40px;
   li {
     
     a {
       text-decoration: none;
       color:  #000000;
       font-weight: 700;
-      padding: 0 1rem;
+      padding: 0 0.5rem;
       font-size: 0.8rem;
       display: flex;
       align-items: center;
