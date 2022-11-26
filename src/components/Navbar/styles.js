@@ -14,12 +14,15 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.a`
-padding: 1.2rem 0;
+padding: 1.1rem 0;
   img {
-    width: 3rem;
+    width: 5rem;
     margin: 0 0rem;
-    border-radius: 15%;
-   
+    border-radius: 20%;
+    margin-top: auto;
+    padding-left: 8px;
+    
+
   }
 `;
 
