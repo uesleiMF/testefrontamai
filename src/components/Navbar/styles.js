@@ -44,10 +44,10 @@ export const List = styled.ul`
     
     a {
       text-decoration: none;
-      color:  #000000;
+      color:  #000;
       font-weight: 700;
       padding: 0 0.5rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       display: flex;
       align-items: center;
 
