@@ -20,7 +20,7 @@ export const Logo = styled.a`
     width: 3rem;
     margin: 0px;
     border-radius: 15%;
-    display: flex;
+    display: auto;
   }
 `;
 
