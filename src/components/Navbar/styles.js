@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.a`
-padding: 1.1rem 0;
+padding: 0 0.1rem;
 display: flex;
 list-style: none;
 margin-bottom: 0px;
@@ -24,8 +24,8 @@ background:transparent;
 
 
 img {
-    width: 5rem;
-    margin: 0 0rem;
+    width: 4rem;
+    margin: 0 0.9rem;
     border-radius: 25%;
     margin-top: auto;
     
