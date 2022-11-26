@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   background-color:#aa67d7;
  
  
@@ -27,12 +27,22 @@ export const Logo = styled.a`
 `;
 
 export const List = styled.ul`
-  display: flex;
+
+display: flex;
   list-style: none;
   margin-bottom: 0px;
   background:transparent;
 
   li {
+    img {
+      width: 4rem;
+      margin: auto;
+      border-radius: 20%;
+      margin-top: auto;
+     
+      
+  
+    }
     a {
       text-decoration: none;
       color:  #000000;
