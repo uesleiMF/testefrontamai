@@ -27,17 +27,45 @@ export const Container = styled.div`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 `
+export const Logo = styled.a`
+
+h6 {
+  font-size: 18px;
+  color: black;
+ 
+  justify-content: center;
+align-items: center;
+ 
+}
+
+img {
+    width: 9rem;
+    margin: 0 0.9rem;
+    border-radius: 25%;
+    margin-top: auto;
+    align-items: center;
+    
+
+  }
+`;
 export const Social = styled.div`
   a {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     color: #A020F0;
     text-decoration: none;
     justify-content: center;
   align-items: center;
    
   }
+  s {
+    font-size: 2.5rem;
+    color: #00ff00;
+    text-decoration: none;
+  }
+
  
   b {
+   
     font-size: 3.5rem;
     color: #A020F0;
     text-decoration: none;

@@ -1,6 +1,6 @@
 //import { Carousel } from 'react-responsive-carousel';
 import React from "react";
-
+import { Logo } from "./styles";
 import { CCarousel, CCarouselItem, CImage} from '@coreui/react';
 
 import c0 from "../../components/Img/c0.jpg";
@@ -13,7 +13,7 @@ import c6 from "../../components/Img/c6.jpg";
 import c7 from "../../components/Img/c7.jpg";
 import c8 from "../../components/Img/c8.jpg";
 import c9 from "../../components/Img/c9.jpg";
-import ieq from "../../components/Img/ieq.png";
+import ieq from "../../components/Img/ieq2.jpg";
 
 
 import { GrInstagram } from "react-icons/gr";
@@ -40,6 +40,8 @@ export default function Home() {
              <h3 className="mx-3 my-3 text-center "> REDE DE CASAIS</h3>
              <h4 className="mx-3 my-3 text-center"> AMAI SEMPRE</h4>
             
+           
+
              </div>
         </div>
       </div>
@@ -124,9 +126,32 @@ export default function Home() {
         <div className="row">
           <div className="col">
         
-             <h3 className="mx-3 my-3 text-center "> REDE DE CASAIS</h3>
-             <h4 className="mx-3 my-3 text-center"> AMAI SEMPRE</h4>
+             <h4 className="mx-3 my-3 text-center "> Visite-nós em nossa (Igreja)</h4>
+             <h4 className="mx-3 my-3 text-center "> Ou uma </h4>
+             <h4 className="mx-4 my-4 text-center "> (Celula) mais proxima de sua casa</h4>
             
+             
+             <h6 className="mx-3 my-3 text-center"> CLIQUE EM UMA DAS IMAGENS ABAIXO:</h6>
+        
+            <Social>
+             <s>
+             <BsFillArrowDownCircleFill/>
+             
+              </s>
+             </Social>
+
+             <Logo>
+     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+                <img src={ieq} alt="bo"  />
+                   </a>
+                <h6 className="mx-3 my-3 text-center ">IEQ</h6>   
+                <h6 className="mx-3 my-3 text-center ">Igreja Do Evangélio Quadrangular</h6>
+                <h6 className="mx-3 my-3 text-center ">Nova-Marabá ---Marabá-Pá</h6>
+          
+              </Logo>
+             
+             
+             
              </div>
         </div>
       </div>
@@ -141,6 +166,7 @@ export default function Home() {
     <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
             <img src={c1} alt="bo" width="25px" height="100px"  className="card-img-top"/>
+             
               </a>
               
              <div className="card-body">
@@ -273,7 +299,7 @@ export default function Home() {
 
       <div className="card mt-4 mb-3 bg-info">
      
-     <h5 className="mx-3 my-3 text-center">CONHECAM AS MIDIAS SOCIAIS DO MINISTERIO AMAI! </h5>
+     <h5 className="mx-3 my-3 text-center">CONHEÇAM  NOSSAS  MIDIAS  SOCIAIS  **MINISTERIO AMAI**! </h5>
           
           <Social>
                
