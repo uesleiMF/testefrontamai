@@ -8,7 +8,6 @@ import c1 from "../../components/Img/ieq2.jpg";
 
 export default function Navbar() {
   
-	GiMusicalNotes
 
   return (
     <Container>
