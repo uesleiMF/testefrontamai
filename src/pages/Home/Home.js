@@ -32,7 +32,7 @@ export default function Home() {
   return (
     
     <div className="container">
-    <div className="card mt-1 bg-info">
+    <div className="card mt-4 bg-info">
       <div className="card-title">
         <div className="row">
           <div className="col">
@@ -116,55 +116,25 @@ export default function Home() {
 </CCarousel>
 
 <div>
+</div>
+</div>
 
-
-
- <div>    
-    
-     
-<div>
-  <div>
-    <div>
-         
-            
-       <h4 className="mx-3 my-3 text-center">ESCOLHA A CELULA MAIS PROXIMA DE SUA CASA </h4>
-  <h5 className="mx-3 my-3 text-center">CLIQUE NAS IMAGENS ABAIXO! </h5>
+<div className="card mt-4 bg-info">
+      <div className="card-title">
+        <div className="row">
+          <div className="col">
         
-  <Social>
-               
+             <h3 className="mx-3 my-3 text-center "> REDE DE CASAIS</h3>
+             <h4 className="mx-3 my-3 text-center"> AMAI SEMPRE</h4>
             
-            <b>
-              
-              <BsFillArrowDownCircleFill/>
-            </b>
-           </Social>
-         
-           <div class='col p-3 mb-3'>
-    <div className="card">
-    <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-      
-            <img src={ieq} alt="bo"  height="200px" className="card-img-top"/>
-              </a>
-              
-             <div className="card-body">
-          <h8 className="card-title">IEQ</h8><br></br>
-          <h8 className="card-title">Igreja do Evangelio Quadrangular</h8><br></br>
-          <h8 className="card-title"> Marabá-PA</h8>
-          <span className="badge bg-primary"></span>
+             </div>
         </div>
       </div>
-      </div>
-          </div>
-     </div>
-     </div>
-     </div>
-     
-     
+</div>
 
-        
-  
-               
-    <div className="card mt-4 bg-success">
+
+
+  <div className="card mt-4 bg-success">
   <div className="row mb-3">
   <div class='col-4 p-3'>
     <div className="card">
@@ -295,15 +265,14 @@ export default function Home() {
           <span className="badge bg-primary"></span>
         </div>
       </div>
+    
       </div>
-
-      </div>
-     
-     </div>
+</div>
+</div>
   
 
+      <div className="card mt-4 mb-3 bg-info">
      
-
      <h5 className="mx-3 my-3 text-center">CONHECAM AS MIDIAS SOCIAIS DO MINISTERIO AMAI! </h5>
           
           <Social>
@@ -322,23 +291,26 @@ export default function Home() {
             
           </Social>
          
-    
+    </div>
+    </div>
 
-
-        {/*  <ReactPlayer
- 
-  frameborder="0" 
-  allowfullscreen=""
-  iframe width="560" 
-  height="315"
-  url={["https://www.youtube.com/watch?v=YjsEH8BRXyg" 
-            
-  ]}
-autoPlay  controls/>*/}
+     
           
-  </div>
-  </div>
-  </div>
+          
+
+
+  
+    
+     
+
+
+
+
+     
+
+        
+  
+               
   
 
   
