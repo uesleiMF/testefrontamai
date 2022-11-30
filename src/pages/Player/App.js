@@ -1,97 +1,107 @@
-import {useState, useEffect} from 'react';
-import Player from '../Player/Player';
-import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useState, useRef } from "react";
+import styled from "styled-components";
+import "./App.css";
 
-function App() {
-  const [songs] = useState([
-    {
-      title: "Som 1",
-      artist: "Artista 1",
-      img_src: "./images/1.gif", 
-      src: "./music/audio2.mp3"
-    },
-    {
-      title: "Som 2",
-      artist: "Artista 2",
-      img_src: "./images/2.gif",
-      src: "./music/audio3.mp3"
-    },
-    {
-      title: "Som 3",
-      artist: "Artista 3",
-      img_src: "./images/4.gif",
-      src: "./music/audio4.mp3"
-    },
-    {
-      title: "Som 4",
-      artist: "Artista 4",
-      img_src: "./images/5.gif",
-      src: "./music/audio1.mp3"
-    },
-    {
-      title: "Som 5",
-      artist: "Artista 5",
-      img_src: "./images/1.gif", 
-      src: "./music/audio.mp3"
-    },
-    {
-      title: "Som 6",
-      artist: "Artista 6",
-      img_src: "./images/2.gif",
-      src: "./music/audio1.mp3"
-    },
-    {
-      title: "Som 7",
-      artist: "Artista 7",
-      img_src: "./images/4.gif",
-      src: "./music/audio.mp3"
-    },
-    {
-      title: "Som 8",
-      artist: "Artista 8",
-      img_src: "./images/5.gif",
-      src: "./music/audio5.mp3"
-    }
-  ]);
+// Import components
+import Player from "./Player";
+import Song from "./Song";
+import Library from "./Library";
+import Nav from "./Nav";
+import Credit from "./Credit";
+// Import data
+import data from "./data";
 
-  const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  const [nextSongIndex, setNextSongIndex] = useState(0);
+const App = () => {
+	// Ref
+	const audioRef = useRef(null);
 
-  useEffect(() => {
-    setNextSongIndex(() => {
-      if (currentSongIndex + 1 > songs.length - 1) {
-        return 0;
-      } else {
-        return currentSongIndex + 1;
-      }
-    });
-  }, [currentSongIndex]);
+	// State
+	const [songs, setSongs] = useState(data());
+	const [currentSong, setCurrentSong] = useState(songs[0]);
+	const [isPlaying, setIsPlaying] = useState(false);
+	const [libraryStatus, setLibraryStatus] = useState(false);
+	const [songInfo, setSongInfo] = useState({
+		currentTime: 0,
+		duration: 0,
+	});
 
-  return (
-    <div className="container">
-    <div className="card mt-1 bg-info">
-      <div className="card-title">
-        <div className="row">
-          <div className="col">
-            <br></br>
-          <h4 className="mx-3 my-3 text-center">OUÇA SEUS HINOS AQUI!</h4>
-          </div>
+	// Functions
+	const updateTimeHandler = (e) => {
+		const currentTime = e.target.currentTime;
+		const duration = e.target.duration;
+		setSongInfo({ ...songInfo, currentTime, duration });
+	};
+
+	const songEndHandler = async () => {
+		let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+		let nextSong = songs[(currentIndex + 1) % songs.length];
+		await setCurrentSong(nextSong);
+
+		const newSongs = songs.map((song) => {
+			if (song.id === nextSong.id) {
+				return {
+					...song,
+					active: true,
+				};
+			} else {
+				return {
+					...song,
+					active: false,
+				};
+			}
+		});
+		setSongs(newSongs);
+
+		if (isPlaying) {
+			audioRef.current.play();
+		}
+	};
+
+	return (
+		
    
-          </div>
-       
-        
-      
-      <Player 
-        currentSongIndex={currentSongIndex} 
-        setCurrentSongIndex={setCurrentSongIndex} 
-        nextSongIndex={nextSongIndex} 
-        songs={songs}
-      />
-    </div>
-    </div>
-    </div>
-  );
-}
+    
+    <AppContainer libraryStatus={libraryStatus}>
+			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+			<Song currentSong={currentSong} />
+			<Player
+				isPlaying={isPlaying}
+				setIsPlaying={setIsPlaying}
+				currentSong={currentSong}
+				setCurrentSong={setCurrentSong}
+				audioRef={audioRef}
+				songInfo={songInfo}
+				setSongInfo={setSongInfo}
+				songs={songs}
+				setSongs={setSongs}
+			/>
+			<Library
+				songs={songs}
+				setCurrentSong={setCurrentSong}
+				audioRef={audioRef}
+				isPlaying={isPlaying}
+				setSongs={setSongs}
+				libraryStatus={libraryStatus}
+			/>
+			<Credit />
+			<audio
+				onLoadedMetadata={updateTimeHandler}
+				onTimeUpdate={updateTimeHandler}
+				onEnded={songEndHandler}
+				ref={audioRef}
+				src={currentSong.audio}
+			/>
+		</AppContainer>
+    
+	);
+};
+
+const AppContainer = styled.div`
+	transition: all 0.5s ease;
+	margin-left: ${(p) => (p.libraryStatus ? "20rem" : "0")};
+	@media screen and (max-width: 768px) {
+		margin-left: 0;
+	}
+`;
 
 export default App;
