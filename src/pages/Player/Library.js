@@ -31,8 +31,8 @@ const LibraryContainer = styled.div`
 	position: fixed;
 	z-index: 9;
 	top: 80px;
-	left: 5px;
-	width: 20rem;
+	left: 1px;
+	width: 15rem;
 	height: 80%;
 	background-color: white;
 	box-shadow: 20px 22px 50px rgb(204, 204, 204);
@@ -54,7 +54,7 @@ const LibraryContainer = styled.div`
 		border-radius: 20px;
 		border: transparent;
 	}
-	@media screen and (max-width: 280px) {
+	@media screen and (max-width: 200px) {
 		width: 100%;
 		z-index: 9;
 	}
