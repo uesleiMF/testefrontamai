@@ -4,11 +4,11 @@ import { v4 as uuidv4 } from "uuid";
 function chillHop() {
 	return [
 		{
-			name: "Beaver Creek",
+			name: "DEUS DE DETALHES",
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
 			artist: "Aso, Middle School, Aviino",
-			audio: "./Audio/audio.mp3",
+			audio: "https://www.zummy.com.ng/Tag2/datas//Deus%20De%20Detalhes.mp3",
 			color: ["#205950", "#2ab3bf"],
 			id: uuidv4(),
 			active: true,
@@ -18,7 +18,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			artist: "Aiguille",
-			audio: "./public/music/audio1.mp3",
+			audio: "https://mp3.chillhop.com/serve.php/?mp3=9272",
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
