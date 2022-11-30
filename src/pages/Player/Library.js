@@ -30,8 +30,9 @@ const Library = ({ songs, currentSong, setCurrentSong, audioRef, isPlaying, setS
 const LibraryContainer = styled.div`
 	position: fixed;
 	z-index: 9;
-	top: 80px;
+	top: 83px;
 	left: 1px;
+	border-radius: 25px;
 	width: 15rem;
 	height: 80%;
 	background-color: white;
