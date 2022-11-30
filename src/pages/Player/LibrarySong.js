@@ -69,17 +69,17 @@ const LibrarySongDescription = styled.div`
 
 const Img = styled.img`
 	margin: 10px 0;
-	height: 65px;
+	height: 55px;
 	border-radius: 30%;
 `;
 
 const H1 = styled.h3`
 	padding-left: 2rem;
-	font-size: 1rem;
+	font-size: 0.8rem;
 `;
 
 const H2 = styled.h4`
-	padding-left: 1rem;
+	padding-left: 2rem;
 	font-size: 0.7rem;
 `;
 

@@ -24,11 +24,11 @@ function chillHop() {
 			active: false,
 		},
 		{
-			name: "Keep Going",
+			name: "O Tempo não pode apagar",
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-			artist: "Swørn",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
+			artist: "Cassiane",
+			audio: "https://s31.aconvert.com/convert/p3r68-cdx67/ph4nn-z8edb.mp3",
 			color: ["#CD607D", "#c94043"],
 			id: uuidv4(),
 			active: false,

@@ -53,7 +53,7 @@ const Button = styled.button`
 	border-radius: 30%;
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
-	padding: 0.5rem;
+	padding: 0.2rem;
 	transition: all 0.3s ease;
 	&:hover {
 		background: rgb(65, 65, 65);
@@ -66,10 +66,10 @@ const Button1 = styled.button`
 	border-radius: 30%;
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
-	padding: 0.5rem;
+	padding: 0.2rem;
 	transition: all 0.3s ease;
 	&:hover {
-		background: rgb(0, 0, 0, 0, 6);
+		background: rgb(65, 65, 65);
 		color: white;
 	}
 `;
