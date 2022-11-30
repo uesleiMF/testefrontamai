@@ -11,12 +11,12 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 		<NavContainer>
 			
 			<Button onClick={() => setLibraryStatus(!libraryStatus)}>
-			Procurar-Hinos
+			Procurar
 				<FontAwesomeIcon icon={faMusic} />
 			</Button>
 			<Button1 onClick={() => setLibraryStatus(!libraryStatus)}>
 			Voltar
-				<FontAwesomeIcon icon={faMusic} />
+				
 			</Button1>
 		</NavContainer>
 	
