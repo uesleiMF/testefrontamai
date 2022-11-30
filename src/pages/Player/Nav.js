@@ -9,9 +9,9 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 		
 		
 		<NavContainer>
-			<H1 libraryStatus={libraryStatus}>Vibes</H1>
+			
 			<Button onClick={() => setLibraryStatus(!libraryStatus)}>
-				Library
+			Escolham seus Hinos
 				<FontAwesomeIcon icon={faMusic} />
 			</Button>
 		</NavContainer>
@@ -24,7 +24,7 @@ const NavContainer = styled.div`
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 350px) {
 		position: fixed;
 		z-index: 10;
 		top: 0;

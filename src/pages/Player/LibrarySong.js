@@ -45,8 +45,8 @@ const LibrarySong = ({ song, setCurrentSong, audioRef, isPlaying, songs, setSong
 };
 const LibrarySongContainer = styled.div`
 	padding: 0 2rem 0 2rem;
-	height: 100px;
-	width: 100%;
+	height: 90px;
+	width: 90%;
 	display: flex;
 	transition: all 0.3s ease;
 	background-color: ${(p) => (p.isActive ? "pink" : "white")};
@@ -60,7 +60,7 @@ const LibrarySongContainer = styled.div`
 `;
 
 const LibrarySongDescription = styled.div`
-	width: 100%;
+	width: 40%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -73,7 +73,7 @@ const Img = styled.img`
 `;
 
 const H1 = styled.h3`
-	padding-left: 1rem;
+	padding-left: 2rem;
 	font-size: 1rem;
 `;
 

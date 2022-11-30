@@ -13,7 +13,7 @@ const Song = ({ currentSong }) => {
 
 const SongContainer = styled.div`
 	margin-top: 10vh;
-	min-height: 50vh;
+	min-height: 10vh;
 	max-height: 60vh;
 	display: flex;
 	flex-direction: column;
@@ -22,15 +22,15 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 20%;
-	border-radius: 50%;
-	@media screen and (max-width: 768px) {
+	width: 15%;
+	border-radius: 30%;
+	@media screen and (max-width: 300px) {
 		width: 50%;
 	}
 `;
 
 const H1 = styled.h2`
-	padding: 3rem 1rem 1rem 1rem;
+	padding: 1rem 2rem 1rem 1rem;
 `;
 
 const H2 = styled.h3`
