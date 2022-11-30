@@ -11,9 +11,13 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 		<NavContainer>
 			
 			<Button onClick={() => setLibraryStatus(!libraryStatus)}>
-			Escolham seus Hinos
+			Procurar-Hinos
 				<FontAwesomeIcon icon={faMusic} />
 			</Button>
+			<Button1 onClick={() => setLibraryStatus(!libraryStatus)}>
+			Voltar
+				<FontAwesomeIcon icon={faMusic} />
+			</Button1>
 		</NavContainer>
 	
 	);
@@ -46,6 +50,7 @@ const H1 = styled.h1`
 const Button = styled.button`
 	background: transparent;
 	border: none;
+	border-radius: 30%;
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
 	padding: 0.5rem;
@@ -55,5 +60,19 @@ const Button = styled.button`
 		color: white;
 	}
 `;
+const Button1 = styled.button`
+	background: transparent;
+	border: none;
+	border-radius: 30%;
+	cursor: pointer;
+	border: 2px solid rgb(65, 65, 65);
+	padding: 0.5rem;
+	transition: all 0.3s ease;
+	&:hover {
+		background: rgb(0, 0, 0, 0, 6);
+		color: white;
+	}
+`;
+
 
 export default Nav;
