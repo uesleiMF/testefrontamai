@@ -68,8 +68,9 @@ const LibrarySongDescription = styled.div`
 `;
 
 const Img = styled.img`
-	margin: 30px 0;
-	height: 60px;
+	margin: 10px 0;
+	height: 65px;
+	border-radius: 30%;
 `;
 
 const H1 = styled.h3`
