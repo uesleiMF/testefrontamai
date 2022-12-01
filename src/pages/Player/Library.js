@@ -32,11 +32,12 @@ const LibraryContainer = styled.div`
 	z-index: 9;
 	top: 83px;
 	left: 1px;
-	border-radius: 25px;
+	border-radius: 35px;
 	width: 15rem;
 	height: 80%;
 	background-color: white;
-	box-shadow: 20px 22px 50px rgb(204, 204, 204);
+	
+	box-shadow: 0 6px 5px rgb(130, 23, 192);
 	user-select: none;
 	overflow: scroll;
 	transform: translateX(${(p) => (p.libraryStatus ? "0%" : "-100%")});

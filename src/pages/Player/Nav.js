@@ -52,6 +52,7 @@ const Button = styled.button`
 	border: none;
 	border-radius: 30%;
 	cursor: pointer;
+	box-shadow: 0 6px 5px rgb(130, 23, 192);
 	border: 2px solid rgb(65, 65, 65);
 	padding: 0.2rem;
 	transition: all 0.3s ease;
@@ -64,6 +65,7 @@ const Button1 = styled.button`
 	background: transparent;
 	border: none;
 	border-radius: 30%;
+	box-shadow: 0 6px 5px rgb(130, 23, 192);
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
 	padding: 0.2rem;

@@ -129,7 +129,7 @@ const Player = ({
 };
 
 const PlayerContainer = styled.div`
-	min-height: 20vh;
+	min-height: 5vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -140,8 +140,8 @@ const TimeControlContainer = styled.div`
 	margin-top: 5vh;
 	width: 50%;
 	display: flex;
-	@media screen and (max-width: 768px) {
-		width: 90%;
+	@media screen and (max-width: 468px) {
+		width: 50%;
 	}
 `;
 
@@ -177,7 +177,7 @@ const Input = styled.input`
 		outline: none;
 		-webkit-appearance: none;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 368px) {
 		&::-webkit-slider-thumb {
 			height: 48px;
 			width: 48px;
@@ -218,8 +218,8 @@ const PlayControlContainer = styled.div`
 	align-items: center;
 	padding: 1rem;
 	width: 30%;
-	@media screen and (max-width: 350px) {
-		width: 60%;
+	@media screen and (max-width: 300px) {
+		width: 80%;
 	}
 `;
 

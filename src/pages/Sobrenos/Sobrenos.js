@@ -8,10 +8,10 @@ import "./Sobrenos.css";
 
 export default function Sobrenos() {
   return (
- 
-        <div className="card-title">
-          <div className="row">   <div className="container">
+    <div className="container">
       <div className="card mt-4 bg-warning bg-opacity-75">
+        <div className="card-title">
+          <div className="row">
             <div className="col">
               <br></br>
               <h2 className="mx-3 my-3 text-center text-success">

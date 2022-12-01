@@ -99,7 +99,7 @@ const App = () => {
 const AppContainer = styled.div`
 	transition: all 0.5s ease;
 	margin-left: ${(p) => (p.libraryStatus ? "10rem" : "0")};
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 468px) {
 		margin-left: 0;
 	}
 `;

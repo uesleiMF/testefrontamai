@@ -44,9 +44,9 @@ const LibrarySong = ({ song, setCurrentSong, audioRef, isPlaying, songs, setSong
 	);
 };
 const LibrarySongContainer = styled.div`
-	padding: 0 2rem 0 2rem;
-	height: 90px;
-	width: 90%;
+	padding: 0 1rem 0 1rem;
+	height: 110px;
+	width: 85%;
 	display: flex;
 	transition: all 0.3s ease;
 	background-color: ${(p) => (p.isActive ? "pink" : "white")};
@@ -60,7 +60,7 @@ const LibrarySongContainer = styled.div`
 `;
 
 const LibrarySongDescription = styled.div`
-	width: 40%;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -68,19 +68,19 @@ const LibrarySongDescription = styled.div`
 `;
 
 const Img = styled.img`
-	margin: 10px 0;
-	height: 55px;
+	margin: 8px 0;
+	height: 60px;
 	border-radius: 30%;
 `;
 
 const H1 = styled.h3`
 	padding-left: 2rem;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 `;
 
 const H2 = styled.h4`
 	padding-left: 2rem;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 `;
 
 export default LibrarySong;

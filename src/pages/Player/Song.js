@@ -3,18 +3,22 @@ import styled from "styled-components";
 
 const Song = ({ currentSong }) => {
 	return (
+		<div className="container">
+		<div className="card mt-2 bg-warning bg-opacity-50">
 		<SongContainer>
 			<Img src={currentSong.cover} alt={currentSong.name}></Img>
 			<H1>{currentSong.name}</H1>
 			<H2>{currentSong.artist}</H2>
 		</SongContainer>
+		</div>
+		</div>
 	);
 };
 
 const SongContainer = styled.div`
-	margin-top: 10vh;
-	min-height: 10vh;
-	max-height: 60vh;
+	margin-top: 5vh;
+	min-height: 4vh;
+	max-height: 40vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,19 +26,19 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 25%;
+	width: 13%;
 	border-radius: 30%;
-	@media screen and (max-width: 350px) {
+	@media screen and (max-width: 300px) {
 		width: 50%;
 	}
 `;
 
 const H1 = styled.h2`
-	padding: 1rem 2rem 1rem 1rem;
+	padding: 0.3rem 1rem 0.8rem 0.8rem;
 `;
 
 const H2 = styled.h3`
-	font-size: 1rem;
+	font-size: 0.8rem;
 `;
 
 export default Song;

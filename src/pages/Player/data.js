@@ -18,7 +18,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			artist: "André Valadão",
-			audio: "https://s31.aconvert.com/convert/p3r68-cdx67/mzf66-yf9vl.mp3",
+			audio: "https://s5.aconvert.com/convert/p3r68-cdx67/ldiej-x9hqq.mp3",
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
