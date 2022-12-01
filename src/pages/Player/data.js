@@ -28,7 +28,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
 			artist: "Cassiane",
-			audio: "https://s31.aconvert.com/convert/p3r68-cdx67/ph4nn-z8edb.mp3",
+			audio: "https://mega.nz/file/XApAkIJa#Cx3xrz_3CnzbNUXD9wta4citko-dtomPmg4WlHRFuMk ",
 			color: ["#CD607D", "#c94043"],
 			id: uuidv4(),
 			active: false,
