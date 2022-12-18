@@ -18,7 +18,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			artist: "André ",
-			src: "./Audio/audio1.mp3",
+			src: "https://www.mediafire.com/file/dugtqkvz9ro578f/X2Download.app+-+Eu+e+Minha+Casa+-+Andr%C3%A9+Valad%C3%A3o+(128+kbps).mp3/file?dkey=x4xrmcjshgb&r=1046",
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
