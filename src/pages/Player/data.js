@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 function chillHop() {
 	return [
 		{
-			name: "Deus de Detalhes",
+			name: "Deus deeee Detalhes",
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
 			artist: "Aso, Middle School, Aviino",
@@ -14,11 +14,11 @@ function chillHop() {
 			active: true,
 		},
 		{
-			name: "Eu e a",
+			name: "Eu eeeeeee Minha Casa",
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			artist: "André ",
-			src: "https://www.mediafire.com/file/dugtqkvz9ro578f/X2Download.app+-+Eu+e+Minha+Casa+-+Andr%C3%A9+Valad%C3%A3o+(128+kbps).mp3/file?dkey=x4xrmcjshgb&r=1046",
+			audio: " ",
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
