@@ -40,7 +40,12 @@
     "styled-components": "^5.3.5",
     "sweetalert": "^2.1.2",
     "uuid": "^8.3.1",
+   
     "web-vitals": "^1.1.0"
+
+    
+    
+    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,7 +54,9 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": ["react-app",
+    "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -62,5 +69,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25"
   }
 }
+
