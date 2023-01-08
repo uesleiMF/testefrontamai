@@ -35,12 +35,7 @@ export default function Navbar() {
             
         </li>
        
-        <li>
-           <FaRegUser />
-           <Link to="/">Login</Link>
-            
-                   
-        </li>
+      
 
 
       </List>
