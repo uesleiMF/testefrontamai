@@ -10,7 +10,7 @@ import Dashboard from './Dashboard';
 import Home from "./pages/Home/Home";
 import Sobrenos from "./pages/Sobrenos/Sobrenos";
 import Player from "./pages/Player/App";
-
+import Cadastro from './pages/Cadastro/Cadastro';
 import './Login.css';
 
 ReactDOM.render(
@@ -24,7 +24,7 @@ ReactDOM.render(
             <Route path= "/home" component={Home} />
             <Route path= "/sobrenos" component={Sobrenos} />
             <Route path= "/app" component={Player} />
-          
+            <Route path= "/cadastro" component={Cadastro} />
         
          {/* <Route component={NotFound}/> */}
 
