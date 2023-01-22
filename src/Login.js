@@ -42,7 +42,7 @@ export default class Login extends Component {
     return (
       <div style={{ marginTop: '200px' }}>
         <div>
-          <h2>Loginn</h2>
+          <h2>Login</h2>
         </div>
 
         <div>
