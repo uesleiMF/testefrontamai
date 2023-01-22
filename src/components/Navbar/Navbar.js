@@ -34,14 +34,13 @@ export default function Navbar() {
          <Link to="/app">Hinos Gospel</Link>
             
         </li>
-        <li>
-         <FaRegUser />
-         
-         <Link to="/">login</Link>
-            
-        </li>
        
-      
+        <li>
+           <FaRegUser />
+           <Link to="/">Login</Link>
+            
+                   
+        </li>
 
 
       </List>

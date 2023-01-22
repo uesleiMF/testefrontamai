@@ -50,7 +50,7 @@ export default class Dashboard extends Component {
     if (this.state.search) {
       data = `${data}&search=${this.state.search}`;
     }
-    axios.get(`https://back-amai.onrender.com/get-casal${data}`, {
+    axios.get(`https://projeto----amai.herokuapp.com/get-casal${data}`, {
       headers: {
         'token': this.state.token
       }
@@ -67,7 +67,7 @@ export default class Dashboard extends Component {
   }
 
   deleteCasal = (id) => {
-    axios.post('https://back-amai.onrender.com/delete-casal', {
+    axios.post('https://projeto----amai.herokuapp.com/delete-casal', {
       id: id
     }, {
       headers: {
@@ -127,7 +127,7 @@ export default class Dashboard extends Component {
     file.append('niverH', this.state.niverH);
     file.append('niverM', this.state.niverM);
 
-    axios.post('https://back-amai.onrender.com/add-casal', file, {
+    axios.post('https://projeto----amai.herokuapp.com/add-casal', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -169,7 +169,7 @@ export default class Dashboard extends Component {
    
 
 
-    axios.post('https://back-amai.onrender.com/update-casal', file, {
+    axios.post('https://projeto----amai.herokuapp.com/update-casal', file, {
       headers: {
         'content-type': 'multipart/form-data',
         'token': this.state.token
@@ -474,7 +474,7 @@ export default class Dashboard extends Component {
                 <TableRow key={row.name}>
                 
                  
-                  <TableCell align="center"><img src={`https://back-amai.onrender.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
+                  <TableCell align="center"><img src={`http://projeto----amai.herokuapp.com/${row.image}`} alt="" width="70" height="70" /></TableCell>
                   <TableCell align="center">{row.name}</TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.tel}</TableCell>
