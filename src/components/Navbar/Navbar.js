@@ -34,6 +34,12 @@ export default function Navbar() {
          <Link to="/app">Hinos Gospel</Link>
             
         </li>
+        <li>
+         <GiMusicalNotes />
+         
+         <Link to="/">login</Link>
+            
+        </li>
        
       
 
