@@ -35,7 +35,7 @@ export default function Navbar() {
             
         </li>
         <li>
-         <GiMusicalNotes />
+         <FaRegUser />
          
          <Link to="/">login</Link>
             
