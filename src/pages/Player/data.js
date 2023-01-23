@@ -18,7 +18,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			artist: "André ",
-			audio: " ",
+			audio: './music/Bondade de Deus(2).mp3',
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
@@ -28,7 +28,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
 			artist: "Cassiane",
-			audio: "https://mega.nz/file/XApAkIJa#Cx3xrz_3CnzbNUXD9wta4citko-dtomPmg4WlHRFuMk ",
+			audio: './music/a.mp3',
 			color: ["#CD607D", "#c94043"],
 			id: uuidv4(),
 			active: false,
@@ -38,7 +38,7 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ef95e219a44869318b7806e9f0f794a1f9c451e4-1024x1024.jpg",
 			artist: "Aiguille",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9148",
+			audio: './music/i.mp3',
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
@@ -47,8 +47,8 @@ function chillHop() {
 			name: "Reflection",
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
-			artist: "Swørn",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
+			artist: "sim",
+			audio: './music/Eu e minha casa.mp3',
 			color: ["#CD607D", "#c94043"],
 			id: uuidv4(),
 			active: false,
