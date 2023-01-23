@@ -20,7 +20,7 @@ export default class Login extends Component {
 
     const pwd = bcrypt.hashSync(this.state.password, salt);
 
-    axios.post('https://projeto----amai.herokuapp.com/login', {
+    axios.post('https://back-amai.onrender.com/login', {
       username: this.state.username,
       password: pwd,
     }).then((res) => {
