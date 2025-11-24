@@ -16,20 +16,27 @@ export default class Register extends Component {
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   register = () => {
-
     axios.post('https://backtestmar.onrender.com/register', {
       username: this.state.username,
       password: this.state.password,
-    }).then((res) => {
+    })
+    .then((res) => {
       swal({
         text: res.data.title,
         icon: "success",
         type: "success"
       });
       this.props.history.push('/');
-    }).catch((err) => {
+    })
+    .catch((err) => {
+      // ✔️ TRATAMENTO SEGURO DE ERRO
+      const msg =
+        err.response?.data?.errorMessage ||
+        err.message ||
+        "Erro inesperado ao registrar usuário.";
+
       swal({
-        text: err.response.data.errorMessage,
+        text: msg,
         icon: "error",
         type: "error"
       });
@@ -55,6 +62,7 @@ export default class Register extends Component {
             required
           />
           <br /><br />
+
           <TextField
             id="standard-basic"
             type="password"
@@ -66,17 +74,22 @@ export default class Register extends Component {
             required
           />
           <br /><br />
-         {/* <TextField
+
+          {/* Caso quiser habilitar confirmação da senha depois */}
+          {/* 
+          <TextField
             id="standard-basic"
             type="password"
             autoComplete="off"
             name="confirm_password"
             value={this.state.confirm_password}
             onChange={this.onChange}
-            placeholder="Confirm Password"
+            placeholder="Confirmar Senha"
             required
-    />*/}
+          />
+          */}
           <br /><br />
+
           <Button
             className="button_style"
             variant="contained"
@@ -86,7 +99,9 @@ export default class Register extends Component {
             onClick={this.register}
           >
             Registro
-          </Button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
           <Link href="/">
             Login
           </Link>

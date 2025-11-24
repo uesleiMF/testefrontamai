@@ -17,24 +17,29 @@ export default class Login extends Component {
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   login = () => {
-
     const pwd = bcrypt.hashSync(this.state.password, salt);
 
     axios.post('https://backtestmar.onrender.com/login', {
       username: this.state.username,
       password: pwd,
-    }).then((res) => {
+    })
+    .then((res) => {
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user_id', res.data.id);
       this.props.history.push('/dashboard');
-    }).catch((err) => {
-      if (err.response && err.response.data && err.response.data.errorMessage) {
-        swal({
-          text: err.response.data.errorMessage,
-          icon: "error",
-          type: "error"
-        });
-      }
+    })
+    .catch((err) => {
+      // 🔒 TRATAMENTO 100% SEGURO
+      const msg =
+        err.response?.data?.errorMessage ||
+        err.message ||
+        "Erro inesperado ao fazer login.";
+
+      swal({
+        text: msg,
+        icon: "error",
+        type: "error"
+      });
     });
   }
 
@@ -77,7 +82,8 @@ export default class Login extends Component {
             onClick={this.login}
           >
             Login
-          </Button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="/register">
             Registro
           </Link>
