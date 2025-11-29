@@ -1,92 +1,108 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
-import { Button, TextField, Link } from '@material-ui/core';
+import { Button, TextField, Link, CircularProgress } from '@material-ui/core';
 const axios = require('axios');
-const bcrypt = require('bcryptjs');
-var salt = bcrypt.genSaltSync(10);
 
 export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      loading: false
     };
   }
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-  login = () => {
-    const pwd = bcrypt.hashSync(this.state.password, salt);
+  login = async () => {
+    const { username, password } = this.state;
 
-    axios.post('https://backtestmar.onrender.com/login', {
-      username: this.state.username,
-      password: pwd,
-    })
-    .then((res) => {
-      localStorage.setItem('token', res.data.token);
-      localStorage.setItem('user_id', res.data.id);
-      this.props.history.push('/dashboard');
-    })
-    .catch((err) => {
-      // 🔒 TRATAMENTO 100% SEGURO
-      const msg =
-        err.response?.data?.errorMessage ||
-        err.message ||
-        "Erro inesperado ao fazer login.";
+    if (!username || !password) {
+      swal({ text: 'Preencha usuário e senha', icon: 'error' });
+      return;
+    }
 
-      swal({
-        text: msg,
-        icon: "error",
-        type: "error"
+    this.setState({ loading: true });
+
+    try {
+      const res = await axios.post('https://backtestmar.onrender.com/login', {
+        username,
+        password
       });
-    });
+
+      const token = res?.data?.token;
+      const id = res?.data?.id || res?.data?._id;
+
+      if (!token) {
+        swal({ text: 'Resposta do servidor não contém token.', icon: 'error' });
+        this.setState({ loading: false });
+        return;
+      }
+
+      localStorage.setItem('token', token);
+      if (id) localStorage.setItem('user_id', id);
+
+      swal({ text: 'Login realizado com sucesso!', icon: 'success' });
+
+      this.props.history.push('/dashboard');
+
+    } catch (err) {
+      const msg =
+        err?.response?.data?.errorMessage ||
+        err?.message ||
+        'Erro inesperado ao fazer login.';
+
+      swal({ text: msg, icon: 'error' });
+    } finally {
+      this.setState({ loading: false });
+    }
   }
 
   render() {
+    const { username, password, loading } = this.state;
+
     return (
       <div style={{ marginTop: '200px' }}>
-        <div>
-          <h2>Login</h2>
-        </div>
+        <h2>Login</h2>
 
-        <div>
-          <TextField
-            id="standard-basic"
-            type="text"
-            autoComplete="off"
-            name="username"
-            value={this.state.username}
-            onChange={this.onChange}
-            placeholder="Usuario"
-            required
-          />
-          <br /><br />
-          <TextField
-            id="standard-basic"
-            type="password"
-            autoComplete="off"
-            name="password"
-            value={this.state.password}
-            onChange={this.onChange}
-            placeholder="Senha"
-            required
-          />
-          <br /><br />
+        <TextField
+          fullWidth
+          type="text"
+          autoComplete="off"
+          name="username"
+          value={username}
+          onChange={this.onChange}
+          placeholder="Usuário"
+          margin="dense"
+        />
+
+        <TextField
+          fullWidth
+          type="password"
+          autoComplete="off"
+          name="password"
+          value={password}
+          onChange={this.onChange}
+          placeholder="Senha"
+          margin="dense"
+        />
+
+        <div style={{ marginTop: 16, display: 'flex', alignItems: 'center' }}>
           <Button
-            className="button_style"
             variant="contained"
             color="primary"
-            size="small"
-            disabled={this.state.username === '' && this.state.password === ''}
             onClick={this.login}
+            disabled={!username || !password || loading}
           >
-            Login
+            {loading ? 'Entrando...' : 'Login'}
           </Button>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/register">
-            Registro
-          </Link>
+
+          {loading && <div style={{ marginLeft: 12 }}><CircularProgress size={24} /></div>}
+
+          <div style={{ marginLeft: 'auto' }}>
+            <Link href="/register">Registro</Link>
+          </div>
         </div>
       </div>
     );

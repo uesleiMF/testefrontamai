@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
 import { Button, TextField, Link } from '@material-ui/core';
-const axios = require('axios');
+import axios from 'axios';
 
 export default class Register extends Component {
   constructor(props) {
@@ -15,94 +15,85 @@ export default class Register extends Component {
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
-  register = () => {
-    axios.post('https://backtestmar.onrender.com/register', {
-      username: this.state.username,
-      password: this.state.password,
-    })
-    .then((res) => {
+  register = async () => {
+    const { username, password, confirm_password } = this.state;
+
+    if (!username || !password || !confirm_password) {
+      return swal({ text: 'Preencha todos os campos', icon: 'error' });
+    }
+
+    if (password !== confirm_password) {
+      return swal({ text: 'As senhas não coincidem', icon: 'error' });
+    }
+
+    try {
+      const res = await axios.post('https://backtestmar.onrender.com/register', { username, password });
       swal({
-        text: res.data.title,
+        text: res.data.message || "Registrado com sucesso!",
         icon: "success",
-        type: "success"
       });
       this.props.history.push('/');
-    })
-    .catch((err) => {
-      // ✔️ TRATAMENTO SEGURO DE ERRO
+    } catch (err) {
       const msg =
         err.response?.data?.errorMessage ||
         err.message ||
         "Erro inesperado ao registrar usuário.";
-
-      swal({
-        text: msg,
-        icon: "error",
-        type: "error"
-      });
-    });
+      swal({ text: msg, icon: 'error' });
+    }
   }
 
   render() {
+    const { username, password, confirm_password } = this.state;
+    const disableButton = !username || !password || !confirm_password || password !== confirm_password;
+
     return (
-      <div style={{ marginTop: '200px' }}>
-        <div>
-          <h2>Cadastrar Usuario</h2>
-        </div>
+      <div style={{ marginTop: '150px', maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
+        <h2>Cadastrar Usuário</h2>
 
-        <div>
-          <TextField
-            id="standard-basic"
-            type="text"
-            autoComplete="off"
-            name="username"
-            value={this.state.username}
-            onChange={this.onChange}
-            placeholder="Usuario"
-            required
-          />
-          <br /><br />
+        <TextField
+          fullWidth
+          type="text"
+          autoComplete="off"
+          name="username"
+          value={username}
+          onChange={this.onChange}
+          placeholder="Usuário"
+          margin="normal"
+        />
 
-          <TextField
-            id="standard-basic"
-            type="password"
-            autoComplete="off"
-            name="password"
-            value={this.state.password}
-            onChange={this.onChange}
-            placeholder="Senha"
-            required
-          />
-          <br /><br />
+        <TextField
+          fullWidth
+          type="password"
+          autoComplete="off"
+          name="password"
+          value={password}
+          onChange={this.onChange}
+          placeholder="Senha"
+          margin="normal"
+        />
 
-          {/* Caso quiser habilitar confirmação da senha depois */}
-          {/* 
-          <TextField
-            id="standard-basic"
-            type="password"
-            autoComplete="off"
-            name="confirm_password"
-            value={this.state.confirm_password}
-            onChange={this.onChange}
-            placeholder="Confirmar Senha"
-            required
-          />
-          */}
-          <br /><br />
+        <TextField
+          fullWidth
+          type="password"
+          autoComplete="off"
+          name="confirm_password"
+          value={confirm_password}
+          onChange={this.onChange}
+          placeholder="Confirmar Senha"
+          margin="normal"
+        />
 
+        <div style={{ marginTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Button
-            className="button_style"
             variant="contained"
             color="primary"
-            size="small"
-            disabled={this.state.username === '' && this.state.password === ''}
+            disabled={disableButton}
             onClick={this.register}
           >
-            Registro
+            Registrar
           </Button>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          
-          <Link href="/">
+
+          <Link href="/" style={{ marginLeft: 10 }}>
             Login
           </Link>
         </div>
