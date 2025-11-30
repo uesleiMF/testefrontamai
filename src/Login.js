@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
 import { Button, TextField, Link, CircularProgress } from '@material-ui/core';
-const axios = require('axios');
+import axios from 'axios';
+import "./Login.css";
 
 export default class Login extends Component {
   constructor(props) {
@@ -16,7 +17,9 @@ export default class Login extends Component {
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   login = async () => {
-    const { username, password } = this.state;
+    const { username, password, loading } = this.state;
+
+    if (loading) return;
 
     if (!username || !password) {
       swal({ text: 'Preencha usuário e senha', icon: 'error' });
@@ -63,47 +66,54 @@ export default class Login extends Component {
     const { username, password, loading } = this.state;
 
     return (
-      <div style={{ marginTop: '200px' }}>
-        <h2>Login</h2>
+      <div className="login-container">
 
-        <TextField
-          fullWidth
-          type="text"
-          autoComplete="off"
-          name="username"
-          value={username}
-          onChange={this.onChange}
-          placeholder="Usuário"
-          margin="dense"
-        />
+        <div className="login-card">
+          <h2>Login</h2>
 
-        <TextField
-          fullWidth
-          type="password"
-          autoComplete="off"
-          name="password"
-          value={password}
-          onChange={this.onChange}
-          placeholder="Senha"
-          margin="dense"
-        />
+          <TextField
+            fullWidth
+            type="text"
+            autoComplete="off"
+            name="username"
+            value={username}
+            onChange={this.onChange}
+            placeholder="Usuário"
+            margin="dense"
+          />
 
-        <div style={{ marginTop: 16, display: 'flex', alignItems: 'center' }}>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={this.login}
-            disabled={!username || !password || loading}
-          >
-            {loading ? 'Entrando...' : 'Login'}
-          </Button>
+          <TextField
+            fullWidth
+            type="password"
+            autoComplete="off"
+            name="password"
+            value={password}
+            onChange={this.onChange}
+            placeholder="Senha"
+            margin="dense"
+          />
 
-          {loading && <div style={{ marginLeft: 12 }}><CircularProgress size={24} /></div>}
+          <div className="login-actions">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={this.login}
+              disabled={!username || !password || loading}
+              className="login-btn"
+            >
+              {loading ? 'Entrando...' : 'Login'}
+            </Button>
 
-          <div style={{ marginLeft: 'auto' }}>
-            <Link href="/register">Registro</Link>
+            {loading && (
+              <CircularProgress size={26} className="login-loading" />
+            )}
+
+            <Link href="/register" className="login-register-link">
+              Registro
+            </Link>
           </div>
         </div>
+        
       </div>
     );
   }

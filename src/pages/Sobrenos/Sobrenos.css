@@ -1,30 +1,71 @@
 
 .cardd {
-   
-  border-radius: 5%;
+  width: 260px;                /* largura fixa moderada para desktop */
+  max-width: 90%;              /* ocupa até 90% no celular */
+  border-radius: 12px;
   background-color: lightsteelblue;
   text-align: center;
-  box-shadow: 0 6px 5px rgb(130, 23, 192);
-  margin-top: auto;
-  margin-left: 5px;
-  margin-right: auto;
-  padding-top:10px;
-  padding-right: auto;
-  padding-left: auto;
-  margin: 5px;
-  
+  box-shadow: 0 6px 10px rgba(130, 23, 192, 0.6);
+  padding: 15px;
+  margin: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+/* Efeito hover */
+.cardd:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 16px rgba(130, 23, 192, 0.35);
+}
+
+/* Imagem */
 .cardd img {
-  width: 50%;
-  border-radius: 25%;
-  margin: center;
- 
+  width: 60%;                 /* boa proporção */
+  max-width: 150px;           /* não estoura */
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
 }
+
+/* Títulos */
 .cardd .card-title {
- 
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.9em;
-  font-weight:Bold;
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* ----- RESPONSIVIDADE ----- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .cardd {
+    width: 220px;
+    padding: 12px;
+  }
+
+  .cardd img {
+    width: 65%;
+    max-width: 130px;
+  }
+
+  .cardd .card-title {
+    font-size: 0.95rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .cardd {
+    width: 100%;
+    max-width: 330px;
+    padding: 10px;
+  }
+
+  .cardd img {
+    width: 70%;
+    max-width: 120px;
+  }
+
+  .cardd .card-title {
+    font-size: 0.9rem;
+  }
 }

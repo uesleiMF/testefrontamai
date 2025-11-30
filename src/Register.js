@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
-import { Button, TextField, Link } from '@material-ui/core';
+import { Button, TextField, Link, CircularProgress } from '@material-ui/core';
 import axios from 'axios';
+import "./Register.css";
 
 export default class Register extends Component {
   constructor(props) {
@@ -9,7 +10,8 @@ export default class Register extends Component {
     this.state = {
       username: '',
       password: '',
-      confirm_password: ''
+      confirm_password: '',
+      loading: false
     };
   }
 
@@ -19,84 +21,101 @@ export default class Register extends Component {
     const { username, password, confirm_password } = this.state;
 
     if (!username || !password || !confirm_password) {
-      return swal({ text: 'Preencha todos os campos', icon: 'error' });
+      swal({ text: "Preencha todos os campos!", icon: "error" });
+      return;
     }
 
     if (password !== confirm_password) {
-      return swal({ text: 'As senhas não coincidem', icon: 'error' });
+      swal({ text: "As senhas não coincidem!", icon: "error" });
+      return;
     }
+
+    this.setState({ loading: true });
 
     try {
-      const res = await axios.post('https://backtestmar.onrender.com/register', { username, password });
-      swal({
-        text: res.data.message || "Registrado com sucesso!",
-        icon: "success",
+      const res = await axios.post("https://backtestmar.onrender.com/register", {
+        username,
+        password
       });
-      this.props.history.push('/');
+
+      swal({ text: "Registrado com sucesso!", icon: "success" });
+
+      this.props.history.push("/");
+
     } catch (err) {
       const msg =
-        err.response?.data?.errorMessage ||
-        err.message ||
-        "Erro inesperado ao registrar usuário.";
-      swal({ text: msg, icon: 'error' });
+        err?.response?.data?.errorMessage ||
+        "Erro ao registrar usuário.";
+
+      swal({ text: msg, icon: "error" });
+    } finally {
+      this.setState({ loading: false });
     }
-  }
+  };
 
   render() {
-    const { username, password, confirm_password } = this.state;
-    const disableButton = !username || !password || !confirm_password || password !== confirm_password;
+    const { username, password, confirm_password, loading } = this.state;
 
     return (
-      <div style={{ marginTop: '150px', maxWidth: '400px', marginLeft: 'auto', marginRight: 'auto' }}>
-        <h2>Cadastrar Usuário</h2>
+      <div className="register-container">
 
-        <TextField
-          fullWidth
-          type="text"
-          autoComplete="off"
-          name="username"
-          value={username}
-          onChange={this.onChange}
-          placeholder="Usuário"
-          margin="normal"
-        />
+        <div className="register-card">
+          <h2>Registro</h2>
 
-        <TextField
-          fullWidth
-          type="password"
-          autoComplete="off"
-          name="password"
-          value={password}
-          onChange={this.onChange}
-          placeholder="Senha"
-          margin="normal"
-        />
+          <TextField
+            fullWidth
+            type="text"
+            autoComplete="off"
+            name="username"
+            value={username}
+            onChange={this.onChange}
+            placeholder="Usuário"
+            margin="dense"
+          />
 
-        <TextField
-          fullWidth
-          type="password"
-          autoComplete="off"
-          name="confirm_password"
-          value={confirm_password}
-          onChange={this.onChange}
-          placeholder="Confirmar Senha"
-          margin="normal"
-        />
+          <TextField
+            fullWidth
+            type="password"
+            autoComplete="off"
+            name="password"
+            value={password}
+            onChange={this.onChange}
+            placeholder="Senha"
+            margin="dense"
+          />
 
-        <div style={{ marginTop: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <Button
-            variant="contained"
-            color="primary"
-            disabled={disableButton}
-            onClick={this.register}
-          >
-            Registrar
-          </Button>
+          <TextField
+            fullWidth
+            type="password"
+            autoComplete="off"
+            name="confirm_password"
+            value={confirm_password}
+            onChange={this.onChange}
+            placeholder="Confirmar senha"
+            margin="dense"
+          />
 
-          <Link href="/" style={{ marginLeft: 10 }}>
-            Login
-          </Link>
+          <div className="register-actions">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={this.register}
+              disabled={!username || !password || !confirm_password || loading}
+              className="register-btn"
+            >
+              {loading ? "Registrando..." : "Registrar"}
+            </Button>
+
+            {loading && (
+              <CircularProgress size={26} className="register-loading" />
+            )}
+
+            <Link href="/" className="register-login-link">
+              Já tenho conta
+            </Link>
+          </div>
         </div>
+
       </div>
     );
   }
