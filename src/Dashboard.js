@@ -18,12 +18,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-
 import Tooltip from '@material-ui/core/Tooltip';
-
-
-
-
 
 import "./Dashboard.css";
 
@@ -251,9 +246,7 @@ export default class Dashboard extends Component {
       <div className="dashboard-container">
         {loading && <div className="loading-container"><CircularProgress color="inherit" /></div>}
 
-        // ...
-
-<div className="top-bar">
+  <div className="top-bar">
   <h2>CELULAS DE CASAIS</h2>
   <div className="top-bar-icons">
     <Tooltip title="Adicionar Casal">
