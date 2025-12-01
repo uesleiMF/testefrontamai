@@ -13,17 +13,17 @@ export default function Navbar() {
       <List>
         <li>
           <FaHeartbeat />
-          <Link to="/home">Página Inicial</Link>
+          <Link to="/home">Inicio</Link>
         </li>
 
         <li>
           <ImManWoman />
-          <Link to="/sobrenos">Sobre Nós</Link>
+          <Link to="/sobrenos">SobreNós</Link>
         </li>
 
         <li>
           <GiMusicalNotes />
-          <Link to="/app">Hinos Gospel</Link>
+          <Link to="/app">Hinos</Link>
         </li>
 
         <li>

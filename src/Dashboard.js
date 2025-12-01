@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {
-  Button, TextField, Dialog, DialogActions,
-  DialogTitle, DialogContent, TableBody, Table,
-  TableContainer, TableHead, TableRow, TableCell, CircularProgress,
+  Dialog, DialogActions, DialogTitle, DialogContent,
+  TableBody, Table, TableContainer, TableHead, TableRow,
+  TableCell, CircularProgress, IconButton, TextField
 } from '@material-ui/core';
 import { Pagination } from '@material-ui/lab';
 import swal from 'sweetalert';
@@ -10,6 +10,21 @@ import axios from 'axios';
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 import { CSVLink } from "react-csv";
+
+// Ícones Material-UI v4
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+import Tooltip from '@material-ui/core/Tooltip';
+
+
+
+
+
 import "./Dashboard.css";
 
 // Configura pdfMake corretamente
@@ -88,13 +103,11 @@ export default class Dashboard extends Component {
     try {
       const headers = { 'Content-Type': 'application/json', ...this.getAuthHeaders() };
       let res;
-
       try {
         res = await axios.delete(`https://backtestmar.onrender.com/delete-casal/${id}`, { headers });
       } catch (e) {
         res = await axios.post('https://backtestmar.onrender.com/delete-casal', { id }, { headers });
       }
-
       swal({ text: res.data?.title || 'Deletado com sucesso!', icon: "success" });
       if (this._isMounted) this.setState({ page: 1 }, () => this.getCasal());
     } catch (err) {
@@ -123,7 +136,6 @@ export default class Dashboard extends Component {
     }
 
     const { name, value } = e.target;
-
     if (this._isMounted) {
       this.setState({ [name]: value }, () => {
         if (name === 'search') {
@@ -135,14 +147,8 @@ export default class Dashboard extends Component {
 
   addCasal = async () => {
     const fileInput = this.fileInputAddRef.current;
-
-    if (!fileInput || !fileInput.files[0]) {
-      return swal({ text: 'Selecione uma imagem', icon: 'error' });
-    }
-
-    if (!this.state.name || !this.state.desc || !this.state.tel || !this.state.niverH || !this.state.niverM) {
-      return swal({ text: 'Preencha todos os campos', icon: 'error' });
-    }
+    if (!fileInput || !fileInput.files[0]) return swal({ text: 'Selecione uma imagem', icon: 'error' });
+    if (!this.state.name || !this.state.desc || !this.state.tel || !this.state.niverH || !this.state.niverM) return swal({ text: 'Preencha todos os campos', icon: 'error' });
 
     const fd = new FormData();
     fd.append('file', fileInput.files[0]);
@@ -158,7 +164,6 @@ export default class Dashboard extends Component {
       });
 
       swal({ text: res.data?.message || 'Casal adicionado!', icon: "success" });
-
       if (this._isMounted) {
         this.handleCasalClose();
         this.setState({
@@ -166,7 +171,6 @@ export default class Dashboard extends Component {
           fileName: '', filePreview: '', page: 1
         }, () => this.getCasal());
       }
-
       if (fileInput) fileInput.value = null;
     } catch (err) {
       const msg = err?.response?.data?.errorMessage || err.message || 'Erro ao adicionar';
@@ -178,12 +182,8 @@ export default class Dashboard extends Component {
   updateCasal = async () => {
     const fileInput = this.fileInputEditRef.current;
     const id = this.state.id;
-
     if (!id) return swal({ text: 'ID ausente', icon: 'error' });
-
-    if (!this.state.name || !this.state.desc || !this.state.tel || !this.state.niverH || !this.state.niverM) {
-      return swal({ text: 'Preencha os campos', icon: 'error' });
-    }
+    if (!this.state.name || !this.state.desc || !this.state.tel || !this.state.niverH || !this.state.niverM) return swal({ text: 'Preencha os campos', icon: 'error' });
 
     const fd = new FormData();
     fd.append('name', this.state.name);
@@ -192,26 +192,17 @@ export default class Dashboard extends Component {
     fd.append('niverH', this.state.niverH);
     fd.append('niverM', this.state.niverM);
 
-    if (fileInput && fileInput.files[0]) {
-      fd.append('file', fileInput.files[0]);
-    }
+    if (fileInput && fileInput.files[0]) fd.append('file', fileInput.files[0]);
 
     try {
-      const res = await axios.put(
-        `https://backtestmar.onrender.com/update-casal/${id}`,
-        fd,
-        { headers: { 'content-type': 'multipart/form-data', ...this.getAuthHeaders() } }
-      );
-
+      const res = await axios.put(`https://backtestmar.onrender.com/update-casal/${id}`, fd, {
+        headers: { 'content-type': 'multipart/form-data', ...this.getAuthHeaders() }
+      });
       swal({ text: res.data?.message || 'Atualizado!', icon: 'success' });
-
       if (this._isMounted) {
         this.handleCasaltEditClose();
-        this.setState({
-          name: '', desc: '', tel: '', niverH: '', niverM: '', fileName: ''
-        }, () => this.getCasal());
+        this.setState({ name: '', desc: '', tel: '', niverH: '', niverM: '', fileName: '' }, () => this.getCasal());
       }
-
       if (fileInput) fileInput.value = null;
     } catch (err) {
       const msg = err?.response?.data?.errorMessage || err.message || 'Erro';
@@ -229,10 +220,7 @@ export default class Dashboard extends Component {
     if (this.fileInputAddRef.current) this.fileInputAddRef.current.value = null;
   };
 
-  handleCasalClose = () => {
-    this.setState({ openCasalModal: false });
-  };
-
+  handleCasalClose = () => this.setState({ openCasalModal: false });
   handleCasalEditOpen = (data) => {
     this.setState({
       openCasalEditModal: true,
@@ -247,43 +235,13 @@ export default class Dashboard extends Component {
     });
     if (this.fileInputEditRef.current) this.fileInputEditRef.current.value = null;
   };
-
-  handleCasaltEditClose = () => {
-    this.setState({ openCasalEditModal: false });
-  };
+  handleCasaltEditClose = () => this.setState({ openCasalEditModal: false });
 
   generatePDF = () => {
     const { casais } = this.state;
-    const body = [
-      ['Nome Casal', 'Descrição', 'Contato', 'Aniversário Homem', 'Aniversário Mulher']
-    ];
-    casais.forEach(c => {
-      body.push([
-        c.name,
-        c.desc,
-        c.tel,
-        c.niverH?.substring(0, 10) || '',
-        c.niverM?.substring(0, 10) || ''
-      ]);
-    });
-
-    const docDefinition = {
-      content: [
-        { text: 'Lista de Casais', style: 'header' },
-        {
-          table: {
-            headerRows: 1,
-            widths: ['*', '*', '*', '*', '*'],
-            body
-          }
-        }
-      ],
-      styles: {
-        header: { fontSize: 18, bold: true, margin: [0, 0, 0, 10] }
-      }
-    };
-
-    pdfMake.createPdf(docDefinition).download('casais.pdf');
+    const body = [['Nome Casal', 'Descrição', 'Contato', 'Aniversário Homem', 'Aniversário Mulher']];
+    casais.forEach(c => body.push([c.name, c.desc, c.tel, c.niverH?.substring(0, 10) || '', c.niverM?.substring(0, 10) || '']));
+    pdfMake.createPdf({ content: [{ text: 'Lista de Casais', style: 'header' }, { table: { headerRows: 1, widths: ['*', '*', '*', '*', '*'], body } }], styles: { header: { fontSize: 18, bold: true, margin: [0, 0, 0, 10] } } }).download('casais.pdf');
   };
 
   render() {
@@ -291,116 +249,99 @@ export default class Dashboard extends Component {
 
     return (
       <div className="dashboard-container">
+        {loading && <div className="loading-container"><CircularProgress color="inherit" /></div>}
 
-        {loading && (
-          <div className="loading-container">
-            <CircularProgress color="inherit" />
-          </div>
-        )}
+        // ...
 
-        {/* Top Bar com PDF, CSV e Logout */}
-        <div className="top-bar">
-          <h2>CELULAS DE CASAIS</h2>
-          <div>
-            <Button variant="contained" color="primary" size="small" onClick={this.handleCasalOpen} className="btn-space">
-              Adicionar Casal
-            </Button>
-            <Button variant="contained" color="default" size="small" onClick={this.generatePDF} className="btn-space">
-              Exportar PDF
-            </Button>
-            <CSVLink
-              data={casais.map(c => ({
-                Nome: c.name,
-                Descrição: c.desc,
-                Contato: c.tel,
-                "Aniversário Homem": c.niverH?.substring(0, 10) || '',
-                "Aniversário Mulher": c.niverM?.substring(0, 10) || ''
-              }))}
-              filename={"casais.csv"}
-              className="btn btn-primary"
-            >
-              <Button variant="contained" color="default" size="small" className="btn-space">
-                Exportar CSV
-              </Button>
-            </CSVLink>
-            <Button variant="contained" size="small" onClick={this.logOut}>Sair</Button>
-          </div>
-        </div>
+<div className="top-bar">
+  <h2>CELULAS DE CASAIS</h2>
+  <div className="top-bar-icons">
+    <Tooltip title="Adicionar Casal">
+      <IconButton color="primary" onClick={this.handleCasalOpen}>
+        <AddCircleIcon />
+      </IconButton>
+    </Tooltip>
+
+    <Tooltip title="Exportar PDF">
+      <IconButton color="default" onClick={this.generatePDF}>
+        <PictureAsPdfIcon />
+      </IconButton>
+    </Tooltip>
+
+    <Tooltip title="Exportar CSV">
+      <CSVLink
+        data={casais.map(c => ({
+          Nome: c.name,
+          Descrição: c.desc,
+          Contato: c.tel,
+          "Aniversário Homem": c.niverH?.substring(0,10),
+          "Aniversário Mulher": c.niverM?.substring(0,10)
+        }))}
+        filename={"casais.csv"}
+        style={{ textDecoration: 'none' }}
+      >
+        <IconButton color="default">
+          <GetAppIcon />
+        </IconButton>
+      </CSVLink>
+    </Tooltip>
+
+    <Tooltip title="Sair">
+      <IconButton color="secondary" onClick={this.logOut}>
+        <ExitToAppIcon />
+      </IconButton>
+    </Tooltip>
+  </div>
+</div>
 
         {/* Modal Adicionar Casal */}
         <Dialog open={this.state.openCasalModal} onClose={this.handleCasalClose}>
           <DialogTitle>Adicionar Casal</DialogTitle>
-          <DialogContent className="dialog-content">
+          <DialogContent>
             <TextField type="text" name="name" value={this.state.name} onChange={this.onChange} placeholder="Nome Casal" fullWidth margin="dense" />
             <TextField type="text" name="desc" value={this.state.desc} onChange={this.onChange} placeholder="Descrição" fullWidth margin="dense" />
             <TextField type="text" name="tel" value={this.state.tel} onChange={this.onChange} placeholder="Contato" fullWidth margin="dense" />
             <TextField type="date" name="niverH" value={this.state.niverH} onChange={this.onChange} fullWidth margin="dense" />
             <TextField type="date" name="niverM" value={this.state.niverM} onChange={this.onChange} fullWidth margin="dense" />
-
             <div className="file-input-row">
               <input ref={this.fileInputAddRef} type="file" accept="image/*" onChange={this.onChange} />
               <span>{this.state.fileName}</span>
             </div>
-
-            {filePreview && (
-              <div className="preview-img-container">
-                <img src={filePreview} alt="Preview" className="preview-img" />
-              </div>
-            )}
+            {filePreview && <div className="preview-img-container"><img src={filePreview} alt="Preview" className="preview-img" /></div>}
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleCasalClose} color="primary">Cancelar</Button>
-            <Button
-              disabled={
-                !this.state.name ||
-                !this.state.desc ||
-                !this.state.tel ||
-                !this.state.niverH ||
-                !this.state.niverM ||
-                !this.fileInputAddRef.current?.files[0]
-              }
-              onClick={this.addCasal}
-              color="primary"
-            >
-              Adicionar Casal
-            </Button>
+            <IconButton onClick={this.handleCasalClose} color="primary"><DeleteIcon /></IconButton>
+            <IconButton onClick={this.addCasal} color="primary"><AddCircleIcon /></IconButton>
           </DialogActions>
         </Dialog>
 
         {/* Modal Editar Casal */}
         <Dialog open={this.state.openCasalEditModal} onClose={this.handleCasaltEditClose}>
           <DialogTitle>Editar Casal</DialogTitle>
-          <DialogContent className="dialog-content">
+          <DialogContent>
             <TextField type="text" name="name" value={this.state.name} onChange={this.onChange} placeholder="Nome Casal" fullWidth margin="dense" />
             <TextField type="text" name="desc" value={this.state.desc} onChange={this.onChange} placeholder="Descrição" fullWidth margin="dense" />
             <TextField type="text" name="tel" value={this.state.tel} onChange={this.onChange} placeholder="Contato" fullWidth margin="dense" />
             <TextField type="date" name="niverH" value={this.state.niverH} onChange={this.onChange} fullWidth margin="dense" />
             <TextField type="date" name="niverM" value={this.state.niverM} onChange={this.onChange} fullWidth margin="dense" />
-
             <div className="file-input-row">
               <input ref={this.fileInputEditRef} type="file" accept="image/*" onChange={this.onChange} />
               <span>{this.state.fileName}</span>
             </div>
-
-            {filePreview && (
-              <div className="preview-img-container">
-                <img src={filePreview} alt="Preview" className="preview-img" />
-              </div>
-            )}
+            {filePreview && <div className="preview-img-container"><img src={filePreview} alt="Preview" className="preview-img" /></div>}
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleCasaltEditClose} color="primary">Cancelar</Button>
-            <Button disabled={!this.state.name} onClick={this.updateCasal} color="primary">Editar Casal</Button>
+            <IconButton onClick={this.handleCasaltEditClose} color="primary"><DeleteIcon /></IconButton>
+            <IconButton onClick={this.updateCasal} color="primary"><EditIcon /></IconButton>
           </DialogActions>
         </Dialog>
 
-        {/* Tabela de Casais */}
+        {/* Tabela */}
         <TableContainer>
           <div className="search-box">
             <TextField type="search" name="search" value={this.state.search} onChange={this.onChange} placeholder="Procurar Casais" variant="outlined" size="small" />
           </div>
-
-          <Table aria-label="casais-table">
+          <Table>
             <TableHead>
               <TableRow>
                 <TableCell align="center">Imagem</TableCell>
@@ -412,40 +353,27 @@ export default class Dashboard extends Component {
                 <TableCell align="center">Ação</TableCell>
               </TableRow>
             </TableHead>
-
             <TableBody>
               {casais.map(row => (
                 <TableRow key={row._id || row.name}>
-                  <TableCell align="center">
-                    {row.image ? (
-                      <img src={row.image} alt={row.name} className="table-img" />
-                    ) : '—'}
-                  </TableCell>
+                  <TableCell align="center">{row.image ? <img src={row.image} alt={row.name} className="table-img" /> : '—'}</TableCell>
                   <TableCell align="center">{row.name}</TableCell>
                   <TableCell align="center">{row.desc}</TableCell>
                   <TableCell align="center">{row.tel}</TableCell>
                   <TableCell align="center">{row.niverH?.substring(0, 10)}</TableCell>
                   <TableCell align="center">{row.niverM?.substring(0, 10)}</TableCell>
                   <TableCell align="center">
-                    <Button variant="outlined" color="primary" size="small" onClick={() => this.handleCasalEditOpen(row)} className="btn-space">
-                      Editar
-                    </Button>
-                    <Button variant="outlined" color="secondary" size="small" onClick={() => this.deleteCasal(row._id)}>
-                      Deletar
-                    </Button>
+                    <IconButton onClick={() => this.handleCasalEditOpen(row)} color="primary"><EditIcon /></IconButton>
+                    <IconButton onClick={() => this.deleteCasal(row._id)} color="secondary"><DeleteIcon /></IconButton>
                   </TableCell>
                 </TableRow>
               ))}
             </TableBody>
-
           </Table>
-
           <div className="pagination-area">
             <Pagination count={pages} page={page} onChange={this.pageChange} color="primary" />
           </div>
-
         </TableContainer>
-
       </div>
     );
   }
