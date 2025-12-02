@@ -34,15 +34,31 @@ export const Logo = styled.div`
 export const Hamburger = styled.div`
   display: none;
   flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
   cursor: pointer;
-  gap: 5px;
+  z-index: 1000;
 
   span {
-    width: 25px;
+    display: block;
     height: 3px;
-    background: #35d8aaff;
+    width: 100%;
+    background: #fff;
     border-radius: 2px;
     transition: all 0.3s ease;
+    transform-origin: 1px;
+  }
+
+  /* Transformação em X quando aberto */
+  &.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  &.open span:nth-child(2) {
+    opacity: 0;
+  }
+  &.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 
   @media (max-width: 768px) {
@@ -92,7 +108,6 @@ export const List = styled.ul`
     }
   }
 
-  /* Desktop não precisa de overlay */
   @media (max-width: 768px) {
     display: none;
   }

@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <Container>
-      {/* Logo sempre visível */}
+      {/* Logo */}
       <Logo>
         <a
           href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9"
@@ -48,14 +48,17 @@ export default function Navbar() {
         </li>
       </List>
 
-      {/* Hamburger para mobile */}
-      <Hamburger onClick={() => setOpen(!open)}>
+      {/* Hamburger */}
+      <Hamburger
+        className={open ? "open" : ""}
+        onClick={() => setOpen(!open)}
+      >
         <span></span>
         <span></span>
         <span></span>
       </Hamburger>
 
-      {/* Menu overlay mobile */}
+      {/* Overlay Menu Mobile */}
       <OverlayMenu open={open}>
         <Link to="/home" onClick={handleClose}>
           <FaHeartbeat />
@@ -73,3 +76,4 @@ export default function Navbar() {
     </Container>
   );
 }
+
