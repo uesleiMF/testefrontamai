@@ -15,13 +15,19 @@ export default class Register extends Component {
     };
   }
 
-  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
+  onChange = (e) =>
+    this.setState({ [e.target.name]: e.target.value });
 
   register = async () => {
     const { username, password, confirm_password } = this.state;
 
     if (!username || !password || !confirm_password) {
       swal({ text: "Preencha todos os campos!", icon: "error" });
+      return;
+    }
+
+    if (password.length < 4) {
+      swal({ text: "A senha deve ter pelo menos 4 caracteres!", icon: "error" });
       return;
     }
 
@@ -33,19 +39,19 @@ export default class Register extends Component {
     this.setState({ loading: true });
 
     try {
-      const res = await axios.post("https://backtestmar.onrender.com/register", {
-        username,
-        password
-      });
+      const res = await axios.post(
+        "https://backtestmar.onrender.com/register",
+        { username, password },
+        { timeout: 25000 } // evita travar caso o Render demore a acordar
+      );
 
       swal({ text: "Registrado com sucesso!", icon: "success" });
-
       this.props.history.push("/");
 
     } catch (err) {
       const msg =
         err?.response?.data?.errorMessage ||
-        "Erro ao registrar usuário.";
+        "Erro ao registrar usuário. O servidor pode estar lento.";
 
       swal({ text: msg, icon: "error" });
     } finally {
@@ -58,6 +64,13 @@ export default class Register extends Component {
 
     return (
       <div className="register-container">
+        
+        {loading && (
+          <div className="overlay-loading">
+            <CircularProgress size={50} />
+            <p>Conectando ao servidor...</p>
+          </div>
+        )}
 
         <div className="register-card">
           <h2>Registro</h2>
@@ -65,34 +78,37 @@ export default class Register extends Component {
           <TextField
             fullWidth
             type="text"
-            autoComplete="off"
             name="username"
             value={username}
             onChange={this.onChange}
             placeholder="Usuário"
             margin="dense"
+            autoComplete="off"
+            disabled={loading}
           />
 
           <TextField
             fullWidth
             type="password"
-            autoComplete="off"
             name="password"
             value={password}
             onChange={this.onChange}
             placeholder="Senha"
             margin="dense"
+            autoComplete="off"
+            disabled={loading}
           />
 
           <TextField
             fullWidth
             type="password"
-            autoComplete="off"
             name="confirm_password"
             value={confirm_password}
             onChange={this.onChange}
             placeholder="Confirmar senha"
             margin="dense"
+            autoComplete="off"
+            disabled={loading}
           />
 
           <div className="register-actions">
@@ -106,16 +122,11 @@ export default class Register extends Component {
               {loading ? "Registrando..." : "Registrar"}
             </Button>
 
-            {loading && (
-              <CircularProgress size={26} className="register-loading" />
-            )}
-
             <Link href="/" className="register-login-link">
               Já tenho conta
             </Link>
           </div>
         </div>
-
       </div>
     );
   }
