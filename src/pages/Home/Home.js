@@ -42,13 +42,14 @@ export default function Home() {
         <h4 className="text-center title2">AMAI SEMPRE</h4>
 
         {/* Carrossel */}
-        <CCarousel controls indicators>
-          {carouselImages.map((img, index) => (
-            <CCarouselItem key={index}>
-              <CImage className="d-block" height="350px" src={img} />
-            </CCarouselItem>
-          ))}
-        </CCarousel>
+       <CCarousel controls indicators interval={3000}>
+  {carouselImages.map((img, index) => (
+    <CCarouselItem key={index}>
+      <CImage className="d-block carousel-img" src={img} />
+    </CCarouselItem>
+  ))}
+</CCarousel>
+
 
       </div>
 

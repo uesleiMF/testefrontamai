@@ -1,12 +1,17 @@
+/* ============================
+   WRAPPER GERAL
+============================ */
 .home-wrapper {
-  padding-top: 40px;   /* 🔥 adiciona espaço superior para o título */
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* Títulos */
+/* ============================
+   TÍTULOS
+============================ */
 .title1 {
   font-weight: bold;
-  margin-top: 20px;   /* 🔥 garante espaço extra */
+  margin-top: 20px;
 }
 
 .title2 {
@@ -14,7 +19,29 @@
   margin-top: 10px;
 }
 
-/* IEQ Imagem */
+/* ============================
+   CARROSSEL (IMAGENS IGUAIS)
+============================ */
+.carousel-img,
+.carousel-item img {
+  width: 50% !important;
+  height: 450px !important;  /* ajuste se quiser maior/menor */
+  object-fit: cover !important;
+  object-position: center;
+  border-radius: 8px;
+}
+
+/* Corrige distorção no mobile */
+@media (max-width: 468px) {
+  .carousel-img,
+  .carousel-item img {
+    height: 240px !important;
+  }
+}
+
+/* ============================
+   IMAGEM IEQ
+============================ */
 .ieq-container {
   display: flex;
   justify-content: center;
@@ -27,19 +54,30 @@
   border-radius: 20px;
   transition: 0.3s;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .ieq-container img:hover {
   transform: scale(1.05);
 }
 
-/* Flip Cards */
+/* Ajuste mobile */
+@media (max-width: 468px) {
+  .ieq-container img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ============================
+   FLIP CARDS
+============================ */
 .flip-card {
   background: transparent;
   width: 100%;
   height: 230px;
   perspective: 1000px;
-  margin-top: 20px; /* 🔥 evita que encoste no título */
+  margin-top: 20px;
 }
 
 .flip-card-inner {
@@ -63,6 +101,7 @@
   border-radius: 10px;
 }
 
+/* Frente */
 .flip-card-front img {
   border-radius: 10px;
   width: 100%;
@@ -70,6 +109,7 @@
   object-fit: cover;
 }
 
+/* Verso */
 .flip-card-back {
   background-color: #024c24;
   color: white;
@@ -84,7 +124,16 @@
   margin-top: 10px;
 }
 
-/* Social */
+/* Ajuste mobile */
+@media (max-width: 468px) {
+  .flip-card {
+    height: 200px;
+  }
+}
+
+/* ============================
+   REDES SOCIAIS
+============================ */
 .social-area {
   display: flex;
   justify-content: center;
