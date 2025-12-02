@@ -10,33 +10,39 @@ export default function Navbar() {
   return (
     <Container>
 
-      <List>
-        <li>
-          <FaHeartbeat />
-          <Link to="/home"></Link>
-        </li>
-
-        <li>
-          <ImManWoman />
-          <Link to="/sobrenos"></Link>
-        </li>
-
-        <li>
-          <GiMusicalNotes />
-          <Link to="/app"></Link>
-        </li>
-
-        <li>
-          <FaRegUser />
-          <Link to="/"></Link>
-        </li>
-      </List>
-
+      {/* Logo à esquerda */}
       <Logo>
-        <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+        <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9" target="_blank" rel="noopener noreferrer">
           <img src={c1} alt="logo" />
         </a>
       </Logo>
+
+      {/* Apenas ícones clicáveis */}
+      <List>
+        <li>
+          <Link to="/home">
+            <FaHeartbeat />
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/sobrenos">
+            <ImManWoman />
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/app">
+            <GiMusicalNotes />
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/">
+            <FaRegUser />
+          </Link>
+        </li>
+      </List>
 
     </Container>
   );
