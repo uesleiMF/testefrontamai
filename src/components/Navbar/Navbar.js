@@ -13,22 +13,22 @@ export default function Navbar() {
       <List>
         <li>
           <FaHeartbeat />
-          <Link to="/home">Inicio</Link>
+          <Link to="/home"></Link>
         </li>
 
         <li>
           <ImManWoman />
-          <Link to="/sobrenos">SobreNós</Link>
+          <Link to="/sobrenos"></Link>
         </li>
 
         <li>
           <GiMusicalNotes />
-          <Link to="/app">Hinos</Link>
+          <Link to="/app"></Link>
         </li>
 
         <li>
           <FaRegUser />
-          <Link to="/">Login</Link>
+          <Link to="/"></Link>
         </li>
       </List>
 
